@@ -1,0 +1,103 @@
+{
+  "_from": "@fortawesome/fontawesome-svg-core",
+  "_id": "@fortawesome/fontawesome-svg-core@6.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-HELwwbCz6C1XEcjzyT1Jugmz2NNklMrSPjZOWMlc+ZsHIVk+XOvOXLGGQtFBwSyqfJDNgRq4xBCwWOaZ/d9DEA==",
+  "_location": "/@fortawesome/fontawesome-svg-core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@fortawesome/fontawesome-svg-core",
+    "name": "@fortawesome/fontawesome-svg-core",
+    "escapedName": "@fortawesome%2ffontawesome-svg-core",
+    "scope": "@fortawesome",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fortawesome/fontawesome-svg-core/-/fontawesome-svg-core-6.2.1.tgz",
+  "_shasum": "e87e905e444b5e7b715af09b64d27b53d4c8f9d9",
+  "_spec": "@fortawesome/fontawesome-svg-core",
+  "_where": "/mnt/data/home/901927.cloudwaysapps.com/xbjkvwwutp/public_html",
+  "author": {
+    "name": "The Font Awesome Team",
+    "url": "https://github.com/orgs/FortAwesome/people"
+  },
+  "bugs": {
+    "url": "https://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "6.2.1"
+  },
+  "deprecated": false,
+  "description": "The iconic font, CSS, and SVG framework",
+  "engines": {
+    "node": ">=6"
+  },
+  "exports": {
+    ".": {
+      "module": "./index.mjs",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "style": "./styles.css",
+      "default": "./index.js"
+    },
+    "./index": {
+      "module": "./index.mjs",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "module": "./index.mjs",
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./plugins": {
+      "module": "./plugins.mjs",
+      "import": "./plugins.mjs",
+      "default": "./plugins.mjs"
+    },
+    "./import.macro": "./import.macro.js",
+    "./import.macro.js": "./import.macro.js",
+    "./styles": "./styles.css",
+    "./styles.css": "./styles.css",
+    "./package.json": "./package.json"
+  },
+  "homepage": "https://fontawesome.com",
+  "jsnext:main": "index.mjs",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "module": "index.mjs",
+  "name": "@fortawesome/fontawesome-svg-core",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "scripts": {
+    "postinstall": "node attribution.js"
+  },
+  "sideEffects": [
+    "./index.js",
+    "./index.mjs",
+    "./styles.css"
+  ],
+  "style": "styles.css",
+  "types": "./index.d.ts",
+  "version": "6.2.1"
+}

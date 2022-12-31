@@ -1,0 +1,86 @@
+{
+  "_from": "@fortawesome/free-regular-svg-icons",
+  "_id": "@fortawesome/free-regular-svg-icons@6.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-wiqcNDNom75x+pe88FclpKz7aOSqS2lOivZeicMV5KRwOAeypxEYWAK/0v+7r+LrEY30+qzh8r2XDaEHvoLsMA==",
+  "_location": "/@fortawesome/free-regular-svg-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@fortawesome/free-regular-svg-icons",
+    "name": "@fortawesome/free-regular-svg-icons",
+    "escapedName": "@fortawesome%2ffree-regular-svg-icons",
+    "scope": "@fortawesome",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@fortawesome/free-regular-svg-icons/-/free-regular-svg-icons-6.2.1.tgz",
+  "_shasum": "650e56d937755a8341f2eef258ecb6f95458820f",
+  "_spec": "@fortawesome/free-regular-svg-icons",
+  "_where": "/mnt/data/home/901927.cloudwaysapps.com/xbjkvwwutp/public_html",
+  "author": {
+    "name": "The Font Awesome Team",
+    "url": "https://github.com/orgs/FortAwesome/people"
+  },
+  "bugs": {
+    "url": "https://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "6.2.1"
+  },
+  "deprecated": false,
+  "description": "The iconic font, CSS, and SVG framework",
+  "engines": {
+    "node": ">=6"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./*": "./*.js"
+  },
+  "homepage": "https://fontawesome.com",
+  "jsnext:main": "index.mjs",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "license": "(CC-BY-4.0 AND MIT)",
+  "main": "index.js",
+  "module": "index.mjs",
+  "name": "@fortawesome/free-regular-svg-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "scripts": {
+    "postinstall": "node attribution.js"
+  },
+  "sideEffects": false,
+  "types": "./index.d.ts",
+  "version": "6.2.1"
+}

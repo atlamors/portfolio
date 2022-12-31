@@ -1,0 +1,86 @@
+{
+  "_from": "@fortawesome/pro-thin-svg-icons",
+  "_id": "@fortawesome/pro-thin-svg-icons@6.2.1",
+  "_inBundle": false,
+  "_integrity": "sha512-X+lubysMJrNf/Qw9lDt7BkD9An0pwOEzOMMTaY2dEKN901SJENJ/Y5Ne23CCWSZwAHydoz5EN4JCMVJS+wEkvQ==",
+  "_location": "/@fortawesome/pro-thin-svg-icons",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@fortawesome/pro-thin-svg-icons",
+    "name": "@fortawesome/pro-thin-svg-icons",
+    "escapedName": "@fortawesome%2fpro-thin-svg-icons",
+    "scope": "@fortawesome",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://npm.fontawesome.com/@fortawesome/pro-thin-svg-icons/-/6.2.1/pro-thin-svg-icons-6.2.1.tgz",
+  "_shasum": "97a96c8871d54b3500ff62ecab2617412fb94379",
+  "_spec": "@fortawesome/pro-thin-svg-icons",
+  "_where": "/mnt/data/home/901927.cloudwaysapps.com/xbjkvwwutp/public_html",
+  "author": {
+    "name": "The Font Awesome Team",
+    "url": "https://github.com/orgs/FortAwesome/people"
+  },
+  "bugs": {
+    "url": "https://github.com/FortAwesome/Font-Awesome/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@fortawesome/fontawesome-common-types": "6.2.1"
+  },
+  "deprecated": false,
+  "description": "The iconic font, CSS, and SVG framework",
+  "engines": {
+    "node": ">=6"
+  },
+  "exports": {
+    ".": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./index.js": {
+      "import": "./index.mjs",
+      "require": "./index.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./*": "./*.js"
+  },
+  "homepage": "https://fontawesome.com",
+  "jsnext:main": "index.mjs",
+  "keywords": [
+    "font",
+    "awesome",
+    "fontawesome",
+    "icon",
+    "svg",
+    "bootstrap"
+  ],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "module": "index.mjs",
+  "name": "@fortawesome/pro-thin-svg-icons",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FortAwesome/Font-Awesome.git"
+  },
+  "scripts": {
+    "postinstall": "node attribution.js"
+  },
+  "sideEffects": false,
+  "types": "./index.d.ts",
+  "version": "6.2.1"
+}

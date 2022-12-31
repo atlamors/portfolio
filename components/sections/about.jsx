@@ -28,7 +28,7 @@ export default function About() {
 	
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXXXLarge']}>
+			<Container spacing={['verticalXLarge']}>
 				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLarge']}>
 					<h4>Synopsis</h4>
 					<h2>About Me</h2>

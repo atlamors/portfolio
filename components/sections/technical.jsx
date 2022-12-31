@@ -16,32 +16,32 @@ library.add(fat)
 export default function Technical() {
 
 	const software 	= [
-		{ key: 'photoshop', 		name: 'Photoshop', 			type: 'devicon' },
-		{ key: 'illustrator', 		name: 'Illustator', 			type: 'devicon' },
-		{ key: 'figma', 		name: 'Figma', 					type: 'devicon' },
-		{ key: 'vscode', 		name: 'VSCode', 				type: 'devicon' },
-		{ key: 'mailbox', 		name: 'Postman', 				type: 'fad' },
-		{ key: 'computer-mouse', 		name: 'Click Up', 				type: 'fad' },
+		{ key: 'photoshop', 	name: 'Photoshop', 			type: 'devicon' },
+		{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
+		{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
+		{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
+		{ key: 'mailbox', 		name: 'Postman', 			type: 'fad' },
+		{ key: 'computer-mouse',name: 'Click Up', 			type: 'fad' },
 	]
 	const tech 	= [
-		{ key: 'javascript', 	name: 'JavaScript', 			type: 'devicon' },
-		{ key: 'react', 		name: 'React', 					type: 'devicon' },
-		{ key: 'nextjs', 		name: 'NextJS', 				type: 'devicon' },
-		{ key: 'nodejs', 		name: 'NodeJS', 				type: 'devicon' },
-		{ key: 'php', 			name: 'PHP', 					type: 'devicon' },
-		{ key: 'wordpress', 	name: 'WordPress', 				type: 'devicon' },
-		{ key: 'woocommerce', 	name: 'WooCommerce', 			type: 'devicon' },
-		{ key: 'html5', 		name: 'HTML5', 					type: 'devicon' },
-		{ key: 'css3', 			name: 'CSS3', 					type: 'devicon' },
-		{ key: 'sass', 			name: 'SASS', 					type: 'devicon' },
-		{ key: 'git', 			name: 'Git', 					type: 'devicon' },
-		{ key: 'mysql', 		name: 'MySQL', 					type: 'devicon' },
-		{ key: 'mongodb', 		name: 'MongoDB', 				type: 'devicon' },
+		{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
+		{ key: 'react', 		name: 'React', 				type: 'devicon' },
+		{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
+		{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
+		{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
+		{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
+		{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
+		{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
+		{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
+		{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },
+		{ key: 'git', 			name: 'Git', 				type: 'devicon' },
+		{ key: 'mysql', 		name: 'MySQL', 				type: 'devicon' },
+		{ key: 'mongodb', 		name: 'MongoDB', 			type: 'devicon' },
 	]
 	
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXXXLarge']}>
+			<Container spacing={['verticalXLarge']}>
 				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLarge']}>
 					<h4>Hardskills</h4>
 					<h2>Technical</h2>

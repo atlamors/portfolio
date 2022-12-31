@@ -6,15 +6,12 @@
 		display: flex;
 		flex-direction: column;
 	}
-
-	h2 {
-		font-size: 2rem;
-	}
-
+	
 	.preHeader {
 		font-family: var(--font-subheader);
 		font-weight: 400;
 		letter-spacing: -.05rem;
+		font-size: 2rem;
 	}
 	.header {
 		color: var(--secondary);
@@ -25,5 +22,6 @@
 		font-weight: 400;
 		letter-spacing: -.05rem;
 		text-align: right;
+		font-size: 2rem;
 	}
 }

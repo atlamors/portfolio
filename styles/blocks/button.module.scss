@@ -1,0 +1,36 @@
+button {
+
+	&.primary {
+		background-color: var(--secondary);
+		color: var(--background);
+
+		&:hover {
+			background-color: var(--secondary-bright);
+		}
+	}
+
+	&.secondary {
+		background-color: transparent;
+		color: var(--primary);
+
+		&:hover {
+			background-color: var(--primary-dark);
+		}
+	}
+
+	&.leaveSite {
+		&:after {
+			content: "↗";
+			position: relative;
+			font-size: 1.2rem;
+			line-height: 0;
+			vertical-align: -1px;
+			margin-left: .5rem;
+			text-decoration: none;
+			text-rendering: optimizeLegibility;
+			white-space: nowrap;
+			font-feature-settings: "liga";
+			-webkit-font-smoothing: antialiased;
+		}
+	}
+}

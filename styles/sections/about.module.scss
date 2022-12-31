@@ -1,0 +1,53 @@
+// Section
+.section {
+
+	.container {
+		display: flex;
+
+		h2 {
+			color: var(--primary);
+		}
+	}
+
+	.header {
+		flex-direction: column;
+		justify-content: center;
+		text-align: center;
+		gap: 2rem;
+	}
+	
+	.content {
+		
+		flex-direction: row;
+		gap: 3rem;
+
+		h3 {
+			color: var(--primary);
+		}
+
+		.icon {
+			padding: 0.5rem;
+			display: block;
+			background: var(--primary-dark);
+			width: fit-content;
+			border-radius: 0.5rem;
+
+			svg {
+				height: 1.6rem;
+				color: var(--primary);
+			}
+		}
+		
+		// Columns
+		.image {
+			flex-basis: 50%;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+		.copy {
+			flex-basis: 50%;
+			flex-grow: 1;
+			flex-shrink: 1;
+		}
+	}
+}

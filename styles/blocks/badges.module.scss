@@ -1,0 +1,107 @@
+$badgeText: 		--primary;
+$border: 		--primary-dim;
+$background: 	--primary-dark;
+
+.badgeBlockContainer{
+	margin-bottom: var(--margin-4x);
+}
+
+.list {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 1rem;
+	row-gap: 1rem;
+	font-family: var(--font-accent);
+	font-weight: 400;
+	font-size: .75rem;
+	list-style: none;
+	
+	.item {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+		align-items: center;
+		border-radius: .25rem;
+		padding: .35rem .7rem;
+		text-transform: uppercase;
+
+		color: var($badgeText);
+		
+		i, svg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-right: .7rem;
+		}
+		
+		svg {
+			height: calc(1rem - 0.2rem);
+			padding: 0.1rem;
+			color: var(--primary);
+		}
+		
+		&:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 1;
+			border: 1px solid var($border);
+			border-radius: .25rem;
+			opacity: .125;
+		}
+		
+		&:after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: -1;
+			background: var($background);
+		}
+	}
+	
+	&.methods {
+		.item {
+			padding: .5rem 1rem;
+			font-size: .9rem;
+			font-weight: 600;
+			border-radius: .5rem;
+			text-transform: capitalize;
+			
+			&:before,
+			&:after {
+				border-radius: inherit;
+			}
+			
+			svg {
+				height: 1.4375rem;
+				margin-right: 1rem;
+				padding: 0.1rem;
+				color: var(--primary-bright);
+			}
+		}
+	}
+
+	&.invertedColor {
+		li {
+			background: var(--primary);
+			color: var(--background);
+
+			svg {
+				color: var(--background);
+			}
+		}
+		&.methods {
+			svg {
+				color: var(--background);
+			}
+		}	
+	}
+}

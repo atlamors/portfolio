@@ -1,0 +1,22 @@
+@mixin media($max: false, $min: false) {
+	$max-1: $max - 1;
+	@if $max {
+		@if $min {
+			@media screen and (max-width: $max-1) and (min-width: $min) {
+				@content;
+			}
+		} @else {
+			@media screen and (max-width: $max-1) {
+				@content;
+			}
+		}
+	} @else {
+		@media screen and (min-width: $min) {
+			@content;
+		}
+	}
+}
+
+@mixin transition($speed: 300ms) {
+	transition: all, cubic-bezier(0.4, 0, 0.2, 1), $speed;
+}

@@ -1,0 +1,30 @@
+// Section
+.section {
+
+	> div {
+		width: fit-content;
+		display: flex;
+		flex-direction: column;
+	}
+
+	h2 {
+		font-size: 2rem;
+	}
+
+	.preHeader {
+		font-family: var(--font-subheader);
+		font-weight: 400;
+		letter-spacing: -.05rem;
+	}
+	.header {
+		color: var(--secondary);
+		font-size: 4rem;
+	}
+	.subHeader {
+		font-family: var(--font-subheader);
+		color: var(--primary-bright);
+		font-weight: 400;
+		letter-spacing: -.05rem;
+		text-align: right;
+	}
+}

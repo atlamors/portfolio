@@ -1,0 +1,35 @@
+//global.module.scss
+.section {
+
+	max-height: 1440px;
+	height: 100vh;
+	justify-content: center;
+
+	> .container {
+		height: fit-content;
+	}
+
+	.preHeader {
+		color: var(--secondary);
+		font-family: var(--font-accent);
+		font-size: 1rem;
+		font-weight: 400;
+		margin: 1rem 0;
+	}
+	
+	.header {
+		color: var(--primary-bright);
+		font-family: var(--font-main);
+		font-size: 5rem;
+		margin: 0;
+	}
+	
+	.primaryDim {
+		color: var(--primary-dim);
+	}
+	
+	.primaryBright {
+		color: var(--primary);
+	}
+	
+}

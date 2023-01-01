@@ -28,8 +28,8 @@ export default function About() {
 	
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXLarge']}>
-				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLarge']}>
+			<Container spacing={['verticalXLrg']}>
+				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLrg']}>
 					<h4>Synopsis</h4>
 					<h2>About Me</h2>
 					<p className="subtitle">
@@ -47,7 +47,7 @@ export default function About() {
 						<h3>
 							Softskills pay the bills
 						</h3>
-						<p className={`${space('bottomXLarge')}`}>
+						<p className={`${space('bottomXLrg')}`}>
 							In addition to my technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a husband, father of two, and business owner / managing partner. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project.
 						</p>
 						<BadgesBlock 

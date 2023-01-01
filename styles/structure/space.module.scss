@@ -1,43 +1,55 @@
-.verticalLarge {
-	margin-top: 3rem;
-	margin-bottom: 3rem;
+.vertical {
+
+	&Std {
+		margin-top: 1rem;
+		margin-bottom: 1rem;
+	}
+	&Med {
+		margin-top: 2rem;
+		margin-bottom: 2rem;
+	}
+	&Lrg {
+		margin-top: 3rem;
+		margin-bottom: 3rem;
+	}
+	&XLrg {
+		margin-top: 5rem;
+		margin-bottom: 5rem;
+	}
+	&XXLrg {
+		margin-top: 7.5rem;
+		margin-bottom: 7.5rem;
+	}
+	&XXXLrg {
+		margin-top: 10rem;
+		margin-bottom: 10rem;
+	}
+
 }
 
-.verticalXLarge {
-	margin-top: 5rem;
-	margin-bottom: 5rem;
+
+.bottom {
+
+	&Med {
+		margin-bottom: 2rem;
+	}
+	&Lrg {
+		margin-bottom: 3rem;
+	}
+	&XLrg {
+		margin-bottom: 5rem;
+	}
+	&XXLrg {
+		margin-bottom: 7.5rem;
+	}
+	&XXXLrg {
+		margin-bottom: 10rem;
+	}
+
 }
 
-.verticalXXLarge {
-	margin-top: 7.5rem;
-	margin-bottom: 7.5rem;
-}
-
-.verticalXXXLarge {
-	margin-top: 10rem;
-	margin-bottom: 10rem;
-}
-
-.bottomReg {
-	margin-bottom: 2rem;
-}
-
-.bottomLarge {
-	margin-bottom: 3rem;
-}
-
-.bottomXLarge {
-	margin-bottom: 5rem;
-}
-
-.bottomXXLarge {
-	margin-bottom: 7.5rem;
-}
-
-.bottomXXXLarge {
-	margin-bottom: 10rem;
-}
-
-.width50 {
-	max-width: 50%;
+.width {
+	&50 {
+		max-width: 50%;
+	}
 }

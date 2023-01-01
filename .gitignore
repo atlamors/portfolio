@@ -106,6 +106,3 @@ dist
 
 # TernJS port file
 .tern-port
-
-# Shit I dont want
-css/

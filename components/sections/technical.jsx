@@ -41,8 +41,8 @@ export default function Technical() {
 	
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXLarge']}>
-				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLarge']}>
+			<Container spacing={['verticalXLrg']}>
+				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLrg']}>
 					<h4>Hardskills</h4>
 					<h2>Technical</h2>
 					<p className="subtitle">
@@ -57,7 +57,7 @@ export default function Technical() {
 						<h3>
 							Polymath foundations
 						</h3>
-						<p className={`${space('bottomXLarge')}`}>
+						<p className={`${space('bottomXLrg')}`}>
 							With a strong foundation in both design and development, I bring a unique perspective to every project and am constantly learning and evolving to stay up-to-date with the latest industry trends.
 						</p>
 						<BadgesBlock 

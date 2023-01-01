@@ -1,7 +1,9 @@
 .default {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
-	overflow-x: hidden;
 	width: 100%;
+	overflow-y: clip;
+	overflow-x: hidden;
 }

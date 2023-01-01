@@ -1,8 +1,6 @@
 import Section 		from '../structure/section';
 import Container 	from '../structure/container';
-
 import space 		from '../structure/space';
-
 import looking 		from '../../styles/sections/looking.module.scss';
 
 export default function Looking() {

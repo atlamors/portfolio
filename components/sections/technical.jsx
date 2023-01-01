@@ -1,3 +1,5 @@
+import Image		from 'next/image'
+
 import Section 		from '../structure/section';
 import Container 	from '../structure/container';
 import space 		from '../structure/space';
@@ -41,8 +43,8 @@ export default function Technical() {
 	
 	return (
 		<Section classProp={about.section}>	
-			<Container spacing={['verticalXLrg']}>
-				<Container classProp={`${about.header} ${about.container}`} spacing={['verticalXXLrg']}>
+			<Container spacing={['verticalXXXLrg']}>
+				<Container classProp={`${about.header} ${about.container}`} spacing={['bottomXXLrg']}>
 					<h4>Hardskills</h4>
 					<h2>Technical</h2>
 					<p className="subtitle">
@@ -77,8 +79,8 @@ export default function Technical() {
 							headerIcon={about.icon} 
 						/>
 					</div>
-					<div className={about.image}>
-						<img src="/img/mobile-menu.jpg" />
+					<div className={`${about.image} ${about.technicalSvg}`}>
+						<Image src="/img/data-lines-01.svg" height={600} width={2000} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
 					</div>
 				</Container>	
 			</Container>

@@ -80,10 +80,21 @@ export default function Technical() {
 						/>
 					</div>
 					<div className={`${about.image} ${about.technicalSvg}`}>
-						<Image src="/img/data-lines-01.svg" height={600} width={2000} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
+						<Image src="/img/data-strings-01.svg" height={800} width={2000} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
 					</div>
 				</Container>	
 			</Container>
+			<div className="Section__background">
+				<div className="Guides" aria-hidden="true">
+					<div className="Guides__container">
+						<div className="Guides__guide"></div>
+						<div className="Guides__guide"></div>
+						<div className="Guides__guide"></div>
+						<div className="Guides__guide"></div>
+						<div className="Guides__guide"></div>
+					</div>
+				</div>
+			</div>
 		</Section>
 	)
 }

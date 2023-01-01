@@ -1,3 +1,5 @@
+import Image		from 'next/image'
+
 import { useState } 		from 'react';
 import { TypeAnimation } 	from 'react-type-animation';
 
@@ -80,6 +82,15 @@ export default function Hero() {
 					LinkedIn
 				</button>
 			</Container>
+			<div className="svg_background">
+				<Image src="/img/dataism-24.svg" height={2000} width={2000} alt="Dataism 24 by Colorpong: https://ywft.us/2c4d58b21" />
+			</div>
+			<div className="bar-gradient_bar-gradient-wrapper__0vpz7">
+				<div className="bar-gradient_bar-gradient__Ij5G_"></div>
+			</div>
+			<div className="bar-gradient_bar-gradient-wrapper__0vpz8">
+				<div className="bar-gradient_bar-gradient__Ij5G_"></div>
+			</div>
 		</Section>
 	)
 }

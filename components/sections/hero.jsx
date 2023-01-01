@@ -44,15 +44,15 @@ export default function Hero() {
 			<Container>
 				<TypeAnimation className={hero.preHeader}	
 					sequence={[
-						3000, 
+						1000, 
 						() => { setTypingStatus('Typing...') },
-						'Hello, my name is',
-						() => {	setTypingStatus('Done Typing') },
-						4500,
-						() => {	setTypingStatus('Deleting...') },
 						'const Andrew = ( name, passion ) =>',
+						() => {	setTypingStatus('Done Typing') },
+						3000,
+						() => {	setTypingStatus('Deleting...') },
+						'Hello, my name is',
 						() => {	setTypingStatus('Done Deleting') },
-						18000,
+						12000,
 					]}
 					speed={60}
 					deletionSpeed={80}
@@ -68,7 +68,7 @@ export default function Hero() {
 			</Container>
 			<Container>
 				<Paragraph
-					spacing={["width50", "verticalLarge"]}
+					spacing={["width50", "verticalLrg"]}
 					content="Hello, I'm Andrew Nelson, a digital polymath. I beleive in life long learning, pursuing your passions with maximum effort, and building for the long term." 
 				/>
 			</Container>

@@ -3,7 +3,7 @@
 
 	.container {
 		display: flex;
-
+		
 		h2 {
 			color: var(--primary);
 		}
@@ -19,7 +19,7 @@
 	.content {
 		
 		flex-direction: row;
-		gap: 3rem;
+		gap: 9rem;
 
 		h3 {
 			color: var(--primary);

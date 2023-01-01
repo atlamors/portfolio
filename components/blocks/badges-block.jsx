@@ -12,7 +12,6 @@ import Badges 	from './badges'
 import badges 	from '../../styles/blocks/badges.module.scss';
 
 export default function BadgesBlock({ title, list, block, icon, invertedColor, headerIcon }) {
-	console.log(icon)
 	return (
 		<div className={badges.badgeBlockContainer}>
 			<span className={headerIcon}>

@@ -24,8 +24,6 @@ function IconModule({ iconKey, iconType }) {
 			return ( <FontAwesomeIcon icon={[ iconType, stateIconKey]} /> )
 		case 'devicon':
 			return ( <i className={`devicon-${iconKey}-plain colored`} /> )
-		case '':
-			return ( '' )
 		default:
 			return ( '' )
 	}

@@ -3,7 +3,9 @@ $border: 		--primary-dim;
 $background: 	--primary-dark;
 
 .badgeBlockContainer{
-	margin-bottom: var(--margin-4x);
+	&:not(:last-of-type) {
+		margin-bottom: var(--margin-4x);
+	}
 }
 
 .list {

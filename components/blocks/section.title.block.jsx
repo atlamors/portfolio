@@ -1,3 +1,9 @@
+/**
+ * Section header component
+ * 
+ * @param {string} * strings for header
+ * @returns 
+ */
 export default function SectionTitle({ preTitle, title, subTitle }) {
 	return (
 		<>

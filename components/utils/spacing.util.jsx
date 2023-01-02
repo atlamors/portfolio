@@ -1,12 +1,13 @@
-import spaces from '../../styles/structure/space.module.scss';
+// Utility scss
+import spaces from '../../styles/utils/spacing.module.scss';
 
 /**
- * (S)CSS class factory for spacial geomtry module.
+ * Selector class factory for spacial geomtry utility component
  * 
- * @param {*} spacing 
- * @returns 
+ * @param 	{array} 	spacing array of strings to select spacing class
+ * @returns {string} 	returns string of class references
  */
-export default function space( spacing ) {
+export default function Spacing( spacing ) {
 	let classes = [];
 	if ( Array.isArray(spacing) ) {
 		spacing.forEach( space => {

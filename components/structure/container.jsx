@@ -1,5 +1,5 @@
 import styles from '../../styles/structure/container.module.scss';
-import space from './space';
+import space from '../utils/spacing.util';
 
 export default function Container({ classProp, spacing, children }) {
 

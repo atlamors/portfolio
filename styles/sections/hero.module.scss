@@ -32,5 +32,95 @@
 	.primaryBright {
 		color: var(--primary);
 	}
+}
+
+// Backgrounds
+.colorfulV1 {
+	--hero-gradient-bg-1: #fe2080;
+	--hero-gradient-bg-2: #ff8d28;
+	--hero-gradient-bg-3: rgb(71 166 192 / 56%);
+	--hero-gradient-bg-4: rgb(130 121 80 / 38%);
+
+	position: absolute;
+	pointer-events: none;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	.svg_background {
+		position: absolute;
+		z-index: -1;
+		width: 200vw;
+		aspect-ratio: 1/1;
+		bottom: 50%;
+		right: 50%;
+		opacity: 15%;
+		transform: translate(48.5%, 50%);
+		max-inline-size: unset;
+		max-block-size: unset;
+	}
 	
+	.radialContainer {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	
+		.radialGradient {
+			position: absolute;
+			right: -30%;
+			width: 100%;
+			left: unset;
+			aspect-ratio: 1/1;
+			height: unset;
+			bottom: -60%;
+			filter: blur(100px);
+			transform: translateZ(0);
+			opacity: 20%;
+			background: var(--bar-gradient);
+			--bar-gradient: radial-gradient( 
+				circle, 
+				var(--hero-gradient-bg-1) 0%, 
+				var(--hero-gradient-bg-2) 24%, 
+				var(--hero-gradient-bg-3) 44%, 
+				var(--hero-gradient-bg-4) 57%, 
+				transparent 70% 
+			);
+		}
+	}
+	
+	.barContainer {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 100px;
+	}
+	
+	.barGradient {	
+		--bar-opacity:0.15; 
+		--bar-blend-mode:screen;
+		--bar-gradient: linear-gradient( 
+			90deg, 
+			var(--hero-gradient-bg-1) 0%, 
+			var(--hero-gradient-bg-2) 26.88%, 
+			var(--hero-gradient-bg-3) 48.46%, 
+			var(--hero-gradient-bg-4) 74.51% 
+		);
+		
+		opacity: var(--bar-opacity);
+		background-blend-mode: var(--bar-blend-mode);
+		background: var(--bar-gradient);
+
+		position: absolute;
+		pointer-events: none;
+		-webkit-user-select: none;
+		user-select: none;
+		z-index: 0;
+		width: 100%;
+		bottom: 0;
+		height: 100%;
+		filter: blur(100px);
+		transform: translateZ(0);
+	}
 }

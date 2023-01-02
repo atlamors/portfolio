@@ -1,27 +1,13 @@
-const { library } = require('@fortawesome/fontawesome-svg-core');
-
-import { useEffect, useState } from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { fas } from '@fortawesome/pro-solid-svg-icons'
-import { fat } from '@fortawesome/pro-thin-svg-icons'
-import { fad } from '@fortawesome/pro-duotone-svg-icons'
-import { far } from '@fortawesome/pro-regular-svg-icons'
-
-library.add(fat, fas, fad, far)
-
 import badges from '../../styles/blocks/badges.module.scss';
+import Icon from '../utils/icon.util.jsx'
 
 function IconModule({ iconKey, iconType }) {
-
-	const [stateIconKey, setIconKey] = useState('circle-notch')
-
 	switch (iconType) {
 		case 'far':
 		case 'fad':
 		case 'fat':
 		case 'fas':
-			useEffect( () => setIconKey(iconKey), [] )
-			return ( <FontAwesomeIcon icon={[ iconType, stateIconKey]} /> )
+			return ( <Icon icon={[ iconType, iconKey ]} /> )
 		case 'devicon':
 			return ( <i className={`devicon-${iconKey}-plain colored`} /> )
 		default:

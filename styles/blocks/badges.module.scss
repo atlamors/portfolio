@@ -1,5 +1,5 @@
 $badgeText: 		--primary;
-$border: 		--primary-dim;
+$border: 		--primary-dark;
 $background: 	--primary-dark;
 
 .badgeBlockContainer{
@@ -54,7 +54,7 @@ $background: 	--primary-dark;
 			z-index: 1;
 			border: 1px solid var($border);
 			border-radius: .25rem;
-			opacity: .125;
+			opacity: 50%;
 		}
 		
 		&:after {
@@ -66,6 +66,7 @@ $background: 	--primary-dark;
 			width: 100%;
 			z-index: -1;
 			background: var($background);
+			opacity: 50%;
 		}
 	}
 	

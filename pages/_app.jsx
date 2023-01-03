@@ -1,3 +1,6 @@
+// Core packages
+import { Analytics } from '@vercel/analytics/react';
+
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"
 
@@ -26,5 +29,10 @@ import '../styles/css/svgs.css'
  * @returns {jsx} <Component />
  */
 export default function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />
+	return (
+		<>
+		<Component {...pageProps} /> 
+		<Analytics />
+		</>
+	)
 }

@@ -29,10 +29,10 @@ function Paragraph({ spacing, content }) {
 
 /**
  * TO DO LIST
- * 
+ *
  * - Create a typog.modules.scss
  *   Load this module onto every component, and use predefined typography classes to keep typography consistent
- * 
+ *
  * - space.modules.scss
  *   Load this module onto every component, and use predefined spacial classes to keep geometry consistent
  */
@@ -44,9 +44,9 @@ export default function Hero() {
 	return (
 		<Section classProp={`${hero.section}`}>
 			<Container>
-				<TypeAnimation className={hero.preHeader}	
+				<TypeAnimation className={hero.preHeader}
 					sequence={[
-						1000, 
+						1000,
 						() => { setTypingStatus('Typing...') },
 						'const Andrew = ( name, passion ) =>',
 						() => {	setTypingStatus('Done Typing') },
@@ -61,17 +61,18 @@ export default function Hero() {
 					wrapper="h2"
 					repeat={Infinity}
 				/>
-				<Header 
+
+				<Header
 					content="Andrew Nelson."
 				/>
-				<HeaderInfo 
+				<HeaderInfo
 					content="I design and build meaningful experiences."
 				/>
 			</Container>
 			<Container>
 				<Paragraph
 					spacing={["width50", "verticalLrg"]}
-					content="Hello, I'm Andrew Nelson, a digital polymath. I beleive in life long learning, pursuing your passions with maximum effort, and building for the long term." 
+					content="I am a digital polymath, and a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact." 
 				/>
 			</Container>
 			<Container>

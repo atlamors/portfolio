@@ -4,10 +4,6 @@
 	.container {
 		display: flex;
 
-		h2 {
-			color: var(--primary);
-		}
-
 		> div {
 			padding-left: 1rem;
 			padding-right: 3rem;
@@ -27,14 +23,6 @@
 			z-index: -2;
 			
 		}
-	}
-
-	.header {
-		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		gap: 2rem;
-		padding: 0 1rem;
 	}
 	
 	.content {

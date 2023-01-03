@@ -27,13 +27,11 @@ export default function About() {
 	return (
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
-				<Container classProp={`${about.header} ${about.container}`} spacing={['bottomXXLrg']}>
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
 					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
 				/>
-				</Container>
 				<Container classProp={`${about.content} ${about.container}`}>
 					<div className={about.image}>
 						{/* <img src="/img/family-photo.jpg" /> */}

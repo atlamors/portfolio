@@ -1,3 +1,9 @@
+// Core packages
+import { Analytics } from '@vercel/analytics/react';
+
+// Utils
+import SetGridGap from '../components/utils/set.grid.util'
+
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"
 
@@ -8,7 +14,7 @@ import "@fontsource/inter/400.css"
 import "@fontsource/inter/700.css"
 import "@fontsource/inter/800.css"
 
-// Devincon import (https://github.com/devicons/devicon)
+// Devicon import (https://github.com/devicons/devicon)
 import '../node_modules/devicon/devicon.min.css'
 
 // Global css
@@ -17,14 +23,18 @@ import '../styles/css/global.css'
 import '../styles/css/svgs.css'
 
 /**
- * This default export is required in a new `pages/_app.js` file.
- * 
- * Default export, do not modify.
- * 
+ * _app.jsx
+ *
  * @param {?} Component
  * @param {?} pageProps
- * @returns {jsx} <Component />
+ * @returns
  */
 export default function MyApp({ Component, pageProps }) {
-	return <Component {...pageProps} />
+	return (
+		<>
+		<Component {...pageProps} />
+		<SetGridGap />
+		<Analytics />
+		</>
+	)
 }

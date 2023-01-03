@@ -1,3 +1,9 @@
+
+import Container from '../structure/container';
+
+// Section scss
+import section from '../../styles/blocks/section.title.module.scss'
+
 /**
  * Section header component
  * 
@@ -7,9 +13,11 @@
 export default function SectionTitle({ preTitle, title, subTitle }) {
 	return (
 		<>
-		<h4>{preTitle}</h4>
-		<h2>{title}</h2>
-		<p className="subtitle">{subTitle}</p>
+		<Container classProp={`${section.title}`} spacing={['bottomXXLrg']}>
+			<h4>{preTitle}</h4>
+			<h2>{title}</h2>
+			<p className="subtitle">{subTitle}</p>
+		</Container>
 		</>
 	)
 

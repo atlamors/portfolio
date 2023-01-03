@@ -14,7 +14,7 @@ import BadgesBlock from '../blocks/about.badges.block'
 import CopyBlock from '../blocks/about.copy.block'
 
 // Section scss
-import about from '../../styles/sections/about.module.scss';
+import about from '../../styles/sections/about.module.scss'
 
 /**
  * Section: Technical
@@ -27,13 +27,11 @@ export default function Technical() {
 	return (
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
-				<Container classProp={`${about.header} ${about.container}`} spacing={['bottomXXLrg']}>
-					<SectionTitle
-						title="Technical"
-						preTitle="Hardskills"
-						subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
-					/>
-				</Container>
+				<SectionTitle
+					title="Technical"
+					preTitle="Hardskills"
+					subTitle="As a creative technologist, I craft intuitive digital experiences using a diverse set of tools and languages."
+				/>
 				<Container classProp={`${about.content} ${about.container}`}>
 					<div className={about.copy}>
 						<CopyBlock 
@@ -80,9 +78,9 @@ const software = [
 
 const tech	= [
 	{ key: 'javascript', 	name: 'JavaScript', 		type: 'devicon' },
+	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
 	{ key: 'react', 		name: 'React', 				type: 'devicon' },
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
-	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
 	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
 	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },

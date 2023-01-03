@@ -29,10 +29,10 @@
 			width: 2px;
 			top: 0;
 			bottom: 0;
-			left: -1px; 
+			left: -1px;
 			background: var(--primary-dim);
 		}
-		
+
 		h3 {
 			margin-top: - .25rem;
 			margin-bottom: .35rem;
@@ -85,10 +85,50 @@
 		}
 	}
 
+	.companyInfo {
+		padding-bottom: 4rem;
+	}
+
 	.position {
 		display: grid;
-		grid-template-columns: calc( var(--grid-32) * 4 ) 1fr;
+		grid-template-columns: calc( ( var(--grid-32) * 4 ) - 1rem ) 1fr;
+		//grid-template-columns: 0 1fr;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
+
+		&.connector {
+			.content {
+				&:before {
+					content: none;
+				}
+			}
+		}
+
+		h3 {
+			font-size: 1rem;
+		}
+
+		&.first {
+			.content {
+				padding-bottom: 0;
+				margin-bottom: 4rem;
+			}
+		}
+
+		.content {
+			position: relative;
+			padding-left: 1rem;
+			padding-bottom: 4rem;
+
+			&:before {
+				content: "";
+				position: absolute;
+				width: 2px;
+				top: 0;
+				bottom: 0;
+				left: -1px;
+				background: var(--primary-dim);
+			}
+		}
 	}
 }

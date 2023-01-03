@@ -1,0 +1,47 @@
+.block {
+	--guideSolidColor: var(--primary-dark);
+	--guideDashedColor: var(--primary-dark);
+
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -3;
+	
+	.Guides{
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 0 --margin-1x;
+		pointer-events: none;
+
+		.Guides__container {
+			display: grid;
+			grid: 1fr/repeat( var(--grid-size), 1fr);
+			position: relative;
+			max-width: var(--reading-width);
+			height: 100%;
+			margin: 0 auto;
+
+			.Guides__guide {
+				width: 1px;
+				background: linear-gradient(180deg,var(--guideDashedColor),var(--guideDashedColor) 50%,transparent 0,transparent);
+				background-size: 1px 8px;
+
+				&:first-of-type {
+					background: var(--guideSolidColor);
+				}
+
+				&:last-of-type {
+					position: absolute;
+					top: 0;
+					right: 0;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

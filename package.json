@@ -1,6 +1,9 @@
 {
 	"scripts": {
-		"dev": "next dev"
+		"dev": "next",
+		"build": "next build",
+		"start": "next start",
+		"lint": "next lint"
 	},
 	"dependencies": {
 		"@fontsource/fira-code": "^4.5.12",
@@ -16,6 +19,7 @@
 		"@fortawesome/pro-thin-svg-icons": "^6.2.1",
 		"@fortawesome/react-fontawesome": "^0.2.0",
 		"@fortawesome/sharp-solid-svg-icons": "^6.2.1",
+		"@vercel/analytics": "^0.1.6",
 		"babel-plugin-macros": "^3.1.0",
 		"devicon": "^2.15.1",
 		"next": "^13.1.1",

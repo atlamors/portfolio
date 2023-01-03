@@ -5,6 +5,9 @@ import Container 	from '../structure/container';
 // Specing util
 import Spacing 		from '../utils/spacing.util';
 
+// Section general blocks
+import SectionGridBg from '../blocks/section.grid.block'
+
 // Section scss
 import looking 		from '../../styles/sections/looking.module.scss';
 
@@ -22,17 +25,7 @@ export default function Looking() {
 				<h2 className={`${looking.header} ${Spacing('verticalStd')}`}>Senior User Experience Designer</h2>
 				<h2 className={looking.subHeader}>with a focus on Product Design.</h2>
 			</Container>	
-			<div className="Section__background">
-				<div className="Guides" aria-hidden="true">
-					<div className="Guides__container">
-						<div className="Guides__guide"></div>
-						<div className="Guides__guide"></div>
-						<div className="Guides__guide"></div>
-						<div className="Guides__guide"></div>
-						<div className="Guides__guide"></div>
-					</div>
-				</div>
-			</div>
+			<SectionGridBg />
 		</Section>
 	)
 }

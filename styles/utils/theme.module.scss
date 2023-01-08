@@ -1,0 +1,34 @@
+.toggle {
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	aspect-ratio: 1/1;
+	height: 3rem;
+	width: auto;
+	margin: 0;
+
+	svg {
+		display: block;
+		position: relative;
+	}
+
+	&[data-theme='light'] {
+		svg {
+			fill: #000;
+		}
+	}
+
+	&[data-theme='dark'] {
+		svg {
+			fill: #fff;
+		}
+	}
+
+	&[data-theme='unicorn'] {
+		svg {
+			fill: #000;
+		}
+	}
+	
+}

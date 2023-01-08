@@ -7,6 +7,7 @@ import Spacing 		from '../utils/spacing.util';
 
 // Section general blocks
 import SectionGridBg from '../blocks/section.grid.block'
+import SectionTitle from '../blocks/section.title.block'
 
 // Section scss
 import looking 		from '../../styles/sections/looking.module.scss';
@@ -21,11 +22,18 @@ export default function Looking() {
 	return (
 		<Section classProp={looking.section}>	
 			<Container classProp={looking.copy} spacing={['verticalXXXLrg']}>
+				<SectionTitle
+					title="Senior User Experience Designer"
+					preTitle="Im currently looking for employment as a"
+					subTitle="with a focus on Product Development."
+				/>
+			</Container>
+			{/* <Container classProp={looking.copy} spacing={['verticalXXXLrg']}>
 				<h2 className={looking.preHeader}>Im currently looking for employment as a</h2>
 				<h2 className={`${looking.header} ${Spacing('verticalStd')}`}>Senior User Experience Designer</h2>
 				<h2 className={looking.subHeader}>with a focus on Product Design.</h2>
-			</Container>	
-			<SectionGridBg />
+			</Container>	 */}
+			{/* <SectionGridBg /> */}
 		</Section>
 	)
 }

@@ -72,7 +72,7 @@ export default function Hero() {
 			<Container>
 				<Paragraph
 					spacing={["width50", "verticalLrg"]}
-					content="I am a digital polymath, and a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact." 
+					content="I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact." 
 				/>
 			</Container>
 			<Container>

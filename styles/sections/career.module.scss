@@ -10,6 +10,12 @@
 			grid-template-columns: $linesArea $companyArea;
 			grid-column-gap: 0px;
 			grid-row-gap: 0px;
+
+			> div:last-of-type {
+				&:before {
+					content: none;
+				}
+			}
 		}
 	}
 
@@ -19,7 +25,7 @@
 
 	.company {
 		position: relative;
-		padding-left: 1rem;
+		padding-left: calc( var(--grid-32) * 4 );
 		padding-right: 1rem;
 		padding-bottom: 4rem;
 
@@ -31,6 +37,12 @@
 			bottom: 0;
 			left: -1px;
 			background: var(--primary-dim);
+		}
+
+		&.row1 {
+			&:before {
+				background: var(--secondary);
+			}
 		}
 
 		h3 {
@@ -61,8 +73,8 @@
 			&:before {
 				content: '';
 				position: absolute;
-				left: -1rem;
-				width: 18px;
+				left: calc( var(--grid-32) * -4 );
+				width: 24px;
 				aspect-ratio: 1/1;
 				background-color: var(--primary-bright);
 				border-radius: 99rem;
@@ -74,8 +86,8 @@
 			&:after {
 				content: '';
 				position: absolute;
-				left: -1rem;
-				width: 9px;
+				left: calc( var(--grid-32) * -4 );
+				width: 15px;
 				aspect-ratio: 1/1;
 				background-color: var(--background);
 				border-radius: 99rem;
@@ -87,12 +99,13 @@
 
 	.companyInfo {
 		padding-bottom: 4rem;
+		max-width: calc( var(--grid-32) * 20 );
 	}
 
 	.position {
 		display: grid;
 		grid-template-columns: calc( ( var(--grid-32) * 4 ) - 1rem ) 1fr;
-		//grid-template-columns: 0 1fr;
+		grid-template-columns: 0 1fr;
 		grid-column-gap: 0px;
 		grid-row-gap: 0px;
 
@@ -104,24 +117,37 @@
 			}
 		}
 
-		h3 {
-			font-size: 1rem;
-		}
 
 		&.first {
 			.content {
 				padding-bottom: 0;
-				margin-bottom: 4rem;
+				//margin-bottom: 4rem;
 			}
 		}
 
 		.content {
 			position: relative;
-			padding-left: 1rem;
+			//padding-left: 2rem;
 			padding-bottom: 4rem;
+			max-width: calc( var(--grid-32) * 18 );
+
+			h3 {
+				font-size: 1rem;
+				&:before,
+				&:after {
+					margin-left: 0rem;
+				}
+	
+				&:before {
+					width: 15px;
+				}
+				&:after {
+					content: none;
+				}
+			}
 
 			&:before {
-				content: "";
+				//content: "";
 				position: absolute;
 				width: 2px;
 				top: 0;

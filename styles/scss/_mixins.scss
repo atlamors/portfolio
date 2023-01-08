@@ -20,3 +20,7 @@
 @mixin transition($speed: 300ms) {
 	transition: all, cubic-bezier(0.4, 0, 0.2, 1), $speed;
 }
+
+@mixin buttonPadding($size) {
+	padding: calc( $size * 1 ) calc( $size * 2 );
+}

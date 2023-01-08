@@ -8,7 +8,7 @@
 
 html {
 	font-size: 16px;
-	font-family: var(--font-paragraph);
+	font-family: var(--font-sans);
 
 	color: var(--primary-dim);
 	background: var(--background);
@@ -40,21 +40,21 @@ button {
 
 h1 {
 	font-size: 3rem;
-	font-family: var(--font-header);
+	font-family: var(--font-sans);
 	font-weight: 600;
 	letter-spacing: -.1rem;
 }
 
 h2 {
 	font-size: 3.75rem;
-	font-family: var(--font-header);
+	font-family: var(--font-sans);
 	font-weight: 700;
     letter-spacing: -.05rem;
 }
 
 h3 {
 	font-size: 1.2rem;
-	font-family: var(--font-header);
+	font-family: var(--font-sans);
 	color: var(--primary);
 	font-weight: 600;
 	margin: 1rem 0;
@@ -63,7 +63,7 @@ h3 {
 
 h4 {
 	font-size: .8rem;
-	font-family: var(--font-header);
+	font-family: var(--font-sans);
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
@@ -71,7 +71,7 @@ h4 {
 
 p {
 	font-size: 1rem;
-	font-family: var(--font-paragraph);
+	font-family: var(--font-sans);
 	line-height: 1.6;
 	letter-spacing: -.02rem;
 

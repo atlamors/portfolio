@@ -28,8 +28,16 @@ export default function Career() {
 				/>
 				<Container classProp={`${career.area}`}>
 					<div className={career.companyArea}>
-						<div className={`${career.lines} row-1`}></div>
-						<div className={`${career.company} row-1`}>
+						<div className={`${career.lines} ${career.row1}`}></div>
+						<div className={`${career.company} ${career.row1}`}>
+							<div className={`${career.companyInfo}`}>
+								<h3>My Supply Co.</h3>
+								<h4>Permanent Full-time · Apr 2019 - Present · 3 yrs 10 mos</h4>
+								<h5>Vancouver, British Columbia, Canada</h5>
+								<p>
+								My Supply Co. helps Canadians manage mental and physical health with naturally occurring nootropic and adaptogenic products. They carry products with complex attributes, aiming to solve a large variety of personal care needs — this requires an extremely customized and evolving approach to how the store is built and functions.
+								</p>
+							</div>
 							<div className={career.position}>
 								<div className={`${career.lines}`}></div>
 								<div className={`${career.content}`}>
@@ -60,19 +68,12 @@ export default function Career() {
 									</p>
 								</div>
 							</div>
-							<div className={`${career.position} ${career.connector}`}>
+							{/* <div className={`${career.position} ${career.connector}`}>
 								<div className={`${career.lines}`}></div>
 								<div className={`${career.content}`}>
 								</div>
-							</div>
-							<div className={`${career.companyInfo}`}>
-								<h3>My Supply Co.</h3>
-								<h4>Permanent Full-time · Apr 2019 - Present · 3 yrs 10 mos</h4>
-								<h5>Vancouver, British Columbia, Canada</h5>
-								<p>
-								My Supply Co. helps Canadians manage mental and physical health with naturally occurring nootropic and adaptogenic products. They carry products with complex attributes, aiming to solve a large variety of personal care needs — this requires an extremely customized and evolving approach to how the store is built and functions.
-								</p>
-							</div>
+							</div> */}
+
 						</div>
 						<div className={`${career.lines} row-2`}></div>
 						<div className={`${career.company} row-2`}>

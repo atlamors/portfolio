@@ -2,9 +2,11 @@ $badgeText: 		--primary;
 $border: 		--primary-dark;
 $background: 	--primary-dark;
 
+@use 'styles/scss/mixins';
+
 .badgeBlockContainer{
 	&:not(:last-of-type) {
-		margin-bottom: var(--margin-4x);
+		margin-bottom: var(--size-4x);
 	}
 }
 
@@ -12,11 +14,11 @@ $background: 	--primary-dark;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	gap: 1rem;
-	row-gap: 1rem;
+	gap: var(--size-2-);
+	row-gap: var(--size-2-);
 	font-family: var(--font-accent);
 	font-weight: 400;
-	font-size: .75rem;
+	font-size: var(--font-xs);
 	list-style: none;
 	
 	.item {
@@ -25,8 +27,8 @@ $background: 	--primary-dark;
 		flex-direction: row;
 		overflow: hidden;
 		align-items: center;
-		border-radius: .25rem;
-		padding: .35rem .7rem;
+		border-radius: var(--size-4-);
+		@include mixins.buttonPadding( var(--size-3-) );
 		text-transform: uppercase;
 
 		color: var($badgeText);

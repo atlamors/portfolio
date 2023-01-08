@@ -39,10 +39,10 @@ export default function SetTheme() {
 			setTheme( e.matches ? 'dark' : 'light' )
 		}
 
-		const refUseSetTheme = (e) => useSetTheme(e)
+		const RefUseSetTheme = (e) => useSetTheme(e)
 
 		// Event listener for system color scheme changing
-		window.matchMedia('(prefers-color-scheme: dark)').addEventListener( 'change', refUseSetTheme )
+		window.matchMedia('(prefers-color-scheme: dark)').addEventListener( 'change', RefUseSetTheme )
 		
 		// Check if a theme has been previously selected and stored in user storage
 		let themeLocalStorage = localStorage.getItem('theme')
@@ -63,7 +63,7 @@ export default function SetTheme() {
 
 		// Return eventListener(s) to prevent memory leaks
 		return (
-			window.matchMedia('(prefers-color-scheme: dark)').removeEventListener( 'change', refUseSetTheme )
+			window.matchMedia('(prefers-color-scheme: dark)').removeEventListener( 'change', RefUseSetTheme )
 		)
 	}, [theme] )
 	

@@ -26,5 +26,5 @@ Please keep in mind there is a lot left to do on this theme so if you fork it no
 
 ## Please fork this repo! 🦄
 
-This is my first open-source contribution, and it was also a great oppoortunity for me to learn! It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs and React and have as much fun as I did—and even better if it helps you in your quest for networking!
+This is my first open-source contribution, and it was also a great oppoortunity for me to learn! It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs and React and have as much fun as I did—and even better if it helps you in your quest of proffesional networking!
 

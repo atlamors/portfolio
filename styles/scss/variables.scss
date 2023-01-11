@@ -48,8 +48,8 @@
 // Light mode theme
 :root[data-theme='light'] {
 	--primary-bright:	#000000;
-	--primary: 			#060708;
-	--primary-dim:		#121315;
+	--primary: 			#2e2e2e;
+	--primary-dim:		#666666;
 	--primary-dark:		#dfdfdf;
 	--secondary: 		#002aff;
 	--secondary-bright:	#4800ff;
@@ -59,8 +59,8 @@
 // Unicorn mode theme
 :root[data-theme='unicorn'] {
 	--primary-bright:	#000000;
-	--primary: 			#060708;
-	--primary-dim:		#121315;
+	--primary: 			#2e2e2e;
+	--primary-dim:		#666666;
 	--primary-dark:		#dfdfdf;
 	--secondary: 		#ff00bb;
 	--secondary-bright:	#feff00;

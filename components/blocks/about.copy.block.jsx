@@ -1,4 +1,4 @@
-// Core packages
+// Util packages
 import Icon from '../utils/icon.util'
 
 // Utility packages

@@ -4,7 +4,10 @@
   <img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme">
   <img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app">
   <img src="https://img.shields.io/github/license/atlamors/portfolio-theme">
+  <br><br>
 </div>
+
+<img src="https://www.andrewnelson.net/img/preview.png">
 
 ## This Theme is still being developed! ⚠️
 

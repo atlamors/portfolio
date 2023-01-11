@@ -3,7 +3,9 @@ import { Analytics } from '@vercel/analytics/react';
 
 // Utils
 import SetGridGap from '../components/utils/set.grid.util'
-import ThemeMode from '../components/utils/theme.util'
+
+// Structure
+import Layout from '../components/structure/layout'
 
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"
@@ -21,7 +23,6 @@ import '../node_modules/devicon/devicon.min.css'
 // Global css
 import '../styles/css/variables.css'
 import '../styles/css/global.css'
-import '../styles/css/svgs.css'
 
 /**
  * _app.jsx
@@ -33,8 +34,9 @@ import '../styles/css/svgs.css'
 export default function MyApp({ Component, pageProps }) {
 	return (
 		<>
-		<ThemeMode />
-		<Component {...pageProps} />
+		<Layout>
+			<Component {...pageProps} />
+		</Layout>
 		<SetGridGap />
 		<Analytics />
 		</>

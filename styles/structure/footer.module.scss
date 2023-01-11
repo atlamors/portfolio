@@ -1,0 +1,37 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	
+	> div {
+		display: flex;
+		flex-direction: column;
+		max-width: var(--reading-width);
+		margin: 0 auto;
+
+		.columns {
+			display: flex;
+			flex-direction: row;
+			gap: 2rem;
+		}
+	}
+
+	.thanks {
+
+	}
+
+	.links {
+
+	}
+
+	.github {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		ul {
+			display: flex;
+			flex-direction: row;
+			gap: 1rem;
+		}
+	}
+}

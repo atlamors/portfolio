@@ -35,7 +35,7 @@ export default function Footer() {
 						<p>Jihad Hassan: Marketing Director @ Another Creative Ltd. Thank you for all the advice and feedback on projects we work on together.</p>					
 						<p>Colorpong: Checkout their amazing vector illustrations. https://www.youworkforthem.com/designer/536/colorpong?aff=1115</p>
 						<p>Brittany Chiang: A major inspiration behind this open source theme https://brittanychiang.com/</p>
-						<p>Vercel: They offer so much in terms of free resources for Nextjs (including hosting). I'm rooting for them! https://vercel.com/</p>
+						<p>Vercel: They offer so much in terms of free resources for Nextjs (including hosting). I&#39;m rooting for them! https://vercel.com/</p>
 					</div>
 
 					<div className={css.links}>

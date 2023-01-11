@@ -16,9 +16,9 @@ Please keep in mind there is a lot left to do on this theme so if you fork it no
 - [ ] Layout\Footer: Currently working on
 - [ ] Layout\About: Employment area
 - [ ] Layout\About: Vector design elements
-- [ ] Layout\Case Studies: Entire page incomplete
-- [ ] Layout\Articles: Entire page incomplete
-- [ ] Auto Loading: Matching /page/ => /content/ structure that autoloads MD files
+- [ ] Pages\Case Studies: Entire page incomplete
+- [ ] Pages\Articles: Entire page incomplete
+- [ ] App\Auto Loading: Matching /page/ => /content/ structure that autoloads MD files
 
 ## Please fork this repo! 🦄
 

@@ -9,11 +9,12 @@
 ## This Theme is still being developed! ⚠️
 
 Please keep in mind there is a lot left to do on this theme so if you fork it now (Jan-11-2023) it will be a mess and be missing a ton of features and functionality.
-- [x] App\Structure: Basic structure decided on
+- [x] App\Structure
 - [x] Layout\Typography
-- [x] Layout\Theme: Darkmode theme and easter egg
+- [x] Layout\Darkmode
+- [x] Layout\Navbar
 - [ ] Layout\Footer: Currently working on
-- [ ] Layout\About: Employment design\layout
+- [ ] Layout\About: Employment area
 - [ ] Layout\About: Vector design elements
 - [ ] Layout\Case Studies: Entire page incomplete
 - [ ] Layout\Articles: Entire page incomplete

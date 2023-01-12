@@ -26,10 +26,13 @@ Please keep in mind there is a lot left to do on this theme so if you fork it no
 - [ ] Pages\Case Studies: Entire page incomplete
 - [ ] Pages\Articles: Entire page incomplete
 - [ ] App\Auto Loading: Matching /page/ => /content/ structure that autoloads MD files
+- [ ] Fork & Deploy Instructions
 
 
 
-## Please fork this repo! 🦄
 
+## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon
+<s>
 This is my first open-source contribution, and it was also a great oppoortunity for me to learn! It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs and React and have as much fun as I did—and even better if it helps you in your quest of proffesional networking!
+</s>
 

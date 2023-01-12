@@ -20,12 +20,13 @@ Please keep in mind there is a lot left to do on this theme so if you fork it no
 - [x] Layout\Typography
 - [x] Layout\Darkmode
 - [x] Layout\Navbar
-- [ ] Layout\Footer: Currently working on
-- [ ] Layout\About: Employment area
-- [ ] Layout\About: Vector design elements
-- [ ] Pages\Case Studies: Entire page incomplete
-- [ ] Pages\Articles: Entire page incomplete
-- [ ] App\Auto Loading: Matching /page/ => /content/ structure that autoloads MD files
+- [ ] Layout\Footer         : In progress
+- [ ] Layout\About          : Employment area
+- [ ] Layout\About          : Vector design elements
+- [ ] Pages\About           : In progress
+- [ ] Pages\Case Studies    : Wireframes done
+- [ ] Pages\Articles        : Wireframes done
+- [ ] App\Auto Loading      : Matching /page/ => /content/ structure that autoloads MD files
 - [ ] Fork & Deploy Instructions
 
 

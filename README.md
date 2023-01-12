@@ -1,6 +1,7 @@
 
 <div align="center">
   <h1>andrewnelson.net | portfolio-theme</h1>
+  <p></p>
   <img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="Experimental">
   <img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel">
   <img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app" alt="Vercel Deployed">
@@ -12,7 +13,7 @@
 
 ## This Theme is still being developed! ⚠️
 
-Please keep in mind there is a lot left to do on this theme so if you fork it now (Jan-11-2023) it will be a mess and be missing a ton of features and functionality.
+Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-11-2023)* it will be a mess and be missing a ton of features and functionality.
 
 - [x] App\Design System\Structure
 - [ ] App\Design System\Spatial

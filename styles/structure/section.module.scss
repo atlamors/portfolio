@@ -1,9 +1,14 @@
+@import '../scss/_mixins';
+
 .default {
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	flex-wrap: wrap;
 	width: 100%;
 	overflow-y: clip;
 	overflow-x: hidden;
+}
+
+@include media($max: $mobile) {
+	
 }

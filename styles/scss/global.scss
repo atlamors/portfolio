@@ -17,12 +17,17 @@ html {
     -webkit-font-smoothing: antialiased;
 }
 
+#__next {
+	width: 100%;
+    overflow-x: hidden;
+}
+
 img {
 	border-radius: .5rem;
 	width: 100%;
 }
 
-button {
+button.button {
 	cursor: pointer;
 	font-family: var(--font-accent);
 	font-size: 1rem;
@@ -77,6 +82,19 @@ p {
 
 	&.subtitle {
 		font-size: 1.25rem;
+	}
+}
+
+a {
+	font-weight: 600;
+	color: var(--primary);
+
+	&:hover {
+		color: var(--primary-bright);
+	}
+
+	svg {
+		margin-left: .25rem;
 	}
 }
 

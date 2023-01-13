@@ -1,3 +1,5 @@
+@import '../scss/_mixins';
+
 .fullScreen {
 	width: 100%;
 	max-width: 100%;
@@ -8,4 +10,12 @@
 	max-width: var(--reading-width);
 	margin-left: auto;
 	margin-right: auto;
+}
+
+@include media($max: $mobile) {
+	.readingWidth {
+		width: calc(100% - 2rem);
+		margin-left: 1rem;
+		margin-right: 1rem;
+	}
 }

@@ -78,7 +78,7 @@ export default function Hero() {
 				<p className={`${hero.tempBright} subtitle ${space(["width75", "verticalLrg"])}`}>
 					This is an open source website built on Next.js and React—it is currently under construction.
 					Version 1 is scheduled to be completed by Jan 30, 2023. 
-					Checkout the roadmap (its updated while I'm working on the site) by visiting the GitHub Repo.<br/><br/>
+					Checkout the roadmap (its updated while I&apos;m working on the site) by visiting the GitHub Repo.<br/><br/>
 					
 					<a href="https://github.com/atlamors/portfolio-theme" target="_blank">https://github.com/atlamors/portfolio-theme <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a><br/><br/>
 					<div className={hero.gitBadges}>

@@ -24,8 +24,8 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Layout\Footer         : In progress
 - [ ] Layout\About          : Employment area
 - [ ] Layout\About          : Vector design elements
-- [ ] scss\desktop : in progress
-- [ ] scss\mobile : just started
+- [ ] Scss\desktop : in progress
+- [ ] Scss\mobile : just started
 - [ ] Pages\About           : In progress
 - [ ] Pages\Case Studies    : Wireframes done
 - [ ] Pages\Articles        : Wireframes done

@@ -80,7 +80,7 @@ export default function Hero() {
 					Version 1 is scheduled to be completed by Jan 30, 2023. 
 					Checkout the roadmap (its updated while I&apos;m working on the site) by visiting the GitHub Repo.<br/><br/>
 					
-					<a href="https://github.com/atlamors/portfolio-theme" target="_blank">https://github.com/atlamors/portfolio-theme <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a><br/><br/>
+					<a href="https://github.com/atlamors/portfolio-theme" rel="noopener" target="_blank">https://github.com/atlamors/portfolio-theme <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a><br/><br/>
 					<div className={hero.gitBadges}>
 						<img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="Experimental" />
 						<img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel" />

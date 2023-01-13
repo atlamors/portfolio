@@ -58,10 +58,10 @@ export default function Footer() {
 					<ul className={css.social}>
 						<li><h4>Social</h4></li>
 						<li className={css.socialList}>
-							<a href="https://medium.com/@--andrewnelson" target="_blank"><Icon icon={[ 'fab', 'medium' ]} /></a>
-							<a href="https://dev.to/andrewnelson" target="_blank"><Icon icon={[ 'fab', 'dev' ]} /></a>
-							<a href="https://www.linkedin.com/in/--andrewnelson/" target="_blank"><Icon icon={[ 'fab', 'linkedin' ]} /></a>
-							<a href="https://github.com/atlamors" target="_blank"><Icon icon={[ 'fab', 'github' ]} /></a>
+							<a href="https://medium.com/@--andrewnelson" rel="noopener" target="_blank"><Icon icon={[ 'fab', 'medium' ]} /></a>
+							<a href="https://dev.to/andrewnelson" rel="noopener" target="_blank"><Icon icon={[ 'fab', 'dev' ]} /></a>
+							<a href="https://www.linkedin.com/in/--andrewnelson/" rel="noopener" target="_blank"><Icon icon={[ 'fab', 'linkedin' ]} /></a>
+							<a href="https://github.com/atlamors" rel="noopener" target="_blank"><Icon icon={[ 'fab', 'github' ]} /></a>
 						</li>
 					</ul>
 				</section>

@@ -11,6 +11,7 @@ import SectionTitle from '../blocks/section.title.block'
 
 // Section scss
 import looking 		from '../../styles/sections/looking.module.scss';
+import section 		from '../../styles/blocks/section.title.module.scss'
 
 /**
  * Section: Looking
@@ -21,19 +22,12 @@ import looking 		from '../../styles/sections/looking.module.scss';
 export default function Looking() {
 	return (
 		<Section classProp={looking.section}>	
-			<Container classProp={looking.copy} spacing={['verticalXXXLrg']}>
-				<SectionTitle
-					title="Senior User Experience Designer"
-					preTitle="Im currently looking for employment as a"
-					subTitle="with a focus on Product Development."
-				/>
+			<Container classProp={`${section.title}`} spacing={['verticalXXXLrg']}>
+				<h4>Im currently looking for employment as a</h4>
+				<h2>Senior User Experience Designer</h2>
+				{/* <h2>Senior <span className={looking.highlight}>User Experience</span> Designer</h2> */}
+				<p className="subtitle">with a focus on Product Design.</p>
 			</Container>
-			{/* <Container classProp={looking.copy} spacing={['verticalXXXLrg']}>
-				<h2 className={looking.preHeader}>Im currently looking for employment as a</h2>
-				<h2 className={`${looking.header} ${Spacing('verticalStd')}`}>Senior User Experience Designer</h2>
-				<h2 className={looking.subHeader}>with a focus on Product Design.</h2>
-			</Container>	 */}
-			{/* <SectionGridBg /> */}
 		</Section>
 	)
 }

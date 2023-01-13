@@ -1,6 +1,7 @@
-export default function CaseStudies() {
+export default function Articles() {
 	return (
 		<>
+		AYO IM AN ARTICLE PAGE 🥳🥳
 		</>
 	)
 }

@@ -34,7 +34,8 @@ export default function About() {
 				/>
 				<Container classProp={`${about.content} ${about.container}`}>
 					<div className={about.image}>
-						{/* <img src="/img/family-photo.jpg" /> */}
+						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
 						<CopyBlock 

@@ -8,9 +8,10 @@ import { fas } from '@fortawesome/pro-solid-svg-icons'
 import { fat } from '@fortawesome/pro-thin-svg-icons'
 import { fad } from '@fortawesome/pro-duotone-svg-icons'
 import { far } from '@fortawesome/pro-regular-svg-icons'
+import { fab } from '@fortawesome/free-brands-svg-icons'
 
 // Load icons into
-library.add(fat, fas, fad, far)
+library.add(fat, fas, fad, far, fab)
 
 /**
  * Icon factory utility.

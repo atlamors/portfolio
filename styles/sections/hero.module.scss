@@ -1,3 +1,5 @@
+@import '../scss/_mixins';
+
 //global.module.scss
 .section {
 	border-bottom: 1px solid var(--primary-dark);
@@ -31,6 +33,30 @@
 	
 	.primaryBright {
 		color: var(--primary);
+	}
+
+	.tempBright {
+		font-size: .875rem;
+
+		.gitBadges {
+			display: flex;
+			gap: .5rem;
+			flex-wrap: wrap;
+			img {
+				height: 16px;
+				width: auto;
+				border-radius: .25rem;
+			}
+		}
+	}
+
+	@include media($max: $mobile) {
+		.preHeader {
+			font-size: 1rem;
+		}
+		.header {
+			font-size: 3rem;
+		}
 	}
 }
 
@@ -122,5 +148,15 @@
 		height: 100%;
 		filter: blur(100px);
 		transform: translateZ(0);
+	}
+
+	@include media($max: $mobile) {
+		.radialContainer {
+			.radialGradient {
+				right: -180%;
+				width: 300%;
+				bottom: -55%;
+			}
+		}
 	}
 }

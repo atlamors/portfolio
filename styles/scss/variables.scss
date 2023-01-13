@@ -6,7 +6,7 @@
 
 // Breakpoints and containers
 :root {
-	--breakpoint: 768px;
+	--mobile: 768px;
 	--reading-width: 1000px;
 }
 
@@ -35,7 +35,7 @@
 // Dark mode theme
 :root[data-theme='dark'] {
 	--primary-bright:	#ffffff;
-	--primary:			#d9d9d9;
+	--primary:			#bfbfbf;
 	--primary-dim:		#666666;
 	--primary-dark:		#141414;
 	--secondary: 		#ffed7f;

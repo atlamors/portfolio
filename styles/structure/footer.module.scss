@@ -1,37 +1,139 @@
+@import '../scss/_mixins';
+
 .container {
 	display: flex;
 	flex-direction: column;
+	margin-top: var(--size-3x);
+	margin-bottom: var(--size-3x);
 	
 	> div {
 		display: flex;
 		flex-direction: column;
+		width: 100%;
 		max-width: var(--reading-width);
 		margin: 0 auto;
+		gap: var(--size-3x);
+	}
 
-		.columns {
-			display: flex;
-			flex-direction: row;
-			gap: 2rem;
+	h4 {
+		margin-bottom: var(--size-1x);
+	}
+
+	a {
+		font-size: .875rem;
+		font-weight: 600;
+		color: var(--primary);
+
+		&:hover {
+			color: var(--primary-bright);
 		}
 	}
 
-	.thanks {
-
+	p {
+		font-size: .875rem;
 	}
 
-	.links {
+	.sections {
+		$gap: 2rem;
+		display: flex;
+		flex-direction: row;
+		//justify-content: space-between;
+		gap: $gap;
 
+		svg {
+			height: .875rem;
+			vertical-align: -0.1rem;
+			margin-left: .125rem;
+		}
+
+		ul {
+
+			&:nth-of-type(1) {
+				width: calc( var(--grid-32) * 12 - $gap );
+			}
+			
+			&:nth-of-type(2) {
+				width: calc( var(--grid-32) * 12 - $gap );
+			}
+
+			li {
+				overflow-wrap: break-word;
+				margin-bottom: var(--size-2-);
+			}
+		}
 	}
+
+	.socialList {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+
+		svg {
+			height: 2rem;
+		}
+	}
+
+	/**
+		Why the fuck isnt this working?
+
+		Get it working to get cool hover effect on steal this theme section!
+		**/
+		.svg-inline--fa.fa-code-branch  {
+			margin-left: 1rem;
+			
+			.fa-secondary {
+				fill: #a371f7;
+				opacity: 1;
+			}
+		}
 
 	.github {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-		ul {
+
+		* {
+			font-size: 1rem;
+			font-family: var(--font-accent);
+			font-weight: 600;
+			letter-spacing: -.01rem;
+		}
+
+		> a {
 			display: flex;
-			flex-direction: row;
-			gap: 1rem;
+			flex-direction: column;
+			align-items: center;
+			width: fit-content;
+			margin: 0 auto;
+			gap: var(--size-2-);
+			filter: grayscale(1);
+
+			&:hover {
+				filter: grayscale(0);
+
+				
+			}
+	
+			ul {
+				display: flex;
+				flex-direction: row;
+				gap: 1rem;
+			}
+		}
+	}
+}
+
+@include media($max: $mobile) {
+	.container {
+		.sections {
+			flex-direction: column-reverse;
+			text-align: center;
+			gap: 3rem;
+			
+			ul {
+				width: 100% !important; // :nth-of-type specifity is bad
+			}
+
+			.socialList {
+				justify-content: center;
+			}
 		}
 	}
 }

@@ -1,6 +1,8 @@
+@import '../scss/_mixins';
+
 .container {
 	position: fixed;
-	z-index: 1;
+	z-index: 10;
 	margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     width: 100vw;
@@ -17,29 +19,37 @@
 		transform: translateY(-100%);
 	}
 	
-
-	ul {
-		
+	.menuHeader {
 		display: flex;
 		flex-direction: row;
-		gap: 4rem;
+		justify-content: space-between;
+	}
+
+	.logo {
+		display: flex;
+		align-items: center;
+		margin: 1rem;
+		font-weight: 600;
+	}
+
+	.mobileButton {
+		display: none;
+	}
+
+	.menu {
+		display: flex;	
+		justify-content: space-between;
 		max-width: var(--reading-width);
 		margin: 1rem auto;
 		border-radius: 1rem;
-		justify-content: flex-end;
-		align-items: center;
 		position: relative;
 		backdrop-filter: blur(10px);
 		border-radius: 1rem;
 
-		li {
-
-		}
-
 		a {
 			font-family: var(--font-accent);
 			font-weight: 700;
-			color: var(--primary-dim);
+			color: var(--primary);
 
 			&:hover {
 				color: var(--primary-bright);
@@ -59,4 +69,116 @@
 			border-radius: 1rem;
 		}
 	}
+
+	.menuContent {
+		ul {
+			display: flex;
+			flex-direction: row;
+			justify-content: flex-end;
+			align-items: center;
+			gap: 4rem;
+		}
+	}
+
+	.mobileToggle {
+		display: none;
+		position: relative;
+		width: 50px;
+		height: 50px;
+		cursor: pointer;
+		transform: rotateY(180deg);
+	
+		div {
+			margin: auto;
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			width: 22px;
+			height: 12px;
+		}
+		
+		span {
+			position: absolute;
+			display: block;
+			width: 100%;
+			height: 2px;
+			background-color: var(--primary);
+			border-radius: 1px;
+			transition: all 0.2s cubic-bezier(0.1, 0.82, 0.76, 0.965);
+	
+			&:first-of-type {
+				top: 0;
+			}
+			&:last-of-type {
+				bottom: 0;
+			}
+		}
+		
+		&[data-open="true"] {
+			span {
+				&:first-of-type {
+					transform: rotate(45deg);
+					top: 5px;
+				}
+				&:last-of-type {
+					transform: rotate(-45deg);
+					bottom: 5px;
+				}
+			}
+		}
+	
+		&[data-open="true"]:hover span:first-of-type,
+		&[data-open="true"]:hover span:last-of-type {
+			width: 22px;
+		}
+		
+		&:hover {
+			span:first-of-type {
+				width: 12px;
+			}
+
+			span:last-of-type {
+				width: 26px;
+			}
+		}
+		
+	}
+	
 }
+
+@include media($max: $mobile) {
+	.container {
+		margin-left: 1rem;
+		margin-right: 1rem;
+		width: calc(100% - 2rem);
+
+		.menuContainer {
+			position: relative;
+		}
+		.mobileToggle {
+			display: block;
+		}
+		.menuHeader {
+			width: 100%;
+		}
+		.menu {
+			flex-direction: column;
+		}
+		.menuContent {
+			display: none;
+
+			&[data-open="true"] {
+				display: block;
+			}
+
+			ul {
+				flex-direction: column;
+				gap: 2rem;
+				margin: 2rem;
+			}
+		}
+	}
+}
+

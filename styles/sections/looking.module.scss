@@ -24,4 +24,24 @@
 		text-align: right;
 		font-size: 2rem;
 	}
+
+	.highlight {
+		--looking-bg-1: #781a17;
+		--looking-bg-2: #81461d91;
+		--looking-bg-3: #2a3e2a;
+
+		background: var(--bar-gradient);
+		--bar-gradient: 
+			linear-gradient( 
+				90deg, 
+				var(--looking-bg-1) -45%, 
+				var(--looking-bg-2) 25%,
+				var(--looking-bg-3) 80%, 
+				var(--looking-bg-1) 150%
+			);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
 }

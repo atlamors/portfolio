@@ -42,7 +42,7 @@ export default function SetTheme() {
 		document.querySelector(':root').dataset.theme = ( theme )
 		localStorage.setItem( 'theme', ( theme ) )
 		
-		const useSetTheme = (e) =>{ setTheme( e.matches ? 'dark' : 'light' ) }
+		const useSetTheme = (e) => { setTheme( e.matches ? 'dark' : 'light' ) }
 
 		const watchSysTheme = window.matchMedia('(prefers-color-scheme: dark)')
 

@@ -6,6 +6,8 @@ import Container 	from '../structure/container';
 
 import space		from '../utils/spacing.util';
 
+import Icon 		from '../utils/icon.util'
+
 import HeroBg		from '../blocks/hero.bg/bg-color-1';
 
 import hero 		from '../../styles/sections/hero.module.scss';
@@ -70,16 +72,28 @@ export default function Hero() {
 				/>
 			</Container>
 			<Container>
-				<Paragraph
-					spacing={["width50", "verticalLrg"]}
-					content="I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact." 
-				/>
+				{/* <p className={`${hero.primaryBright} subtitle ${space(["width50", "verticalLrg"])}`}>
+					I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.
+				</p> */}
+				<p className={`${hero.tempBright} subtitle ${space(["width75", "verticalLrg"])}`}>
+					This is an open source website built on Next.js and React—it is currently under construction.
+					Version 1 is scheduled to be completed by Jan 30, 2023. 
+					Checkout the roadmap (its updated while I&apos;m working on the site) by visiting the GitHub Repo.<br/><br/>
+					
+					<a href="https://github.com/atlamors/portfolio-theme" rel="noreferrer" target="_blank">https://github.com/atlamors/portfolio-theme <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a><br/><br/>
+					<div className={hero.gitBadges}>
+						<img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="Experimental" />
+						<img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel" />
+						<img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app" alt="Vercel Deployed" />
+						<img src="https://img.shields.io/github/license/atlamors/portfolio-theme" alt="Liscence" />
+					</div>
+				</p>
 			</Container>
 			<Container>
-				<button className={`${button.primary}`}>
+				<button className={`button ${button.primary}`}>
 					Contact Me
 				</button>
-				<button className={`${button.secondary} ${button.leaveSite}`}>
+				<button className={`button ${button.secondary} ${button.leaveSite}`}>
 					LinkedIn
 				</button>
 			</Container>

@@ -1,4 +1,4 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 
 import Link from 'next/link'
 
@@ -8,7 +8,19 @@ import css from '../../../styles/structure/navbar.module.scss'
 
 export default function Navbar() {
 
+	const [ menuState, menuToggle ] = useState()
+
 	useEffect( () => {
+		menuToggle(false)
+	}, [] )
+
+	const toggleMenu = () => {
+		let bool = ! menuState
+		menuToggle(bool)
+	}
+
+	useEffect( () => {
+
 		/**
 		 * Scroll events
 		 */
@@ -18,17 +30,17 @@ export default function Navbar() {
 				window.sticky		= {}
 				window.sticky.nav	= document.querySelector(`nav`)
 
-				this.scrollEvents()
+				this.addEventListeners()
 			}
 
-			scrollEvents() {
+			addEventListeners() {
 				if ( window.sticky.nav ) {
 					window.addEventListener('DOMContentLoaded', this.maybeHideNav, false)
 					document.addEventListener('scroll', this.maybeHideNav, false)
 				}
 			}
 
-			removeScrollEvents() {
+			removeEventListeners() {
 				if ( window.sticky.nav ) {
 					window.removeEventListener('DOMContentLoaded', this.maybeHideNav, false)
 					document.removeEventListener('scroll', this.maybeHideNav, false)
@@ -76,27 +88,41 @@ export default function Navbar() {
 		const navScroll = new NavScroll
 
 		return () => {
-			navScroll.removeScrollEvents()
+			navScroll.removeEventListeners()
 		}
 	}, [] )
 
 	return (
 		<nav className={css.container}>
-			<ul>
-				<li>
-					<Link href="/">About Me</Link>
+			<ul className={css.menu}>
+				<li className={css.menuHeader}>
+					<div class={css.logo}>
+						Andrew Nelson
+					</div>
+					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
+						<div>
+							<span></span>
+							<span></span>
+						</div>
+					</button>
 				</li>
-				<li>
-					<Link href="/case-studies">Case Studies</Link>
-				</li>
-				<li>
-					<Link href="/articles">Articles</Link>
-				</li>
-				<li>
-					<ThemeMode />
+				<li data-open={menuState} className={css.menuContent}>
+					<ul>
+						<li>
+							<Link href="/">About Me</Link>
+						</li>
+						<li>
+							<Link href="/case-studies">Case Studies</Link>
+						</li>
+						<li>
+							<Link href="/articles">Articles</Link>
+						</li>
+						<li>
+							<ThemeMode />
+						</li>
+					</ul>
 				</li>
 			</ul>
-			
 		</nav>
 	)
 }

@@ -45,7 +45,7 @@ export default function Footer() {
 							<p>A major inspiration behind this open source theme.</p>
 						</li>
 						<li><a href="https://vercel.com/docs" rel="noreferrer" target="_blank">Vercel - Platform <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-							<p>Host your own Next.js project for free 🥳</p>
+							<p>Host your own Next.js project for free.</p>
 						</li>
 					</ul>
 					<ul className={css.links}>
@@ -66,7 +66,7 @@ export default function Footer() {
 					</ul>
 				</section>
 				<section className={css.github}>
-					<a href="https://github.com/atlamors/portfolio-theme"rel="noreferrer" target="_blank">
+					<a href="https://github.com/atlamors/portfolio-theme" rel="noreferrer" target="_blank">
 						<h5>Steal this theme! Its open-source 🥰</h5>
 						<ul>
 							<li>

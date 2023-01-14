@@ -96,7 +96,7 @@ export default function Navbar() {
 		<nav className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<div class={css.logo}>
+					<div className={css.logo}>
 						Andrew Nelson
 					</div>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
@@ -116,6 +116,9 @@ export default function Navbar() {
 						</li>
 						<li>
 							<Link href="/articles">Articles</Link>
+						</li>
+						<li>
+							<Link href="/projects">Projects</Link>
 						</li>
 						<li>
 							<ThemeMode />

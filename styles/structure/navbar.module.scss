@@ -72,10 +72,12 @@
 
 	.menuContent {
 		ul {
+			height: 100%;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-end;
 			align-items: center;
+			text-align: center;
 			gap: 4rem;
 		}
 	}
@@ -167,10 +169,13 @@
 			flex-direction: column;
 		}
 		.menuContent {
-			display: none;
-
+			transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 300ms;
+			max-height: 0vh;
+			overflow: hidden;
+			
 			&[data-open="true"] {
-				display: block;
+				transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 300ms;
+				max-height: 100vh;
 			}
 
 			ul {

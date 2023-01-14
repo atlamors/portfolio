@@ -75,7 +75,7 @@ export default function Hero() {
 				{/* <p className={`${hero.primaryBright} subtitle ${space(["width50", "verticalLrg"])}`}>
 					I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.
 				</p> */}
-				<p className={`${hero.tempBright} subtitle ${space(["width75", "verticalLrg"])}`}>
+				<p className={`${hero.tempBright} subtitle ${space(["verticalLrg"])}`}>
 					This is an open source website built on Next.js and React—it is currently under construction.
 					Version 1 is scheduled to be completed by Jan 30, 2023. 
 					Checkout the roadmap (its updated while I&apos;m working on the site) by visiting the GitHub Repo.<br/><br/>

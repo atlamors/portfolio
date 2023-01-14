@@ -37,6 +37,7 @@
 
 	.tempBright {
 		font-size: .875rem;
+		width: 60%;
 
 		.gitBadges {
 			display: flex;
@@ -56,6 +57,14 @@
 		}
 		.header {
 			font-size: 3rem;
+		}
+		.tempBright {
+			width: 100%;
+			padding-right: 1rem;
+		}
+		button {
+			font-size: .875rem;
+			padding: 0.75rem 2rem;
 		}
 	}
 }

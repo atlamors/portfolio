@@ -3,4 +3,28 @@ module.exports = {
 	env: {
 		dir: '/',
 	},
+	images: {
+		remotePatterns: [
+			{
+				protocol: 'https',
+				hostname: '**.vercel.app',
+				pathname: '/api/**'
+			},
+			{
+				protocol: 'https',
+				hostname: '**.vercel.app',
+				pathname: '?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app'
+			},
+			{
+				protocol: 'https',
+				hostname: '**.shields.io',
+				pathname: '/badge/**'
+			},
+			{
+				protocol: 'https',
+				hostname: '**.shields.io',
+				pathname: '/github/**'
+			},
+		],
+	},
 }

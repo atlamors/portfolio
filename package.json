@@ -19,18 +19,21 @@
 		"@fortawesome/pro-thin-svg-icons": "^6.2.1",
 		"@fortawesome/react-fontawesome": "^0.2.0",
 		"@fortawesome/sharp-solid-svg-icons": "^6.2.1",
+		"@uiw/react-markdown-preview": "^4.1.7",
 		"@vercel/analytics": "^0.1.6",
 		"babel-plugin-macros": "^3.1.0",
 		"devicon": "^2.15.1",
-		"next": "^13.1.1",
+		"next": "^12.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-markdown": "^8.0.4",
 		"react-type-animation": "^2.1.2",
+		"swr": "^2.0.0",
 		"the-new-css-reset": "^1.8.2"
 	},
 	"devDependencies": {
 		"eslint": "8.31.0",
-		"eslint-config-next": "13.1.1",
+		"eslint-config-next": "^13.1.2",
 		"sass": "^1.57.1"
 	}
 }

@@ -29,6 +29,9 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Pages\About           : In progress
 - [ ] Pages\Case Studies    : Wireframes done
 - [ ] Pages\Articles        : Wireframes done
+- [ ] Pages\Projects      : Github API done, building cache and layout
+- [x] Pages\Projects\GitHubAPI
+- [ ] Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs
 - [ ] App\Auto Loading      : Matching /page/ => /content/ structure that autoloads MD files
 - [ ] Fork & Deploy Instructions
 

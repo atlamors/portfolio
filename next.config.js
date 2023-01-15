@@ -25,6 +25,11 @@ module.exports = {
 				hostname: '**.shields.io',
 				pathname: '/github/**'
 			},
+			{
+				protocol: 'https',
+				hostname: '**.githubusercontent.com',
+				pathname: '/**'
+			},
 		],
 	},
 }

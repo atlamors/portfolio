@@ -101,3 +101,13 @@ a {
 .noEvents {
 	pointer-events: none;
 }
+
+.list {
+	list-style: disc;
+	margin-left: 1.5rem;
+	li {
+		&::marker {
+			content: normal;
+		}
+	}
+}

@@ -32,10 +32,10 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [x] Layout\Footer
 
 #### Pages
-- [ ] Pages\About           : Finish UI.
-- [ ] Pages\Case Studies    : Wireframes done
-- [ ] Pages\Articles        : Wireframes done
-
+- [ ] Pages\About : Finish UI.
+- [ ] Pages\Case Studies : Wireframes done
+- [ ] Pages\Articles : Wireframes done
+- [ ] Pages\Projects : UI Done
 
 #### About Page
 - [ ] Pages\About\Hero
@@ -45,7 +45,7 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Pages\About\Career
 
 #### Project Page
-- [ ] Pages\Projects      : Build out components and blocks, spatial design system, autoload featured projects via MD files
+- [ ] Pages\Projects : Build out components and blocks, spatial design system, autoload featured projects via MD files
 - [x] Pages\Projects\FeaturedProjects\UI
 - [ ] Pages\Projects\FeaturedProjects\DX
 - [x] Pages\Projects\GitHubAPI\API

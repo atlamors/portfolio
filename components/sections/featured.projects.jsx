@@ -71,7 +71,7 @@ export default function FeaturedProjects() {
 					<h4>About</h4>
 					<br/>
 					<p className={css.description}>
-						This is my first open-source project. I'm trying to balance the UI/UX and DX to create something that brings an educational and networking value to whoever wants to use it. 
+						This is my first open-source project. I&apos;m trying to balance the UI/UX and DX to create something that brings an educational and networking value to whoever wants to use it. 
 					</p>
 					<br/><br/>
 					<Badges list={portfolioStack} block="stack" />

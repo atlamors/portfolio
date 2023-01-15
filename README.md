@@ -15,6 +15,7 @@
 
 Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-11-2023)* it will be a mess and be missing a ton of features and functionality.
 
+###App Architecure & Design Systems
 - [ ] App\Auto Loading : Matching /page/ => /content/ structure that autoloads MD files
 - [ ] App\DX\Fork & Deploy Instructions
 - [x] App\Design System\Structure
@@ -22,17 +23,27 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] App\Design System\Scss\Desktop : in progress
 - [ ] App\Design System\Scss\Mobile : just started
 
+###Layout & Utils
 - [x] Layout\Icon Util
 - [x] Layout\Typography
 - [x] Layout\Darkmode
 - [x] Layout\Navbar
 - [x] Layout\Footer
-- [ ] Layout\About : Finish UI.
 
-- [ ] Pages\About           : In progress
+###Pages
+- [ ] Pages\About           : Finish UI.
 - [ ] Pages\Case Studies    : Wireframes done
 - [ ] Pages\Articles        : Wireframes done
 
+
+###About Page
+- [ ] Pages\About\Hero
+- [ ] Pages\About\Looking
+- [ ] Pages\About\About
+- [ ] Pages\About\Technical
+- [ ] Pages\About\Career
+
+###Project Page
 - [ ] Pages\Projects      : Build out components and blocks, spatial design system, autoload featured projects via MD files
 - [x] Pages\Projects\FeaturedProjects\UI
 - [ ] Pages\Projects\FeaturedProjects\DX

@@ -48,9 +48,9 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Pages\Projects      : Build out components and blocks, spatial design system, autoload featured projects via MD files
 - [x] Pages\Projects\FeaturedProjects\UI
 - [ ] Pages\Projects\FeaturedProjects\DX
-- [ ] Pages\Projects\GitHubAPI\DX
 - [x] Pages\Projects\GitHubAPI\API
 - [x] Pages\Projects\GitHubAPI\UI
+- [ ] Pages\Projects\GitHubAPI\DX
 - [ ] Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs
 
 ## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon

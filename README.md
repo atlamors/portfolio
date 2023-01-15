@@ -46,6 +46,7 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 
 #### Project Page
 - [ ] Pages\Projects : Build out components and blocks, spatial design system, autoload featured projects via MD files
+- [ ] Pages\Projects\Scss\Mobile 
 - [x] Pages\Projects\FeaturedProjects\UI
 - [ ] Pages\Projects\FeaturedProjects\DX
 - [x] Pages\Projects\GitHubAPI\API

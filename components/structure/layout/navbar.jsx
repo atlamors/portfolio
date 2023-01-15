@@ -111,12 +111,12 @@ export default function Navbar() {
 						<li>
 							<Link href="/">About Me</Link>
 						</li>
-						<li>
+						{/* <li>
 							<Link href="/case-studies">Case Studies</Link>
 						</li>
 						<li>
 							<Link href="/articles">Articles</Link>
-						</li>
+						</li> */}
 						<li>
 							<Link href="/projects">Projects</Link>
 						</li>

@@ -15,28 +15,31 @@
 
 Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-11-2023)* it will be a mess and be missing a ton of features and functionality.
 
+- [ ] App\Auto Loading : Matching /page/ => /content/ structure that autoloads MD files
+- [ ] App\DX\Fork & Deploy Instructions
 - [x] App\Design System\Structure
 - [ ] App\Design System\Spatial : Testing different models currently
+- [ ] App\Design System\Scss\Desktop : in progress
+- [ ] App\Design System\Scss\Mobile : just started
+
 - [x] Layout\Icon Util
 - [x] Layout\Typography
 - [x] Layout\Darkmode
 - [x] Layout\Navbar
-- [ ] Layout\Footer         : In progress
-- [ ] Layout\About          : Employment area
-- [ ] Layout\About          : Vector design elements
-- [ ] Scss\Desktop : in progress
-- [ ] Scss\Mobile : just started
+- [x] Layout\Footer
+- [ ] Layout\About : Finish UI.
+
 - [ ] Pages\About           : In progress
 - [ ] Pages\Case Studies    : Wireframes done
 - [ ] Pages\Articles        : Wireframes done
-- [ ] Pages\Projects      : Github API done, building cache and layout
-- [x] Pages\Projects\GitHubAPI
+
+- [ ] Pages\Projects      : Build out components and blocks, spatial design system, autoload featured projects via MD files
+- [x] Pages\Projects\FeaturedProjects\UI
+- [ ] Pages\Projects\FeaturedProjects\DX
+- [ ] Pages\Projects\GitHubAPI\DX
+- [x] Pages\Projects\GitHubAPI\API
+- [x] Pages\Projects\GitHubAPI\UI
 - [ ] Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs
-- [ ] App\Auto Loading      : Matching /page/ => /content/ structure that autoloads MD files
-- [ ] Fork & Deploy Instructions
-
-
-
 
 ## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon
 <s>

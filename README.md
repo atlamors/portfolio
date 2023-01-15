@@ -13,7 +13,7 @@
 
 ## This website is still being developed! ⚠️
 
-Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-11-2023)* it will be a mess and be missing a ton of features and functionality.
+Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-15-2023)* it will be a mess and be missing a ton of features and functionality.
 
 #### App Architecure & Design Systems
 - [ ] App\Auto Loading : Matching /page/ => /content/ structure that autoloads MD files

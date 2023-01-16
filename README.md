@@ -47,6 +47,15 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Pages\About\Technical
 - [ ] Pages\About\Career
 
+#### Articles Page
+- [ ] Pages\Articles : Build out components and blocks, spatial design system, autoload featured projects via MD files
+- [ ] Pages\Articles\Scss\Mobile 
+- [x] Pages\Articles\Medium\API
+- [x] Pages\Articles\Medium\UI
+- [ ] Pages\Articles\Medium\DX
+- [ ] Pages\Articles\Dev.to\API
+- [ ] Pages\Articles\HackerNoon\API
+
 #### Project Page
 - [ ] Pages\Projects : Build out components and blocks, spatial design system, autoload featured projects via MD files
 - [ ] Pages\Projects\Scss\Mobile 

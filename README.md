@@ -15,6 +15,9 @@
 
 Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-15-2023)* it will be a mess and be missing a ton of features and functionality.
 
+#### Next & App Architecure
+- [ ] Next.js : Move to Next 13 and /app file structure when stable
+
 #### App Architecure & Design Systems
 - [ ] App\Auto Loading : Matching /page/ => /content/ structure that autoloads MD files
 - [ ] App\DX\Fork & Deploy Instructions

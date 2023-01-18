@@ -19,7 +19,7 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Next.js : Move to Next 13 and /app file structure when stable
 
 #### App Architecure & Design Systems
-- [ ] App\Auto Loading : Matching /page/ => /content/ structure that autoloads MD files
+- [ ] App\Content Storage : Matching /page/ => /content/ structure that uses json files
 - [ ] App\DX\Fork & Deploy Instructions
 - [x] App\Design System\Structure
 - [ ] App\Design System\Spatial : Testing different models currently
@@ -37,8 +37,8 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 #### Pages
 - [ ] Pages\About : Finish UI.
 - [ ] Pages\Case Studies : Wireframes done
-- [ ] Pages\Articles : Wireframes done
-- [ ] Pages\Projects : UI Done
+- [x] Pages\Articles : UI tweaks still in progress
+- [x] Pages\Projects : UI tweaks still in progress
 
 #### About Page
 - [ ] Pages\About\Hero
@@ -48,23 +48,23 @@ Please keep in mind there is a **lot** left to do on this theme so if you fork i
 - [ ] Pages\About\Career
 
 #### Articles Page
-- [ ] Pages\Articles : Build out components and blocks, spatial design system, autoload featured projects via MD files
-- [ ] Pages\Articles\Scss\Mobile 
+- [x] Pages\Articles
+- [x] Pages\Articles\Scss\Mobile 
 - [x] Pages\Articles\Medium\API
 - [x] Pages\Articles\Medium\UI
-- [ ] Pages\Articles\Medium\DX
+- [x] Pages\Articles\Medium\DX
 - [ ] Pages\Articles\Dev.to\API
 - [ ] Pages\Articles\HackerNoon\API
 
 #### Project Page
-- [ ] Pages\Projects : Build out components and blocks, spatial design system, autoload featured projects via MD files
-- [ ] Pages\Projects\Scss\Mobile 
+- [x] Pages\Projects
+- [x] Pages\Projects\Scss\Mobile 
 - [x] Pages\Projects\FeaturedProjects\UI
-- [ ] Pages\Projects\FeaturedProjects\DX
+- [x] Pages\Projects\FeaturedProjects\DX
 - [x] Pages\Projects\GitHubAPI\API
 - [x] Pages\Projects\GitHubAPI\UI
-- [ ] Pages\Projects\GitHubAPI\DX
-- [ ] Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs
+- [x] Pages\Projects\GitHubAPI\DX
+- [ ] <s>Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs</s>
 
 ## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon
 <s>

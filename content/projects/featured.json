@@ -1,0 +1,40 @@
+[
+	{
+		"project": "My Supply Co.",
+		"url": "https://mysupplyco.com",
+		"type": "E-commerce",
+		"repo": "Private",
+		"description": "<ul class='list'><li><p>User Experience and Interface Design</p></li><li><p>Business and Product Development</p></li><li><p>Full Stack Development</p></li><li><p>Plugin / Microservice Development</p></li></ul>",
+		"image_url": "/img/featured-mysupplyco.png",
+		"stack": [
+			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
+			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "woocommerce", "name": "WooCommerce", 	"type": "devicon" },
+			{ "key": "wordpress",	"name": "Wordpress", 	"type": "devicon" },
+			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
+			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
+			{ "key": "github",		"name": "GitHub", 		"type": "devicon" },
+			{ "key": "google",		"name": "GA4/GTM", 		"type": "devicon" }
+		]
+	},
+	{
+		"project": "andrewnelson.net",
+		"url": "https://github.com/atlamors/portfolio",
+		"type": "Open Source Portfolio",
+		"repo": "Public",
+		"description": "This is my first open-source project. I'm trying to balance the UI/UX and DX to create something that brings an educational and networking value to whoever wants to use it.",
+		"image_url": "/img/preview.png",
+		"stack": [
+			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
+			{ "key": "react", 		"name": "React", 		"type": "devicon" },
+			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
+			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
+			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
+			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
+			{ "key": "github",		"name": "GitHub", 		"type": "devicon" }
+		]
+	}
+]

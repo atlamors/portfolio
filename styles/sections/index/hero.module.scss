@@ -1,4 +1,4 @@
-@import '../scss/_mixins';
+@import '../../scss/_mixins';
 
 //global.module.scss
 .section {
@@ -38,16 +38,18 @@
 	.tempBright {
 		font-size: .875rem;
 		width: 60%;
+	}
 
-		.gitBadges {
-			display: flex;
-			gap: .5rem;
-			flex-wrap: wrap;
-			img {
-				height: 16px;
-				width: auto;
-				border-radius: .25rem;
-			}
+	.gitBadges {
+		position: relative;
+		display: flex;
+		gap: .5rem;
+		flex-wrap: wrap;
+		height: 1rem;
+		img {
+			height: 16px;
+			width: fit-content;
+			border-radius: .25rem;
 		}
 	}
 

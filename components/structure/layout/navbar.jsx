@@ -1,12 +1,16 @@
 import { useEffect, useState } from 'react'
-
+import { useCallback } from 'react'
+import {useRouter} from 'next/router';
 import Link from 'next/link'
-
 import ThemeMode from '../../utils/theme.util'
 
+import settings from '../../../content/settings.json'
+import content  from '../../../content/navbar.json'
 import css from '../../../styles/structure/navbar.module.scss'
 
 export default function Navbar() {
+
+	const router = useRouter()
 
 	const [ menuState, menuToggle ] = useState()
 
@@ -14,17 +18,40 @@ export default function Navbar() {
 		menuToggle(false)
 	}, [] )
 
-	const toggleMenu = () => {
-		let bool = ! menuState
-		menuToggle(bool)
-	}
+	useEffect( () => {
+		class RouteEvents {
+
+			constructor() {
+				console.log(
+					'%c☰  Navigation Router Events Loaded', 
+					'background: #060708; color: #fff; padding: .125rem .75rem; border-radius: 5px; font-weight: 900; '
+				)
+				this.addEventListeners()
+			}
+
+			closeMenu() {
+				menuToggle(false)
+			}
+
+			addEventListeners() {
+				router.events.on('routeChangeComplete', this.closeMenu)
+			}
+
+			removeEventListeners() {
+				router.events.off('routeChangeComplete', this.closeMenu)
+			}
+		}
+
+		const routeEvents = new RouteEvents
+
+		return () => {
+			routeEvents.removeEventListeners()
+		}
+	}, [router.events])
 
 	useEffect( () => {
 
-		/**
-		 * Scroll events
-		 */
-		class NavScroll {
+		class ScrollEvents {
 
 			constructor() {
 				window.sticky		= {}
@@ -69,8 +96,9 @@ export default function Navbar() {
 				 * Add or remove hidden class from filter menu
 				 */
 				const nC 		= window.sticky.nav.classList
-				const hero 		= document.querySelector('main > div:first-of-type')
-				const hiddenAt 	= ( hero ) ? hero.getBoundingClientRect().bottom + window.scrollY : ( window.innerHeight / 2 )
+				// const hero 		= document.querySelector('main > div:first-of-type')
+				// const hiddenAt 	= ( hero ) ? hero.getBoundingClientRect().bottom + window.scrollY : ( window.innerHeight / 2 )
+				const hiddenAt	= ( window.innerHeight / 2 )
 
 				if ( window.scrollY > this.lastY && window.scrollY > hiddenAt && ! nC.contains( css.hidden ) ) {
 					nC.add( css.hidden )
@@ -85,19 +113,24 @@ export default function Navbar() {
 			}
 		}
 
-		const navScroll = new NavScroll
+		const scrollEvents = new ScrollEvents
 
 		return () => {
-			navScroll.removeEventListeners()
+			scrollEvents.removeEventListeners()
 		}
 	}, [] )
+
+	const toggleMenu = () => {
+		let bool = ! menuState
+		menuToggle(bool)
+	}
 
 	return (
 		<nav className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
 					<div className={css.logo}>
-						Andrew Nelson
+						{settings.name}
 					</div>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
 						<div>
@@ -108,24 +141,22 @@ export default function Navbar() {
 				</li>
 				<li data-open={menuState} className={css.menuContent}>
 					<ul>
-						<li>
-							<Link href="/">About Me</Link>
-						</li>
-						{/* <li>
-							<Link href="/case-studies">Case Studies</Link>
-						</li>
-						<li>
-							<Link href="/articles">Articles</Link>
-						</li> */}
-						<li>
-							<Link href="/projects">Projects</Link>
-						</li>
+						{
+						content.map( ({ url, title }, index) => {
+							return (
+								<li key={index}>
+									<Link href={url}>{title}</Link>
+								</li>
+							)
+						})	
+						}
 						<li>
 							<ThemeMode />
 						</li>
 					</ul>
 				</li>
 			</ul>
+			<span onClick={toggleMenu} className={css.menuBlackout} data-open={menuState}></span>
 		</nav>
 	)
 }

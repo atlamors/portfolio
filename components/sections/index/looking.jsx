@@ -1,17 +1,17 @@
 // Section structure
-import Section 		from '../structure/section';
-import Container 	from '../structure/container';
+import Section 		from '../../structure/section';
+import Container 	from '../../structure/container';
 
 // Specing util
-import Spacing 		from '../utils/spacing.util';
+import Spacing 		from '../../utils/spacing.util';
 
 // Section general blocks
-import SectionGridBg from '../blocks/section.grid.block'
-import SectionTitle from '../blocks/section.title.block'
+import SectionGridBg from '../../blocks/section.grid.block'
+import SectionTitle from '../../blocks/section.title.block'
 
 // Section scss
-import looking 		from '../../styles/sections/looking.module.scss';
-import section 		from '../../styles/blocks/section.title.module.scss'
+import looking 		from '../../../styles/sections/index/looking.module.scss';
+import section 		from '../../../styles/blocks/section.title.module.scss'
 
 /**
  * Section: Looking
@@ -21,7 +21,7 @@ import section 		from '../../styles/blocks/section.title.module.scss'
  */
 export default function Looking() {
 	return (
-		<Section classProp={looking.section}>	
+		<Section classProp={`${looking.section} borderBottom`}>	
 			<Container classProp={`${section.title}`} spacing={['verticalXXXLrg']}>
 				<h4>Im currently looking for employment as a</h4>
 				<h2>Senior User Experience Designer</h2>

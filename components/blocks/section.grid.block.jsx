@@ -7,8 +7,10 @@ export default function sectionGridBG({ gridSize = 4 }) {
 				<div className={`${grid.Guides__container} grid-${gridSize}`}>
 					{ generateGrid( gridSize, grid.Guides__guide ) }
 					<style jsx>
-						{` .${grid.Guides__container}.grid-${gridSize} { --grid-size: ${gridSize}; } `}
-					</style>
+						{`
+						.${grid.Guides__container}.grid-${gridSize} { --grid-size: ${gridSize}; }
+						`}
+					</style>	
 				</div>
 			</div>
 		</div>

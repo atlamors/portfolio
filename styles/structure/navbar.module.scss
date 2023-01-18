@@ -82,6 +82,19 @@
 		}
 	}
 
+	.menuBlackout {
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 0;
+		z-index: -1;
+		
+		&[data-open="true"] {
+			height: 100vh;
+		}
+	}
+
 	.mobileToggle {
 		display: none;
 		position: relative;
@@ -152,9 +165,15 @@
 
 @include media($max: $mobile) {
 	.container {
-		margin-left: 1rem;
-		margin-right: 1rem;
-		width: calc(100% - 2rem);
+		padding-left: 1rem;
+		padding-right: 1rem;
+		width: 100%;
+
+		&.hidden {
+			.menuBlackout {
+				height: 0;
+			}
+		}
 
 		.menuContainer {
 			position: relative;

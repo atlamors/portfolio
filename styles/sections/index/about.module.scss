@@ -1,0 +1,129 @@
+@import '../../scss/mixins';
+
+// Section
+.section {
+
+	.technicalSvg {
+		img {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 110vw;
+			height: 115%;
+			max-inline-size: unset;
+			max-block-size: unset;
+			opacity: 1;
+			z-index: -2;
+			
+		}
+	}
+	
+	.content {
+		$padding: 2rem;
+		flex-direction: row;
+		display: flex;
+
+		> div {
+			padding: 0;
+		}
+
+		h3 {
+			position: relative;
+			color: var(--primary);
+
+			// &:before {
+			// 	content: '';
+			// 	position: absolute;
+			// 	left: calc( $padding * -1 );
+			// 	width: 18px;
+			// 	aspect-ratio: 1/1;
+			// 	background-color: var(--primary-bright);
+			// 	border-radius: 99rem;
+			// 	border: 3px solid var(--background);
+			// 	top: 50%;
+			// 	transform: translate(-50%, -50%);
+			// }
+
+			// &:after {
+			// 	content: '';
+			// 	position: absolute;
+			// 	left: calc( $padding * -1 );
+			// 	width: 9px;
+			// 	aspect-ratio: 1/1;
+			// 	background-color: var(--background);
+			// 	border-radius: 99rem;
+			// 	top: 50%;
+			// 	transform: translate(-50%, -50%);
+			// }
+		}
+
+		.container {
+			padding: $padding;
+			border: 1px solid var(--primary-dark);
+			border-radius: 2rem;
+			background: var(--background-dim);
+
+			&:not(:last-of-type) {
+				margin-bottom: var(--size-1x);
+			}
+		}
+
+		.copy {
+			flex-basis: calc(50% + 1px);
+			margin-right: -1px;
+			flex-grow: 1;
+			flex-shrink: 1;
+			padding: 1rem;
+		}
+
+		.icon {
+			padding: 0.5rem;
+			display: block;
+			background: var(--primary-dark);
+			width: fit-content;
+			border-radius: 0.5rem;
+
+			svg {
+				height: 1.6rem;
+				color: var(--primary);
+			}
+		}
+		
+		// Columns
+		.image {
+			flex-basis: 50%;
+			flex-grow: 1;
+			flex-shrink: 1;
+			position: relative;
+			padding: 1rem;
+
+			img {
+				height: 100%;
+				width: auto;
+				aspect-ratio: 3/4;
+				object-fit: cover;
+				border-radius: 2rem;
+			}
+		}
+	}
+}
+
+@include media($max: $mobile) {
+	.section {
+		.content {
+			flex-direction: column;
+
+			> div {
+				flex-basis: 100% !important;
+			}
+
+			.image {
+				padding: 1rem;
+			}
+
+			.copy {
+				padding: 0;
+			}
+		}
+	}
+}

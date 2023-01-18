@@ -1,6 +1,8 @@
 // Sections
-import GitRecentProjects from '../../components/sections/git.recent.projects'
-import FeaturedProjects from '../../components/sections/featured.projects'
+import GitRecentProjects from '../../components/sections/projects/recent'
+import FeaturedProjects from '../../components/sections/projects/featured'
+
+import github from '../../content/projects/github.json'
 
 // This gets called on every request
 export async function getServerSideProps({ res }) {
@@ -11,8 +13,8 @@ export async function getServerSideProps({ res }) {
 	)
 
 	const [ gitUserRes, gitReposRes] = await Promise.all( [
-		fetch(`https://api.github.com/users/atlamors`),
-		fetch(`https://api.github.com/users/atlamors/repos`),
+		fetch(`https://api.github.com/users/${github.account}`),
+		fetch(`https://api.github.com/users/${github.account}/repos`),
 	] )
 	
 	let [ user, repos] = await Promise.all( [
@@ -28,10 +30,9 @@ export async function getServerSideProps({ res }) {
 	
 	if (repos.length) {
 		repos = repos.map( 
-			({ name, fork, forks_count, html_url, language, watchers, default_branch, homepage, owner, pushed_at, topics }) => {
-				const mdurl = `https://raw.githubusercontent.com/${owner.login}/${name}/${default_branch}/README.md` 
+			({ name, fork, description, forks_count, html_url, language, watchers, default_branch, homepage, pushed_at, topics }) => {
 				const timestamp = Math.floor(new Date(pushed_at) / 1000)
-				return ({ name, fork, forks_count, html_url, language, watchers, default_branch, homepage, mdurl, timestamp, topics, pushed_at })
+				return ({ name, fork, description, forks_count, html_url, language, watchers, default_branch, homepage, timestamp, topics, pushed_at })
 			}
 		)
 

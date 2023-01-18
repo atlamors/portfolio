@@ -1,13 +1,13 @@
 import Hero 
-	from '../components/sections/hero'
+	from '../components/sections/index/hero'
 import Looking
-	from '../components/sections/looking'
+	from '../components/sections/index/looking'
 import About
-	from '../components/sections/about'
+	from '../components/sections/index/about'
 import Technical
-	from '../components/sections/technical'
+	from '../components/sections/index/technical'
 import Career
-	from '../components/sections/career'
+	from '../components/sections/index/career'
 
 export default function HomePage() {
 

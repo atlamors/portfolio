@@ -4,6 +4,8 @@ import Icon from '../../utils/icon.util'
 
 import css from '../../../styles/structure/footer.module.scss'
 
+import content from '../../../content/footer.json'
+
 export default function Footer() {
 	
 	const [gitHubInfo, setGitHubInfo] = useState({
@@ -12,9 +14,7 @@ export default function Footer() {
 	});
 
 	useEffect(() => {
-		//if (process.env.NODE_ENV !== 'production') return
-
-		fetch('https://api.github.com/repos/atlamors/portfolio-theme')
+		fetch( content.portfolio.repo )
 			.then(response => response.json())
 			.then(json => {
 				const { stargazers_count, forks_count } = json;
@@ -32,42 +32,46 @@ export default function Footer() {
 				<section className={css.sections}>
 					<ul className={css.thanks}>
 						<li><h4>Acknowledgments</h4></li>
-						<li>
-							<a href="" rel="noreferrer" target="_blank">Jihad Hassan - Marketing Director <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-							<p>Thank you for all the advice and feedback.</p>
-						</li>
-						<li>	
-							<a href="https://www.youworkforthem.com/designer/536/colorpong?aff=1115" rel="noreferrer" target="_blank">Colorpong - Artist <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-							<p>Checkout their amazing vector illustrations. </p>
-						</li>
-						<li>
-							<a href="https://brittanychiang.com/" rel="noreferrer" target="_blank">Brittany Chiang - Software Engineer <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a> 
-							<p>A major inspiration behind this open source theme.</p>
-						</li>
-						<li><a href="https://vercel.com/docs" rel="noreferrer" target="_blank">Vercel - Platform <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-							<p>Host your own Next.js project for free.</p>
-						</li>
+						{
+						content.acknowledgments.map( ({ person, link, note }) => {
+							return (
+								<li>
+									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
+									<p>{note}</p>
+								</li>
+							)
+						})
+						}
 					</ul>
 					<ul className={css.links}>
 						<li><h4>Links</h4></li>
-						<li>
-							<a href="https://www.youworkforthem.com/?aff=1115" rel="noreferrer" target="_blank">YWFT Creative Marketplace <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
-							<p>Best in class for assets.</p>
-						</li>
+						{
+						content.links.map( ({ person, link, note }) => {
+							return (
+								<li>
+									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
+									<p>{note}</p>
+								</li>
+							)
+						})
+						}
 					</ul>
 					<ul className={css.social}>
 						<li><h4>Social</h4></li>
 						<li className={css.socialList}>
-							<a href="https://medium.com/@--andrewnelson" rel="noreferrer" target="_blank"><Icon icon={[ 'fab', 'medium' ]} /></a>
-							<a href="https://dev.to/andrewnelson" rel="noreferrer" target="_blank"><Icon icon={[ 'fab', 'dev' ]} /></a>
-							<a href="https://www.linkedin.com/in/--andrewnelson/" rel="noreferrer" target="_blank"><Icon icon={[ 'fab', 'linkedin' ]} /></a>
-							<a href="https://github.com/atlamors" rel="noreferrer" target="_blank"><Icon icon={[ 'fab', 'github' ]} /></a>
+							{
+							content.social.map( ({ url, icon }) => {
+								return (
+									<a href={url} rel="noreferrer" target="_blank"><Icon icon={[ 'fab', icon ]} /></a>
+								)
+							})
+							}
 						</li>
 					</ul>
 				</section>
 				<section className={css.github}>
-					<a href="https://github.com/atlamors/portfolio-theme" rel="noreferrer" target="_blank">
-						<h5>Steal this theme! Its open-source 🥰</h5>
+					<a href={content.portfolio.repo} rel="noreferrer" target="_blank">
+						<h5>{content.portfolio.forkthis}</h5>
 						<ul>
 							<li>
 								<p><Icon icon={[ 'fad', 'code-branch' ]} /> Forks: { gitHubInfo.forks }</p>

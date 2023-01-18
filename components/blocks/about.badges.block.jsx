@@ -18,9 +18,9 @@ import badges 	from '../../styles/blocks/badges.module.scss';
  * @param {string}	classProps template literal class reference(s) for the container class(es)
  * @returns <BadgesBlock /> Container for badges component in the about section 
  */
-export default function BadgesBlock({ title, list, block, icon, invertedColor, headerIcon, classProps }) {
+export default function BadgesBlock({ title, list, block, icon, invertedColor, headerIcon, containerClass }) {
 	return (
-		<div className={`${badges.badgeBlockContainer} ${classProps}`}>
+		<div className={`${badges.badgeBlockContainer} ${containerClass}`}>
 			<span className={headerIcon}>
 				<Icon icon={[ 'fat', icon ]} />
 			</span>

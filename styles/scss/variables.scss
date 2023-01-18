@@ -1,3 +1,5 @@
+@import "../scss/mixins";
+
 // Fonts
 :root {
 	--font-sans: "Inter",-apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
@@ -10,18 +12,18 @@
 	--reading-width: 1000px;
 }
 
-// Fonts sizes
+// Spatial sizing
 :root {
+	// Fonts sizes
+	--font-xx:  0.60rem;
 	--font-xs:	0.75rem;
-	--font-s: 	0.90rem;
+	--font-s: 	0.875rem;
 	--font-r: 	1.00rem;
 	--font-m: 	1.20rem;
 	--font-l: 	2.00rem;
 	--font-xl: 	3.75rem;
-}
-
-// Spacing sizes
-:root {
+	
+	// Marging/padding sizes
 	--size-4-: 0.25rem;
 	--size-3-: 0.35rem;
 	--size-2-: 0.50rem;
@@ -30,6 +32,30 @@
 	--size-3x: 3.00rem;
 	--size-4x: 4.00rem;
 	--size-5x: 5.00rem;
+}
+
+// Spatial sizing
+@include media($max: $mobile) {
+	:root {
+		// Fonts sizes
+		--font-xx:  0.60rem;
+		--font-xs:	0.75rem;
+		--font-s: 	0.875rem;
+		--font-r: 	0.95rem;
+		--font-m: 	1.00rem;
+		--font-l: 	2.00rem;
+		--font-xl: 	2.75rem;
+
+		// Marging/padding sizes
+		--size-4-: 0.25rem;
+		--size-3-: 0.35rem;
+		--size-2-: 0.50rem;
+		--size-1x: 1.00rem;
+		--size-2x: 2.00rem;
+		--size-3x: 3.00rem;
+		--size-4x: 4.00rem;
+		--size-5x: 5.00rem;
+	}
 }
 
 // Dark mode theme
@@ -42,7 +68,8 @@
 	--secondary-bright: #ffea5f;
 	--background: 		#060708;
 	--background-dim:	#08090a;
-	--brightness:		30%;
+	--brightness-low:	30%;
+	--brightness-high:	100%;
 	color-scheme: dark;
 } 
 

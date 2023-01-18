@@ -1,3 +1,5 @@
+@import '../../scss/mixins';
+
 .hasBg {
 	border-bottom: 1px solid var(--primary-dark);
 }
@@ -56,10 +58,19 @@
 	}
 
 	.description {
-		font-size: .875rem;
+		font-size: .75rem;
+		font-family: var(--font-accent);
+
+		li {
+			&::marker {
+				content: '=>';
+			}
+		}
 
 		p { 
 			font-size: inherit;
+			font-family: inherit;
+			margin-left: 0.5rem;
 		}
 	}
 
@@ -98,11 +109,7 @@
 		width: calc(100% + 3rem);
 		max-width: calc(100% + 3rem);
 		left: -3rem;
-		filter: brightness(var(--brightness));
-
-		&:hover {
-			filter: brightness(1);
-		}
+		border-radius: 1rem;
 	}
 }
 
@@ -198,5 +205,33 @@
 				transform: rotate(360deg);
 			}
 		} 
+	}
+}
+
+@include media($max: $mobile) {
+	.project {
+		&:nth-of-type(n) {
+			flex-direction: column-reverse;
+
+			.details {
+				border-radius: 1rem;
+				padding: 1rem;
+			}
+
+			.image {
+				width: 100%;
+				left: unset;
+				right: unset;
+				
+				img {
+					position: relative;
+					top: unset;
+					transform: unset;
+					width: unset;
+					max-width: 100%;
+					left: unset;
+				}
+			}
+		}
 	}
 }

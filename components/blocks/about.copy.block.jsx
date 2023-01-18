@@ -13,16 +13,18 @@ import space from '../utils/spacing.util';
  * @param {string} 	copy written content
  * @returns {jsx} <CopyBlock />
  */
-export default function CopyBlock({ classProps, icon, title, copy }) {
+export default function CopyBlock({ containerClass, iconClass, icon, title, copy }) {
 	return (
 		<>
-		<span className={classProps}>
-			<Icon icon={icon} />
-		</span>
-		<h3>{title}</h3>
-		<p className={`${space('bottomXLrg')}`}>
-			{copy}
-		</p>
+		<div className={containerClass}>
+			<span className={iconClass}>
+				<Icon icon={icon} />
+			</span>
+			<h3>{title}</h3>
+			<p>
+				{copy}
+			</p>
+		</div>
 		</>
 	)
 }

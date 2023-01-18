@@ -30,6 +30,11 @@ module.exports = {
 				hostname: '**.githubusercontent.com',
 				pathname: '/**'
 			},
+			{
+				protocol: 'https',
+				hostname: '**.medium.com',
+				pathname: '/**'
+			},
 		],
 	},
 }

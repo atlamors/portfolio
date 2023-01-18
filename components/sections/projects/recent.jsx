@@ -22,11 +22,11 @@ export default function GitProjects({ repos, user }) {
 				</section>
 				<div className={css.projects}>
 					{
-					repos.map( ({ name, description, topics, forks_count, html_url, language, watchers, homepage, pushed_at }) => {
+					repos.map( ({ name, description, topics, forks_count, html_url, language, watchers, homepage, pushed_at }, index) => {
 						const date = new Date(pushed_at).toDateString()
 						return (
 							<>
-							<article className={css.project}>
+							<article key={index} className={css.project}>
 								<span className={css.header}>
 									<a href={html_url} rel="noreferrer" target="_blank">{name} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
 									<p className={css.homepage}>{homepage}</p>
@@ -42,8 +42,8 @@ export default function GitProjects({ repos, user }) {
 								</span>
 								<span className={css.topicsContainer}>
 									{
-									topics.map( (e) => {
-										return ( <span className={css.topics}><i class="devicon-github-plain"></i> {e}</span> )
+									topics.map( (e, index) => {
+										return ( <span key={index} className={css.topics}><i class="devicon-github-plain"></i> {e}</span> )
 									})
 									}
 								</span>

@@ -29,9 +29,9 @@ export default function FeaturedProjects() {
 				<h3>Featured Projects</h3>
 				<br/><br/><br/><br/>
 				{
-					content.map( ({ project, url, type, repo, description, stack, image_url }) => {
+					content.map( ({ project, url, type, repo, description, stack, image_url }, index) => {
 						return (
-							<section className={css.project}>
+							<section key={index} className={css.project}>
 								<div className={css.details}>
 								{ displayHeader(url, project, repo) }
 								<p>{type}</p>

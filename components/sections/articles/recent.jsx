@@ -19,11 +19,11 @@ export default function Recent({ mediumArticles }) {
 				<br/><br/><br/><br/>
 				<div className={css.projects}>
 					{
-					articles.map( ({ title, pubDate, link, author, thumbnail, categories }) => {
+					articles.map( ({ title, pubDate, link, author, thumbnail, categories }, index) => {
 						const date = new Date(pubDate).toDateString()
 						return (
 							<>
-							<article className={css.project}>
+							<article key={index} className={css.project}>
 								<span className={css.featuredImage}>
 									<img src={thumbnail} alt="Article thumbnail" />
 								</span>
@@ -38,8 +38,8 @@ export default function Recent({ mediumArticles }) {
 								</span>
 								<span className={css.topicsContainer}>
 									{
-									categories.map( (e) => {
-										return ( <span className={css.topics}><Icon icon={[ 'fab', 'medium' ]} /> {e}</span> )
+									categories.map( (e, index) => {
+										return ( <span key={index} className={css.topics}><Icon icon={[ 'fab', 'medium' ]} /> {e}</span> )
 									})
 									}
 								</span>

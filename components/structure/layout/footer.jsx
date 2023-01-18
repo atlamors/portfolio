@@ -33,9 +33,9 @@ export default function Footer() {
 					<ul className={css.thanks}>
 						<li><h4>Acknowledgments</h4></li>
 						{
-						content.acknowledgments.map( ({ person, link, note }) => {
+						content.acknowledgments.map( ({ person, link, note }, index) => {
 							return (
-								<li>
+								<li key={index}>
 									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
 									<p>{note}</p>
 								</li>
@@ -46,9 +46,9 @@ export default function Footer() {
 					<ul className={css.links}>
 						<li><h4>Links</h4></li>
 						{
-						content.links.map( ({ person, link, note }) => {
+						content.links.map( ({ person, link, note }, index) => {
 							return (
-								<li>
+								<li key={index}>
 									<a href={link} rel="noreferrer" target="_blank">{person} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a>
 									<p>{note}</p>
 								</li>
@@ -60,9 +60,9 @@ export default function Footer() {
 						<li><h4>Social</h4></li>
 						<li className={css.socialList}>
 							{
-							content.social.map( ({ url, icon }) => {
+							content.social.map( ({ url, icon }, index) => {
 								return (
-									<a href={url} rel="noreferrer" target="_blank"><Icon icon={[ 'fab', icon ]} /></a>
+									<a  key={index} href={url} rel="noreferrer" target="_blank"><Icon icon={[ 'fab', icon ]} /></a>
 								)
 							})
 							}

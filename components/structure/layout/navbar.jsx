@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import { useCallback } from 'react'
 import {useRouter} from 'next/router';
 import Link from 'next/link'
 import ThemeMode from '../../utils/theme.util'
@@ -17,13 +18,7 @@ export default function Navbar() {
 		menuToggle(false)
 	}, [] )
 
-	const toggleMenu = () => {
-		let bool = ! menuState
-		menuToggle(bool)
-	}
-
 	useEffect( () => {
-
 		class RouteEvents {
 
 			constructor() {
@@ -34,18 +29,27 @@ export default function Navbar() {
 				this.addEventListeners()
 			}
 
-			handler() {
-				toggleMenu()
+			closeMenu() {
+				menuToggle(false)
 			}
 
 			addEventListeners() {
-				router.events.on('routeChangeComplete', this.handler)
+				router.events.on('routeChangeComplete', this.closeMenu)
 			}
 
 			removeEventListeners() {
-				router.events.off('routeChangeComplete', this.handler)
+				router.events.off('routeChangeComplete', this.closeMenu)
 			}
 		}
+
+		const routeEvents = new RouteEvents
+
+		return () => {
+			routeEvents.removeEventListeners()
+		}
+	}, [router.events])
+
+	useEffect( () => {
 
 		class ScrollEvents {
 
@@ -110,13 +114,16 @@ export default function Navbar() {
 		}
 
 		const scrollEvents = new ScrollEvents
-		const routeEvents = new RouteEvents
 
 		return () => {
 			scrollEvents.removeEventListeners()
-			routeEvents.removeEventListeners()
 		}
 	}, [] )
+
+	const toggleMenu = () => {
+		let bool = ! menuState
+		menuToggle(bool)
+	}
 
 	return (
 		<nav className={css.container}>
@@ -135,9 +142,9 @@ export default function Navbar() {
 				<li data-open={menuState} className={css.menuContent}>
 					<ul>
 						{
-						content.map( ({ url, title }) => {
+						content.map( ({ url, title }, index) => {
 							return (
-								<li>
+								<li key={index}>
 									<Link href={url}>{title}</Link>
 								</li>
 							)

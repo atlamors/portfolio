@@ -1,8 +1,12 @@
+
+import Image from 'next/image'
+
 // Section structure
 import Section 		from '../../structure/section';
 import Container 	from '../../structure/container';
 import Badges 		from '../../utils/badge.list.util'
 import Icon 		from '../../utils/icon.util'
+import SectionTitle from '../../blocks/section.title.block'
 
 import css 			from '../../../styles/sections/projects/featured.module.scss'
 import content 		from '../../../content/projects/featured.json'
@@ -25,28 +29,31 @@ export default function FeaturedProjects() {
 
 	return (
 		<Section classProp={css.hasBg}>	
-			<Container classProp={''} spacing={'verticalXXXLrg'}>
-				<h3>Featured Projects</h3>
-				<br/><br/><br/><br/>
+			<Container spacing={'verticalXXXXLrg'}>
+				<SectionTitle
+					title="Featured Projects"
+					preTitle="UX and Full Stack"
+					subTitle="A personal quest to become a better creative writer."
+				/>
 				{
-					content.map( ({ project, url, type, repo, description, stack, image_url }, index) => {
-						return (
-							<section key={index} className={css.project}>
-								<div className={css.details}>
-								{ displayHeader(url, project, repo) }
-								<p>{type}</p>
-								<br/><br/>
-								<div className={css.description} dangerouslySetInnerHTML={ { __html: description } }>
-								</div>
-								<br/><br/>
-								<Badges list={stack} block="stack" />
-								</div>
-								<div className={css.image}>
-									<img src={image_url} alt="Featured photo"/>
-								</div>
-							</section>
-						)
-					})
+				content.map( ({ project, url, type, repo, description, stack, image_url }, index) => {
+					return (
+						<section key={index} className={css.project}>
+							<div className={css.details}>
+							{ displayHeader(url, project, repo) }
+							<p>{type}</p>
+							<br/><br/>
+							<div className={css.description} dangerouslySetInnerHTML={ { __html: description } }>
+							</div>
+							<br/><br/>
+							<Badges list={stack} block="stack" />
+							</div>
+							<div className={css.image}>
+								<img key={index} src={image_url} alt="Featured photo"/>
+							</div>
+						</section>
+					)
+				})
 				}
 			</Container>
 			<div className={css.bgContainer}>

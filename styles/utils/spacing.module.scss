@@ -1,49 +1,49 @@
 .vertical {
-
 	&Std {
-		margin-top: 1rem;
-		margin-bottom: 1rem;
+		margin-top: var(--size-1x);
+		margin-bottom: var(--size-1x);
 	}
 	&Med {
-		margin-top: 2rem;
-		margin-bottom: 2rem;
+		margin-top: var(--size-2x);
+		margin-bottom: var(--size-2x);
 	}
 	&Lrg {
-		margin-top: 3rem;
-		margin-bottom: 3rem;
+		margin-top: var(--size-3x);
+		margin-bottom: var(--size-3x);
 	}
 	&XLrg {
-		margin-top: 5rem;
-		margin-bottom: 5rem;
+		margin-top: var(--size-4x);
+		margin-bottom: var(--size-4x);
 	}
 	&XXLrg {
-		margin-top: 7.5rem;
-		margin-bottom: 7.5rem;
+		margin-top: var(--size-5x);
+		margin-bottom: var(--size-5x);
 	}
 	&XXXLrg {
-		margin-top: 10rem;
-		margin-bottom: 10rem;
+		margin-top: var(--size-6x);
+		margin-bottom: var(--size-6x);
 	}
-
+	&XXXXLrg {
+		margin-top: var(--size-7x);
+		margin-bottom: var(--size-7x);
+	}
 }
 
 
 .bottom {
-
 	&Med {
-		margin-bottom: 2rem;
+		margin-bottom: var(--size-2x);
 	}
 	&Lrg {
-		margin-bottom: 3rem;
+		margin-bottom: var(--size-3x);
 	}
 	&XLrg {
-		margin-bottom: 5rem;
+		margin-bottom: var(--size-4x);
 	}
 	&XXLrg {
-		margin-bottom: 7.5rem;
+		margin-bottom: var(--size-5x);
 	}
 	&XXXLrg {
-		margin-bottom: 10rem;
+		margin-bottom: var(--size-6x);
 	}
-
 }

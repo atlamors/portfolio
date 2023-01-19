@@ -2,6 +2,7 @@ import Section 		from '../../structure/section';
 import Container 	from '../../structure/container';
 
 import Image from 'next/image'
+import SectionTitle from '../../blocks/section.title.block'
 
 import Icon from '../../utils/icon.util'
 
@@ -14,10 +15,13 @@ export default function Recent({ mediumArticles }) {
 
 	return (
 		<Section classProp="borderBottom">
-			<Container spacing={'verticalXXXLrg'}>
-				<h3>Recent Articles</h3>
-				<br/><br/><br/><br/>
-				<div className={css.projects}>
+			<Container spacing={'verticalXXXXLrg'}>
+				<SectionTitle
+					title="Recent Articles"
+					preTitle="Informative"
+					subTitle="A personal quest to become a better creative writer."
+				/>
+				<section className={css.projects}>
 					{
 					articles.map( ({ title, pubDate, link, author, thumbnail, categories }, index) => {
 						const date = new Date(pubDate).toDateString()
@@ -48,7 +52,7 @@ export default function Recent({ mediumArticles }) {
 						)
 					})
 					}
-				</div>
+				</section>
 			</Container>
 		</Section>
 	)

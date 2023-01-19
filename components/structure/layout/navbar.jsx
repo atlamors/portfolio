@@ -54,6 +54,11 @@ export default function Navbar() {
 		class ScrollEvents {
 
 			constructor() {
+				console.log(
+					'%c▼  Navigation Scroll Events Loaded', 
+					'background: #060708; color: #fff; padding: .125rem .75rem; border-radius: 5px; font-weight: 900; '
+				)
+
 				window.sticky		= {}
 				window.sticky.nav	= document.querySelector(`nav`)
 

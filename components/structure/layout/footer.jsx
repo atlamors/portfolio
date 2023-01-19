@@ -1,10 +1,12 @@
 import { useState, useEffect } from 'react'
 
+import Container from '../../structure/container'
 import Icon from '../../utils/icon.util'
 
 import css from '../../../styles/structure/footer.module.scss'
 
 import content from '../../../content/footer.json'
+import settings from '../../../content/settings.json'
 
 export default function Footer() {
 	
@@ -14,7 +16,7 @@ export default function Footer() {
 	});
 
 	useEffect(() => {
-		fetch( content.portfolio.repo )
+		fetch( settings.portfolio.repo )
 			.then(response => response.json())
 			.then(json => {
 				const { stargazers_count, forks_count } = json;
@@ -28,7 +30,7 @@ export default function Footer() {
 	
 	return (
 		<footer className={css.container}>
-			<div>
+			<Container spacing={['verticalXXLrg', 'bottomLrg']}>
 				<section className={css.sections}>
 					<ul className={css.thanks}>
 						<li><h4>Acknowledgments</h4></li>
@@ -70,8 +72,8 @@ export default function Footer() {
 					</ul>
 				</section>
 				<section className={css.github}>
-					<a href={content.portfolio.repo} rel="noreferrer" target="_blank">
-						<h5>{content.portfolio.forkthis}</h5>
+					<a href={settings.portfolio.repo} rel="noreferrer" target="_blank">
+						<h5>{settings.portfolio.forkthis}</h5>
 						<ul>
 							<li>
 								<p><Icon icon={[ 'fad', 'code-branch' ]} /> Forks: { gitHubInfo.forks }</p>
@@ -82,7 +84,7 @@ export default function Footer() {
 						</ul>
 					</a>
 				</section>
-			</div>
+			</Container>
 		</footer>
 	)
 }

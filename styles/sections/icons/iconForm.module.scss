@@ -47,4 +47,9 @@
 	justify-content: center;
 	align-items: center;
 	font-size: 4rem;
+
+	svg {
+		pointer-events: all;
+		user-select: all;
+	}
 }

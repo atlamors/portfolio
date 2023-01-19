@@ -47,10 +47,5 @@
 			"url": "https://github.com/atlamors",
 			"icon": "github"
 		}
-	],
-
-	"portfolio": { 
-		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo": "https://api.github.com/repos/atlamors/portfolio"
-	}
+	]
 }

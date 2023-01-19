@@ -1,5 +1,10 @@
 {
 	"name": "Andrew Nelson",
 	"logo": "",
-	"github": ""
+	"github": "",
+	
+	"portfolio": { 
+		"forkthis": "Steal this theme! Its open-source 🥰",
+		"repo": "https://api.github.com/repos/atlamors/portfolio"
+	}
 }

@@ -10,6 +10,9 @@
 	max-width: var(--reading-width);
 	margin-left: auto;
 	margin-right: auto;
+
+	display: flex;
+	flex-direction: column;
 }
 
 @include media($max: $mobile) {

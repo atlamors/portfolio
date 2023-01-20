@@ -1,6 +1,8 @@
+import { useState, useEffect } from "react"
+
 import Recent from '../../components/sections/articles/recent'
 
-import medium from '../../content/articles/medium.json'
+import settings from '../../content/settings.json'
 
 // This gets called on every request
 export async function getServerSideProps({ res }) {
@@ -10,8 +12,10 @@ export async function getServerSideProps({ res }) {
 		'public, s-maxage=600, stale-while-revalidate=59'
 	)
 
+	console.log(settings.username.medium)
+
 	const [ mediumRSS ] = await Promise.all( [
-		fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${medium.username}`),
+		fetch(`https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/${settings.username.medium}`),
 	] )
 	
 	let [ mediumArticles ] = await Promise.all( [
@@ -24,7 +28,7 @@ export async function getServerSideProps({ res }) {
 export default function Articles({ mediumArticles }) {
 	return (
 		<>
-		<Recent mediumArticles={mediumArticles} />
+		<Recent mediumArticles={mediumArticles}/>
 		</>
 	)
 }

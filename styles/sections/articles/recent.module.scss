@@ -46,6 +46,12 @@
 	padding: 1rem;
 	overflow: hidden;
 
+	&:hover {
+		.featuredImage img {
+			filter: brightness(var(--brightness-high));
+		}	
+	}
+
 	.featuredImage {
 		margin: -1rem;
 		margin-bottom: 0;

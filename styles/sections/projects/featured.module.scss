@@ -21,7 +21,6 @@
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-	margin-bottom: 8rem;
 
 	&:nth-of-type(odd) {
 		flex-direction: row-reverse;
@@ -235,4 +234,12 @@
 			}
 		}
 	}
+	
+	.bgContainer {
+		.orbitalBg {
+			width: unset;
+			height: 100%;
+		}
+	}
 }
+

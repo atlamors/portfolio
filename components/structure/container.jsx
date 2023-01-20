@@ -2,7 +2,7 @@
 import Spacing from '../utils/spacing.util';
 
 // Structure scss
-import styles from '../../styles/structure/container.module.scss';
+import css from '../../styles/structure/container.module.scss';
 
 /**
  * Structural Component
@@ -19,7 +19,7 @@ export default function Container({ classProp, spacing, children }) {
 	const _class = classProp ? classProp : '';
 
 	return ( 
-		<div className={`${styles.readingWidth} ${_class} ${Spacing(spacing)}`}>
+		<div className={`${css.readingWidth} ${_class} ${Spacing(spacing)}`}>
 			{children}
 		</div>
 	);

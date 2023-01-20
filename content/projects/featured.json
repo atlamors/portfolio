@@ -24,7 +24,7 @@
 		"url": "https://github.com/atlamors/portfolio",
 		"type": "Open Source Portfolio",
 		"repo": "Public",
-		"description": "This is my first open-source project. I'm trying to balance the UI/UX and DX to create something that brings an educational and networking value to whoever wants to use it.",
+		"description": "Built on Next.js and React this is a extremely fast portfolio website. This website is open source and easy to fork and install.",
 		"image_url": "/img/preview.png",
 		"stack": [
 			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },

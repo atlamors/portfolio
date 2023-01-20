@@ -1,8 +1,12 @@
 {
 	"name": "Andrew Nelson",
 	"logo": "",
-	"github": "",
 	
+	"username": {
+		"github": "atlamors",
+		"medium": "@--andrewnelson"
+	},
+
 	"portfolio": { 
 		"forkthis": "Steal this theme! Its open-source 🥰",
 		"repo": "https://api.github.com/repos/atlamors/portfolio"

@@ -47,7 +47,7 @@ export default function Navbar() {
 		return () => {
 			routeEvents.removeEventListeners()
 		}
-	}, [router.events])
+	}, [router.events] )
 
 	useEffect( () => {
 
@@ -131,7 +131,7 @@ export default function Navbar() {
 	}
 
 	return (
-		<nav className={css.container}>
+		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
 					<div className={css.logo}>

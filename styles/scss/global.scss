@@ -152,3 +152,19 @@ a {
 .borderBottom {
 	border-bottom: 1px solid var(--primary-dark);
 }
+
+#gradient-canvas {
+	position: absolute;
+    z-index: -1;
+	opacity: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transform: rotate(180deg);
+    aspect-ratio: auto;
+    --gradient-color-1: var( --mesh-color-1 );
+	--gradient-color-2: var( --mesh-color-2 );
+	--gradient-color-3: var( --mesh-color-3 );
+	--gradient-color-4: var( --mesh-color-4 );
+}

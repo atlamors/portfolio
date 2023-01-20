@@ -13,7 +13,7 @@ import section from '../../styles/blocks/section.title.module.scss'
 export default function SectionTitle({ preTitle, title, subTitle }) {
 	return (
 		<>
-		<Container classProp={`${section.title}`} spacing={['bottomXLrg']}>
+		<Container classProp={`${section.title}`}>
 			<h4>{preTitle}</h4>
 			<h2>{title}</h2>
 			<p className="subtitle">{subTitle}</p>

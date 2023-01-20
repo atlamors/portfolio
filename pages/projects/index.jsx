@@ -2,7 +2,7 @@
 import GitRecentProjects from '../../components/sections/projects/recent'
 import FeaturedProjects from '../../components/sections/projects/featured'
 
-import github from '../../content/projects/github.json'
+import settings from '../../content/settings.json'
 
 // This gets called on every request
 export async function getServerSideProps({ res }) {
@@ -13,8 +13,8 @@ export async function getServerSideProps({ res }) {
 	)
 
 	const [ gitUserRes, gitReposRes] = await Promise.all( [
-		fetch(`https://api.github.com/users/${github.account}`),
-		fetch(`https://api.github.com/users/${github.account}/repos`),
+		fetch(`https://api.github.com/users/${settings.username.github}`),
+		fetch(`https://api.github.com/users/${settings.username.github}/repos`),
 	] )
 	
 	let [ user, repos] = await Promise.all( [
@@ -52,6 +52,16 @@ export async function getServerSideProps({ res }) {
 export default function Projects({ user, repos }) {
 	return (
 		<>
+		<style>
+			{`
+			:root[data-theme=dark] {
+				--mesh-color-1: #060708;
+				--mesh-color-2: #030805;
+				--mesh-color-3: #05070a;
+				--mesh-color-4: #000000;
+			}
+			`}
+		</style>
 		<FeaturedProjects />
 		<GitRecentProjects user={user} repos={repos} />
 		</>

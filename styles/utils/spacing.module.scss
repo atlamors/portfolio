@@ -2,30 +2,37 @@
 	&Std {
 		margin-top: var(--size-1x);
 		margin-bottom: var(--size-1x);
+		gap: var(--size-1x);
 	}
 	&Med {
 		margin-top: var(--size-2x);
 		margin-bottom: var(--size-2x);
+		gap: var(--size-2x);
 	}
 	&Lrg {
 		margin-top: var(--size-3x);
 		margin-bottom: var(--size-3x);
+		gap: var(--size-3x);
 	}
 	&XLrg {
 		margin-top: var(--size-4x);
 		margin-bottom: var(--size-4x);
+		gap: var(--size-4x);
 	}
 	&XXLrg {
 		margin-top: var(--size-5x);
 		margin-bottom: var(--size-5x);
+		gap: var(--size-5x);
 	}
 	&XXXLrg {
 		margin-top: var(--size-6x);
 		margin-bottom: var(--size-6x);
+		gap: var(--size-6x);
 	}
 	&XXXXLrg {
 		margin-top: var(--size-7x);
 		margin-bottom: var(--size-7x);
+		gap: var(--size-7x);
 	}
 }
 

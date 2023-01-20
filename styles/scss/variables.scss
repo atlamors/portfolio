@@ -53,12 +53,12 @@
 		--size-3-: 0.35rem;
 		--size-2-: 0.50rem;
 		--size-1x: 1.00rem;
-		--size-2x: 1.25rem;
-		--size-3x: 1.50rem;
-		--size-4x: 2.00rem;
-		--size-5x: 3.00rem;
-		--size-6x: 7.00rem;
-		--size-7x: 10.00rem;
+		--size-2x: 1.50rem;
+		--size-3x: 2.00rem;
+		--size-4x: 3.00rem;
+		--size-5x: 4.00rem;
+		--size-6x: 5.50rem;
+		--size-7x: 7.00rem;
 	}
 }
 
@@ -72,8 +72,15 @@
 	--secondary-bright: #ffea5f;
 	--background: 		#060708;
 	--background-dim:	#08090a;
+
 	--brightness-low:	30%;
 	--brightness-high:	100%;
+
+	--mesh-color-1: #060708;
+    --mesh-color-2: #030408;
+    --mesh-color-3: #05070a;
+    --mesh-color-4: #0c1019;
+
 	color-scheme: dark;
 } 
 
@@ -86,6 +93,11 @@
 	--secondary: 		#002aff;
 	--secondary-bright:	#4800ff;
 	--background: 		#ededed;
+
+	--mesh-color-1: #96c4f3;
+    --mesh-color-2: #96a8f2;
+    --mesh-color-3: #bad0ef;
+    --mesh-color-4: #c8ceda;
 }
 
 // Unicorn mode theme
@@ -97,6 +109,11 @@
 	--secondary: 		#ff00bb;
 	--secondary-bright:	#feff00;
 	--background: 		#ffffff;
+
+	--mesh-color-1: #96c4f3;
+    --mesh-color-2: #f296cc;
+    --mesh-color-3: #efe2ba;
+    --mesh-color-4: #c8d7da;
 }
 
 

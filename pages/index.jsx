@@ -13,6 +13,16 @@ export default function HomePage() {
 
 	return (
 		<>
+			<style>
+				{`
+				:root[data-theme=dark] {
+					--mesh-color-1: #060708;
+					--mesh-color-2: #030805;
+					--mesh-color-3: #05070a;
+					--mesh-color-4: #120806;
+				}
+				`}
+			</style>
 			<Hero />
 			<Looking />
 			<About />

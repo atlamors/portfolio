@@ -15,7 +15,7 @@ function displayHeader(url, project, repo) {
 	if (url) {
 		return ( 
 			<a href={url} target="_blank" rel="noreferrer">
-				<h3>{project} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /> <span className={css.privateOr}><i class="devicon-github-plain"></i>{repo}</span></h3> 
+				<h3>{project} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /> <span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span></h3> 
 			</a>
 		)
 	} else {
@@ -33,7 +33,7 @@ export default function FeaturedProjects() {
 				<SectionTitle
 					title="Featured Projects"
 					preTitle="UX and Full Stack"
-					subTitle="A personal quest to become a better creative writer."
+					subTitle="Focused on the experience, driven by the engineering."
 				/>
 				{
 				content.map( ({ project, url, type, repo, description, stack, image_url }, index) => {
@@ -57,12 +57,12 @@ export default function FeaturedProjects() {
 				}
 			</Container>
 			<div className={css.bgContainer}>
-				<span class={css.orbitalBg}>
+				<span className={css.orbitalBg}>
 					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroLeft} ${css.heroOrbital}`}></span></span>
 					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroCenter}`}></span></span>
 					<span class={`${css.bgSection}`}><span className={`${css.bgInner} ${css.heroRight} ${css.heroOrbital}`}></span></span>
 				</span>
-				<span class={css.afterGlowBg}></span>
+				<span className={css.afterGlowBg}></span>
 			</div>
 		</Section>
 	)

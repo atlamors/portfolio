@@ -1,30 +1,21 @@
-import Hero 
-	from '../components/sections/index/hero'
-import Looking
-	from '../components/sections/index/looking'
-import About
-	from '../components/sections/index/about'
-import Technical
-	from '../components/sections/index/technical'
-import Career
-	from '../components/sections/index/career'
+import Hero 		from '../components/sections/index/hero'
+import Looking 		from '../components/sections/index/looking'
+import About 		from '../components/sections/index/about'
+import Technical 	from '../components/sections/index/technical'
+import Career 		from '../components/sections/index/career'
 
+import Color 	from '../components/utils/page.colors.util'
+
+import colors 		from '../content/index/_colors.json'
+
+//
 export default function HomePage() {
 
 	return (
 		<>
-			<style>
-				{`
-				:root[data-theme=dark] {
-					--mesh-color-1: #060708;
-					--mesh-color-2: #030805;
-					--mesh-color-3: #05070a;
-					--mesh-color-4: #120806;
-				}
-				`}
-			</style>
+			<Color colors={colors} />
 			<Hero />
-			<Looking />
+			{/* <Looking /> */}
 			<About />
 			<Technical />
 			<Career />

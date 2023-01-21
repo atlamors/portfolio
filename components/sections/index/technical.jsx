@@ -42,22 +42,22 @@ export default function Technical() {
 							containerClass={about.container}
 						/>
 						<BadgesBlock 
-							title="Software I love to create with" 
-							list={software} 
+							title="Software I love to work with" 
+							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
+							list={software}
 							block="software" 
 							icon="grid-2-plus"
 							containerClass={about.container}
 							headerIcon={about.icon} 
-							//invertedColor="invertedColor" 
 						/>
 						<BadgesBlock 
 							title="Technologies I love to build with" 
+							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
 							list={tech} 
 							block="tech" 
 							icon="laptop-code"
 							containerClass={about.container}
 							headerIcon={about.icon} 
-							//invertedColor="invertedColor"
 						/>							
 					</div>
 					<div className={`${about.image} ${about.technicalSvg}`}>
@@ -77,6 +77,9 @@ const software = [
 	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
 	{ key: 'mailbox', 		name: 'Postman', 			type: 'fad' },
 	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fad' },
+	{ key: 'list-music',	name: 'Ableton', 			type: 'fad' },
+	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
+	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
 ]
 
 const tech	= [

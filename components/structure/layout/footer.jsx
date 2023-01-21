@@ -6,7 +6,7 @@ import Icon from '../../utils/icon.util'
 import css from '../../../styles/structure/footer.module.scss'
 
 import content from '../../../content/footer.json'
-import settings from '../../../content/settings.json'
+import settings from '../../../content/_settings.json'
 
 export default function Footer() {
 	
@@ -16,7 +16,7 @@ export default function Footer() {
 	});
 
 	useEffect(() => {
-		fetch( settings.portfolio.repo )
+		fetch( settings.portfolio.repo_api )
 			.then(response => response.json())
 			.then(json => {
 				const { stargazers_count, forks_count } = json;
@@ -72,7 +72,7 @@ export default function Footer() {
 					</ul>
 				</section>
 				<section className={css.github}>
-					<a href={settings.portfolio.repo} rel="noreferrer" target="_blank">
+					<a href={settings.portfolio.repo_html} rel="noreferrer" target="_blank">
 						<h5>{settings.portfolio.forkthis}</h5>
 						<ul>
 							<li>

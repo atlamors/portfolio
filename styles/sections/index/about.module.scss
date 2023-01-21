@@ -22,6 +22,7 @@
 		$padding: 2rem;
 		flex-direction: row;
 		display: flex;
+		gap: 1rem;
 
 		> div {
 			padding: 0;
@@ -58,6 +59,9 @@
 		}
 
 		.container {
+			display: flex;
+			flex-direction: column;
+			gap: var(--size-1x);
 			padding: $padding;
 			border: 1px solid var(--primary-dark);
 			border-radius: 2rem;
@@ -69,19 +73,19 @@
 		}
 
 		.copy {
-			flex-basis: calc(50% + 1px);
-			margin-right: -1px;
+			flex-basis: calc(60% + 1px);
 			flex-grow: 1;
 			flex-shrink: 1;
-			padding: 1rem;
 		}
 
 		.icon {
 			padding: 0.5rem;
-			display: block;
+			display: flex;
+			align-items: center;
 			background: var(--primary-dark);
 			width: fit-content;
 			border-radius: 0.5rem;
+			aspect-ratio: 1;
 
 			svg {
 				height: 1.6rem;
@@ -95,7 +99,6 @@
 			flex-grow: 1;
 			flex-shrink: 1;
 			position: relative;
-			padding: 1rem;
 
 			img {
 				height: 100%;
@@ -115,6 +118,10 @@
 
 			> div {
 				flex-basis: 100% !important;
+			}
+
+			.container {
+				padding: 2rem 1.25rem;
 			}
 
 			.image {

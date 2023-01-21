@@ -21,7 +21,7 @@ export default function Badges({ list, block, invertedColor }) {
 				return ( 
 					<li key={name} className={`${badges.item} ${key}`}>
 						<IconModule iconKey={key} iconType={type} />
-						<span>{name}</span>
+						<span className={badges.title}>{name}</span>
 					</li> 
 				)
 			}) 

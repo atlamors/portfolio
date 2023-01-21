@@ -23,13 +23,20 @@
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+
+		a {
+			display: flex;
+			align-items: center;
+			margin: 1rem;
+
+			font-weight: 600;
+			font-family: var(--font-sans);
+			color: var(--primary-dim);
+		}
 	}
 
+	// Link ClassName not working?
 	.logo {
-		display: flex;
-		align-items: center;
-		margin: 1rem;
-		font-weight: 600;
 	}
 
 	.mobileButton {
@@ -96,6 +103,7 @@
 	}
 
 	.mobileToggle {
+		z-index: 1;
 		display: none;
 		position: relative;
 		width: 50px;

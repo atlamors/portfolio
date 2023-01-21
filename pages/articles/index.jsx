@@ -1,8 +1,21 @@
 import { useState, useEffect } from "react"
 
-import Recent from '../../components/sections/articles/recent'
+import Recent 		from '../../components/sections/articles/recent'
 
-import settings from '../../content/settings.json'
+import Color 	from '../../components/utils/page.colors.util'
+
+import colors 		from '../../content/articles/_colors.json'
+import settings 	from '../../content/_settings.json'
+
+//
+export default function Articles({ mediumArticles }) {
+	return (
+		<>
+			<Color colors={colors} />
+			<Recent mediumArticles={mediumArticles}/>
+		</>
+	)
+}
 
 // This gets called on every request
 export async function getServerSideProps({ res }) {
@@ -23,12 +36,4 @@ export async function getServerSideProps({ res }) {
 	] )
 
 	return { props: { mediumArticles } }
-}
-
-export default function Articles({ mediumArticles }) {
-	return (
-		<>
-		<Recent mediumArticles={mediumArticles}/>
-		</>
-	)
 }

@@ -11,16 +11,24 @@ import SectionTitle from '../../blocks/section.title.block'
 import css 			from '../../../styles/sections/projects/featured.module.scss'
 import content 		from '../../../content/projects/featured.json'
 
-function displayHeader(url, project, repo) {
+function DisplayHeader(url, project, repo) {
 	if (url) {
 		return ( 
-			<a href={url} target="_blank" rel="noreferrer">
-				<h3>{project} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /> <span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span></h3> 
-			</a>
+			<span class={css.headerTitle}>
+				<h3>
+					<a href={url} target="_blank" rel="noreferrer">
+						{project} <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} />
+					</a>
+				</h3> 
+				<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
+			</span>
 		)
 	} else {
 		return ( 
-			<h3>{project} <span className={css.privateOr}><i class="devicon-github-plain"></i>{repo}</span></h3> 
+			<span class={css.headerTitle}>
+				<h3>{project} <span className={css.privateOr}><i class="devicon-github-plain"></i>{repo}</span></h3> 
+				<span className={css.privateOr}><i className="devicon-github-plain"></i>{repo}</span>
+			</span>
 		)
 	}
 }
@@ -36,20 +44,26 @@ export default function FeaturedProjects() {
 					subTitle="Focused on the experience, driven by the engineering."
 				/>
 				{
-				content.map( ({ project, url, type, repo, description, stack, image_url }, index) => {
+				content.map( ({ project, url, type, repo, description_title,description, stack, image_url }, index) => {
 					return (
 						<section key={index} className={css.project}>
 							<div className={css.details}>
-							{ displayHeader(url, project, repo) }
-							<p>{type}</p>
-							<br/><br/>
-							<div className={css.description} dangerouslySetInnerHTML={ { __html: description } }>
-							</div>
-							<br/><br/>
-							<Badges list={stack} block="stack" />
+								<div className={css.projectHeader}>
+									{ DisplayHeader(url, project, repo) }
+									<p>{type}</p>
+								</div>
+								<img src={image_url} alt="Featured photo"/>
+								<span className={css.descriptionContainer}>
+									<h4>{description_title}</h4>
+									<div className={css.description} dangerouslySetInnerHTML={ { __html: description } }></div>
+								</span>
+								<span className={css.stackContainer}>
+									<h4>Stack</h4>
+									<Badges list={stack} block="stack" />
+								</span>
 							</div>
 							<div className={css.image}>
-								<img key={index} src={image_url} alt="Featured photo"/>
+								<img src={image_url} alt="Featured photo"/>
 							</div>
 						</section>
 					)

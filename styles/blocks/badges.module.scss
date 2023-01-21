@@ -1,8 +1,9 @@
-$badgeText: 		--primary;
+$badgeText: 	--primary;
 $border: 		--primary-dark;
 $background: 	--primary-dark;
 
-@use 'styles/scss/mixins';
+
+@import 'styles/scss/mixins';
 
 .badgeBlockContainer{
 	&:not(:last-of-type) {
@@ -11,6 +12,8 @@ $background: 	--primary-dark;
 }
 
 .list {
+	position: relative;
+	z-index: 1;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
@@ -28,7 +31,7 @@ $background: 	--primary-dark;
 		overflow: hidden;
 		align-items: center;
 		border-radius: var(--size-4-);
-		@include mixins.buttonPadding( var(--size-3-) );
+		@include buttonPadding( var(--size-3-) );
 		text-transform: uppercase;
 
 		color: var($badgeText);
@@ -45,6 +48,11 @@ $background: 	--primary-dark;
 			padding: 0.1rem;
 			color: var(--primary);
 		}
+
+		.title {
+			flex-grow: 1;
+			text-align: center;
+		}
 		
 		&:before {
 			content: '';
@@ -56,7 +64,7 @@ $background: 	--primary-dark;
 			z-index: 1;
 			border: 1px solid var($border);
 			border-radius: .25rem;
-			opacity: 50%;
+			opacity: 75%;
 		}
 		
 		&:after {
@@ -78,6 +86,7 @@ $background: 	--primary-dark;
 			font-size: .9rem;
 			font-weight: 600;
 			border-radius: .5rem;
+			width: calc(50% - 0.25rem);
 			text-transform: capitalize;
 			
 			&:before,
@@ -108,5 +117,22 @@ $background: 	--primary-dark;
 				color: var(--background);
 			}
 		}	
+	}
+}
+
+@include media($max: $mobile) {
+	.list {
+		&.methods {
+			.item {
+				font-size: .75rem;
+				padding: 0.5rem;
+				letter-spacing: -.025rem;
+
+				svg {
+					height: 1rem;
+					margin-right: .5rem;
+				}
+			}
+		}
 	}
 }

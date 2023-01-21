@@ -141,5 +141,9 @@
 @include media($max: $mobile) {
 	.project {
 		flex-basis: 100%;
+
+		&:hover {
+			border-color: var(--primary-dim2);
+		}
 	}
 }

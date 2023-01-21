@@ -1,0 +1,14 @@
+{
+	"dark": {
+		"mesh__secondaryDark": 	"#060708",
+		"mesh__secondaryLight": "#07120e",
+		"mesh__primaryDark": 	"#06050a",
+		"mesh__primaryLight": 	"#0c1019"
+	},
+	"light": {
+
+	},
+	"unicorn": {
+		
+	}
+}

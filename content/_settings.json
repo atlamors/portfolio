@@ -9,6 +9,7 @@
 
 	"portfolio": { 
 		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo": "https://api.github.com/repos/atlamors/portfolio"
+		"repo_html": "https://www.github.com/atlamors/portfolio",
+		"repo_api": "https://api.github.com/repos/atlamors/portfolio"
 	}
 }

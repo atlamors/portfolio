@@ -19,7 +19,7 @@
 	--font-xs:	0.75rem;
 	--font-s: 	0.875rem;
 	--font-r: 	1.00rem;
-	--font-m: 	1.20rem;
+	--font-m: 	1.125rem;
 	--font-l: 	2.00rem;
 	--font-xl: 	3.75rem;
 	
@@ -44,7 +44,7 @@
 		--font-xs:	0.75rem;
 		--font-s: 	0.875rem;
 		--font-r: 	0.95rem;
-		--font-m: 	1.00rem;
+		--font-m: 	0.90rem;
 		--font-l: 	2.00rem;
 		--font-xl: 	2.75rem;
 
@@ -66,8 +66,9 @@
 :root[data-theme='dark'] {
 	--primary-bright:	#ffffff;
 	--primary:			#bfbfbf;
-	--primary-dim:		#666666;
-	--primary-dark:		#141414;
+	--primary-dim:		#666667;
+	--primary-dim2:		#262627;
+	--primary-dark:		#141415;
 	--secondary: 		#ffed7f;
 	--secondary-bright: #ffea5f;
 	--background: 		#060708;
@@ -93,6 +94,7 @@
 	--secondary: 		#002aff;
 	--secondary-bright:	#4800ff;
 	--background: 		#ededed;
+	--background-dim:	#fbfbfb;
 
 	--mesh-color-1: #96c4f3;
     --mesh-color-2: #96a8f2;
@@ -109,6 +111,7 @@
 	--secondary: 		#ff00bb;
 	--secondary-bright:	#feff00;
 	--background: 		#ffffff;
+	--background-dim:	#fbfbfb;
 
 	--mesh-color-1: #96c4f3;
     --mesh-color-2: #f296cc;

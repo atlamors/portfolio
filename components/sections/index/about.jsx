@@ -46,11 +46,12 @@ export default function About() {
 							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
 						/>
 						<BadgesBlock 
-							title="Methodologies that I practice" 
+							title="Reasearch and planning" 
 							containerClass={about.container}
 							list={methods} 
 							block="methods" 
 							icon="fingerprint"
+							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with many of touch points of the digital experience."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>

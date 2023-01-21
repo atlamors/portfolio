@@ -22,6 +22,12 @@
 	flex-direction: row;
 	flex-wrap: nowrap;
 
+	&:hover {
+		img {
+			filter: brightness( var(--brightness-hight) );
+		}
+	}
+
 	&:nth-of-type(odd) {
 		flex-direction: row-reverse;
 
@@ -41,6 +47,7 @@
 	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 1;
+	gap: var(--size-4x);
 
 	border: 1px solid var(--primary-dark);
 	border-radius: 2rem;
@@ -52,13 +59,22 @@
 		position: relative;
 	}
 
+	h4 {
+		margin-bottom: var(--size-1x);
+	}
+
 	ul {
 		z-index: 2;
 	}
 
+	img {
+		display: none;
+	}
+
 	.description {
-		font-size: .75rem;
+		font-size: 0.875rem;
 		font-family: var(--font-accent);
+		color: var(--primary);
 
 		li {
 			&::marker {
@@ -72,25 +88,48 @@
 			margin-left: 0.5rem;
 		}
 	}
+}
 
-	.privateOr {
-		position: absolute;
-		top: 0;
-		right: 0;
-		margin: auto 0;
+.projectHeader  {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3-);
+
+	.headerTitle {
 		display: flex;
 		flex-direction: row;
-		gap: .35rem;
 		align-items: center;
-		max-width: fit-content;
-		font-size: .7rem;
-		font-weight: 400;
-		font-family: var(--font-accent);
-		color: var(--primary-dim);		padding: .125rem .5rem;
-		border-radius: 99rem;
-		border: 1px solid var(--primary-dark);
-		background: var(--primary-dark);
+		justify-content: space-between;
+
+		a {
+			flex-grow: 0;
+			flex-shrink: 1;
+		}
+
+		.privateOr {
+			flex-grow: 0;
+			flex-shrink: 1;
+			height: fit-content;
+		}
 	}
+
+}
+
+
+
+.privateOr {
+	display: flex;
+	flex-direction: row;
+	gap: .35rem;
+	align-items: center;
+	max-width: fit-content;
+	font-size: .7rem;
+	font-weight: 400;
+	font-family: var(--font-accent);
+	color: var(--primary-dim);		padding: .125rem .5rem;
+	border-radius: 99rem;
+	border: 1px solid var(--primary-dark);
+	background: var(--primary-dark);
 }
 
 .image {
@@ -213,24 +252,23 @@
 		&:nth-of-type(n) {
 			flex-direction: column-reverse;
 
+			&:hover {
+				.details {
+					border-color: var(--primary-dim2);
+				}
+			}
+
 			.details {
 				border-radius: 1rem;
-				padding: 1rem;
+				padding: var(--size-2x);
+
+				img {
+					display: block;
+				}
 			}
 
 			.image {
-				width: 100%;
-				left: unset;
-				right: unset;
-				
-				img {
-					position: relative;
-					top: unset;
-					transform: unset;
-					width: unset;
-					max-width: 100%;
-					left: unset;
-				}
+				display: none;
 			}
 		}
 	}

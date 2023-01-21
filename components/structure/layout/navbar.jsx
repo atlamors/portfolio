@@ -4,7 +4,7 @@ import {useRouter} from 'next/router';
 import Link from 'next/link'
 import ThemeMode from '../../utils/theme.util'
 
-import settings from '../../../content/settings.json'
+import settings from '../../../content/_settings.json'
 import content  from '../../../content/navbar.json'
 import css from '../../../styles/structure/navbar.module.scss'
 
@@ -134,9 +134,9 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<div className={css.logo}>
+					<Link className={css.logo} href="/"  >
 						{settings.name}
-					</div>
+					</Link>
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
 						<div>
 							<span></span>

@@ -23,14 +23,17 @@
 		"@vercel/analytics": "^0.1.6",
 		"babel-plugin-macros": "^3.1.0",
 		"devicon": "^2.15.1",
+		"framer-motion": "^8.5.0",
 		"next": "^12.3",
 		"react": "^18.2.0",
 		"react-dom": "^18.2.0",
+		"react-intersection-observer": "^9.4.1",
 		"react-markdown": "^8.0.4",
 		"react-mutation-observer": "^1.1.0",
 		"react-type-animation": "^2.1.2",
 		"swr": "^2.0.0",
-		"the-new-css-reset": "^1.8.2"
+		"the-new-css-reset": "^1.8.2",
+		"uuid": "^9.0.0"
 	},
 	"devDependencies": {
 		"eslint": "8.31.0",

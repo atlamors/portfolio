@@ -61,7 +61,7 @@ export default function Technical() {
 						/>							
 					</div>
 					<div className={`${about.image} ${about.technicalSvg}`}>
-						<Image src="/img/data-strings-01.svg" height={800} width={2000} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
+						<img src="/img/dataism-24.svg" alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
 					</div>
 				</section>	
 			</Container>
@@ -75,9 +75,9 @@ const software = [
 	{ key: 'illustrator', 	name: 'Illustrator', 		type: 'devicon' },
 	{ key: 'figma', 		name: 'Figma', 				type: 'devicon' },
 	{ key: 'vscode', 		name: 'VSCode', 			type: 'devicon' },
-	{ key: 'mailbox', 		name: 'Postman', 			type: 'fad' },
-	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fad' },
-	{ key: 'list-music',	name: 'Ableton', 			type: 'fad' },
+	{ key: 'mailbox', 		name: 'Postman', 			type: 'fas' },
+	{ key: 'computer-mouse',name: 'Click Up', 			type: 'fas' },
+	{ key: 'list-music',	name: 'Ableton', 			type: 'fas' },
 	{ key: 'aftereffects',	name: 'After Effects', 		type: 'devicon' },
 	{ key: 'premierepro',	name: 'Premiere Pro', 		type: 'devicon' },
 ]
@@ -87,9 +87,11 @@ const tech	= [
 	{ key: 'nodejs', 		name: 'NodeJS', 			type: 'devicon' },
 	{ key: 'react', 		name: 'React', 				type: 'devicon' },
 	{ key: 'nextjs', 		name: 'NextJS', 			type: 'devicon' },
+	{ key: 'jquery', 		name: 'jQuery', 			type: 'devicon' },
 	{ key: 'php', 			name: 'PHP', 				type: 'devicon' },
 	{ key: 'wordpress', 	name: 'WordPress', 			type: 'devicon' },
 	{ key: 'woocommerce', 	name: 'WooCommerce', 		type: 'devicon' },
+	{ key: "google",		name: "GA4/GTM", 			type: "devicon" },
 	{ key: 'html5', 		name: 'HTML5', 				type: 'devicon' },
 	{ key: 'css3', 			name: 'CSS3', 				type: 'devicon' },
 	{ key: 'sass', 			name: 'SASS', 				type: 'devicon' },

@@ -51,14 +51,13 @@ export default function About() {
 							list={methods} 
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with many of touch points of the digital experience."
+							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>
 					</div>
 				</section>	
 			</Container>
-			{/* <SectionGridBg gridSize={0}/> */}
 		</Section>
 	)
 }
@@ -69,4 +68,5 @@ const methods 	= [
 	{ key: 'window', 			name: 'Design Systems', 	type: 'fad' },
 	{ key: 'cubes', 			name: 'Product Strategy', 	type: 'far' },
 	{ key: 'layer-plus', 		name: 'Brand Strategy', 	type: 'fad' },
+	{ key: 'solar-system', 		name: 'Operations', 		type: 'fad' },
 ]

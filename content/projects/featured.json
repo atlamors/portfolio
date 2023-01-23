@@ -11,12 +11,13 @@
 			{ "key": "php", 		"name": "PHP", 			"type": "devicon" },
 			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
 			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
+			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
 			{ "key": "woocommerce", "name": "WooCommerce", 	"type": "devicon" },
 			{ "key": "wordpress",	"name": "Wordpress", 	"type": "devicon" },
 			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
 			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
 			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "github",		"name": "GitHub", 		"type": "devicon" },
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
 			{ "key": "google",		"name": "GA4/GTM", 		"type": "devicon" }
 		]
 	},
@@ -36,7 +37,7 @@
 			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
 			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
 			{ "key": "sass",		"name": "SCSS", 		"type": "devicon" },
-			{ "key": "github",		"name": "GitHub", 		"type": "devicon" }
+			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" }
 		]
 	}
 ]

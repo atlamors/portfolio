@@ -73,10 +73,10 @@
 
 // Backgrounds
 .colorfulV1 {
-	--hero-gradient-bg-1: #fe2080;
-	--hero-gradient-bg-2: #ff8d28;
-	--hero-gradient-bg-3: rgb(71 166 192 / 56%);
-	--hero-gradient-bg-4: rgb(130 121 80 / 38%);
+	--hero-gradient-bg-1: var(--neon-1-1);
+	--hero-gradient-bg-2: var(--neon-1-2);
+	--hero-gradient-bg-3: var(--neon-2-1);
+	--hero-gradient-bg-4: var(--neon-2-2);
 	
 	position: absolute;
 	pointer-events: none;

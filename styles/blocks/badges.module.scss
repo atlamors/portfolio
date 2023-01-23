@@ -1,6 +1,6 @@
 $badgeText: 	--primary;
 $border: 		--primary-dark;
-$background: 	--primary-dark;
+$background: 	--background-dim2;
 
 
 @import 'styles/scss/mixins';
@@ -20,17 +20,28 @@ $background: 	--primary-dark;
 	gap: var(--size-2-);
 	row-gap: var(--size-2-);
 	font-family: var(--font-accent);
-	font-weight: 400;
+	font-weight: 600;
 	font-size: var(--font-xs);
 	list-style: none;
-	
+
+    border-top: 1px solid var(--primary-dark);
+    background: var(--background-dim);
+    margin-left: calc( var(--padding-left) * -1 );
+    margin-right: calc( var(--padding-right) * -1 );
+    margin-bottom: calc( var(--padding-bottom) * -1 );
+	padding: var(--padding);
+	padding-left: var(--padding-left);
+    padding-top: var(--padding-top, 1rem);
+	padding-right: var(--padding-right);
+	padding-bottom: var(--padding-bottom);
+
 	.item {
 		position: relative;
 		display: flex;
 		flex-direction: row;
 		overflow: hidden;
 		align-items: center;
-		border-radius: var(--size-4-);
+		border-radius: 9rem;
 		@include buttonPadding( var(--size-3-) );
 		text-transform: uppercase;
 
@@ -42,11 +53,18 @@ $background: 	--primary-dark;
 			align-items: center;
 			margin-right: .7rem;
 		}
+
+		i {
+			//color: var(--icon-bright);
+		}
 		
 		svg {
 			height: calc(1rem - 0.2rem);
 			padding: 0.1rem;
-			color: var(--primary);
+
+			path {
+				fill: var(--icon-bright);
+			}
 		}
 
 		.title {
@@ -62,9 +80,9 @@ $background: 	--primary-dark;
 			height: 100%;
 			width: 100%;
 			z-index: 1;
-			border: 1px solid var($border);
-			border-radius: .25rem;
-			opacity: 75%;
+			border: 1px solid var(--primary-dim);
+			border-radius: 9rem;
+			opacity: 10%;
 		}
 		
 		&:after {
@@ -76,7 +94,7 @@ $background: 	--primary-dark;
 			width: 100%;
 			z-index: -1;
 			background: var($background);
-			opacity: 50%;
+			opacity: 100%;
 		}
 	}
 	
@@ -98,7 +116,10 @@ $background: 	--primary-dark;
 				height: 1.4375rem;
 				margin-right: 1rem;
 				padding: 0.1rem;
-				color: var(--primary-bright);
+
+				path {
+					fill: url(#fa-gradient) var(--icon-bright);
+				}
 			}
 		}
 	}

@@ -85,7 +85,10 @@ p {
 	letter-spacing: -.02rem;
 
 	&.subtitle {
-		font-size: var(--font-m);
+		font-family: var(--font-accent);
+		font-size: var(--font-r-s);
+		font-weight: 600;
+		letter-spacing: 0;
 	}
 }
 

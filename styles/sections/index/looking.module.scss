@@ -2,10 +2,30 @@
 .section {
 	background-color: var(--background-dim);
 
+	h2 {
+		font-size: var(--font-xl-l);
+	}
+
+	h4 {
+		font-family: var(--font-accent);
+		text-transform: none;
+		font-size: var(--font-r-s);
+		letter-spacing: .01rem;
+	}
+
+	.container {
+		text-align: left;
+		max-width: 700px;
+	}
+
 	.copy {
 		width: fit-content;
 		display: flex;
 		flex-direction: column;
+	}
+
+	.jsonSub {
+		margin-left: 2rem;
 	}
 	
 	.preHeader {
@@ -27,18 +47,32 @@
 	}
 
 	.highlight {
-		--looking-bg-1: #781a17;
-		--looking-bg-2: #81461d91;
-		--looking-bg-3: #2a3e2a;
+		--looking-bg-1: var(--neon-1-1);
+		--looking-bg-2: var(--neon-1-2);
 
 		background: var(--bar-gradient);
 		--bar-gradient: 
 			linear-gradient( 
 				90deg, 
 				var(--looking-bg-1) -45%, 
-				var(--looking-bg-2) 25%,
-				var(--looking-bg-3) 80%, 
-				var(--looking-bg-1) 150%
+				var(--looking-bg-2) 125%
+			);
+
+		-webkit-background-clip: text;
+		background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.highlight2 {
+		--looking-bg-1: var(--neon-2-1);
+		--looking-bg-2: var(--neon-2-2);
+
+		background: var(--bar-gradient);
+		--bar-gradient: 
+			linear-gradient( 
+				90deg, 
+				var(--looking-bg-1) -45%, 
+				var(--looking-bg-2) 125%
 			);
 
 		-webkit-background-clip: text;

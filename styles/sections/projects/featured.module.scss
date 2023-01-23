@@ -4,6 +4,26 @@
 	border-bottom: 1px solid var(--primary-dark);
 }
 
+.image {
+	z-index: 3;
+	position: relative;
+	display: block;
+	width: 50%;
+	border-radius: 1rem;
+	flex-grow: 1;
+	flex-shrink: 0;
+
+	img {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: calc(100% + 3rem);
+		max-width: calc(100% + 3rem);
+		border-radius: 1rem;
+		aspect-ratio: 14/9;
+	}
+}
+
 .icon {
 	padding: 0.5rem;
 	display: block;
@@ -28,16 +48,37 @@
 		}
 	}
 
+	&:nth-of-type(even) {
+		.details {
+			--padding: 2rem;
+			--padding-left: var(--padding);
+			--padding-top: var(--padding);
+			--padding-right: 5rem;
+			--padding-bottom: var(--padding);
+			padding: var(--padding);
+			padding-right: var(--padding-right);
+		}
+
+		.image {
+			left: -3rem;
+		}
+	}
+
 	&:nth-of-type(odd) {
 		flex-direction: row-reverse;
 
 		.details {
-			padding: 2rem;
-			padding-left: 5rem;
+			--padding: 2rem;
+			--padding-left: 5rem;
+			--padding-top: var(--padding);
+			--padding-right: var(--padding);
+			--padding-bottom: var(--padding);
+			padding: var(--padding);
+			padding-left: var(--padding-left);
 		}
+
 		.image {
-			left: unset;
-			right: -3rem;
+			right: 0;
 		}
 	}
 }
@@ -47,12 +88,11 @@
 	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 1;
-	gap: var(--size-4x);
+	gap: var(--size-3x);
+	overflow: hidden;
 
 	border: 1px solid var(--primary-dark);
 	border-radius: 2rem;
-	padding: 2rem;
-	padding-right: 5rem;
 	background-color: var(--background);
 
 	h3 {
@@ -126,31 +166,13 @@
 	font-size: .7rem;
 	font-weight: 400;
 	font-family: var(--font-accent);
-	color: var(--primary-dim);		padding: .125rem .5rem;
+	color: var(--primary-dim);
+	padding: .125rem .5rem;
 	border-radius: 99rem;
 	border: 1px solid var(--primary-dark);
 	background: var(--primary-dark);
 }
 
-.image {
-	position: relative;
-	display: block;
-	width: 50%;
-	border-radius: 1rem;
-	flex-grow: 1;
-	flex-shrink: 0;
-
-	img {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: calc(100% + 3rem);
-		max-width: calc(100% + 3rem);
-		left: -3rem;
-		border-radius: 1rem;
-		aspect-ratio: 14/9;
-	}
-}
 
 .bgContainer {
 	--opacity: 5%;
@@ -264,11 +286,29 @@
 
 				img {
 					display: block;
+					margin-left: -2rem;
+					margin-top: -1rem;
+					margin-right: -2rem;
+					border-radius: 0;
+					max-width: unset;
+					width: unset;
 				}
 			}
 
 			.image {
 				display: none;
+			}
+
+			.stackContainer {
+				--padding-top: 1.5rem;
+
+				h4 { 
+					text-align: center;
+					display: none;
+				}
+				ul {
+					font-size: .6rem;
+				}
 			}
 		}
 	}

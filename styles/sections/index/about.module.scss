@@ -3,25 +3,11 @@
 // Section
 .section {
 
-	.technicalSvg {
-		img {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 110vw;
-			height: 115%;
-			max-inline-size: unset;
-			max-block-size: unset;
-			opacity: 1;
-			z-index: -2;
-			
-		}
-	}
-	
 	.content {
 		$padding: 2rem;
-		flex-direction: row;
+		position: relative;
 		display: flex;
+		flex-direction: row;
 		gap: 1rem;
 
 		> div {
@@ -62,10 +48,18 @@
 			display: flex;
 			flex-direction: column;
 			gap: var(--size-1x);
-			padding: $padding;
 			border: 1px solid var(--primary-dark);
 			border-radius: 2rem;
-			background: var(--background-dim);
+			background: var(--background-dim2);
+			box-shadow: 0 0 30px var(--background);
+			overflow: hidden;
+
+			padding: var(--padding);
+			--padding: 2rem;
+			--padding-left: var(--padding);
+			--padding-top: var(--padding);
+			--padding-right: var(--padding);
+			--padding-bottom: var(--padding);
 
 			&:not(:last-of-type) {
 				margin-bottom: var(--size-1x);
@@ -90,7 +84,13 @@
 			svg {
 				height: 1.6rem;
 				color: var(--primary);
+
+				path {
+					fill: url(#fa-gradient) #fff;
+				}
 			}
+
+
 		}
 		
 		// Columns
@@ -106,6 +106,15 @@
 				aspect-ratio: 3/4;
 				object-fit: cover;
 				border-radius: 2rem;
+			}
+
+			&.technicalSvg {
+				img {    
+					position: relative;
+					overflow: visible;
+					z-index: -1;					
+					filter: brightness(100%);
+				}
 			}
 		}
 	}
@@ -126,6 +135,14 @@
 
 			.image {
 				padding: 1rem;
+				&.technicalSvg {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					height: 140%;
+					z-index: -1;
+				}
 			}
 
 			.copy {

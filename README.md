@@ -13,58 +13,30 @@
 
 ## This website is still being developed! ⚠️
 
-Please keep in mind there is a **lot** left to do on this theme so if you fork it now *(Jan-17-2023)* it will be a mess and be missing a ton of features and functionality.
+The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, etc.
 
 #### Next & App Architecure
 - [ ] Next.js : Move to Next 13 and /app file structure when stable
+- [ ] Sanity.io : GUI page editor
 
 #### App Architecure & Design Systems
-- [ ] App\Content Storage : Matching /page/ => /content/ structure that uses json files
-- [ ] App\DX\Fork & Deploy Instructions
-- [x] App\Design System\Structure
-- [ ] App\Design System\Spatial : Testing different models currently
-- [ ] App\Design System\Scss\Desktop : in progress
-- [ ] App\Design System\Scss\Mobile : just started
-- [ ] App\Design System\Scss\Darkmode Themes : WIP
-
-#### Layout & Utils
-- [x] Layout\Icon Util
-- [x] Layout\Typography
-- [x] Layout\Darkmode
-- [x] Layout\Navbar
-- [x] Layout\Footer
+- [ ] App\Systems\Margins : Continuing to develop Design Token System
+- [ ] App\Systems\Padding : Continuing to develop Design Token System
 
 #### Pages
-- [ ] Pages\About : Finish UI.
-- [ ] Pages\Case Studies : Wireframes done
-- [x] Pages\Articles : UI tweaks still in progress
-- [x] Pages\Projects : UI tweaks still in progress
-
-#### About Page
-- [ ] Pages\About\Hero
-- [ ] Pages\About\Looking
-- [ ] Pages\About\About
-- [ ] Pages\About\Technical
-- [ ] Pages\About\Career
+- [x] Pages\About
+- [ ] Pages\Case Studies
+- [x] Pages\Articles : API options and connections for Dev.to and HackerNoon not complete
+- [x] Pages\Projects : Single project details page
 
 #### Articles Page
-- [x] Pages\Articles
-- [x] Pages\Articles\Scss\Mobile 
 - [x] Pages\Articles\Medium\API
-- [x] Pages\Articles\Medium\UI
-- [x] Pages\Articles\Medium\DX
 - [ ] Pages\Articles\Dev.to\API
 - [ ] Pages\Articles\HackerNoon\API
 
-#### Project Page
-- [x] Pages\Projects
-- [x] Pages\Projects\Scss\Mobile 
-- [x] Pages\Projects\FeaturedProjects\UI
-- [x] Pages\Projects\FeaturedProjects\DX
-- [x] Pages\Projects\GitHubAPI\API
-- [x] Pages\Projects\GitHubAPI\UI
-- [x] Pages\Projects\GitHubAPI\DX
-- [ ] <s>Pages\Projects\MD Builder : Global CSS node_module support needed, waiting for stable 13+ version of nextjs</s>
+#### Projects Page
+- [ ] Pages\Projects\Project : Single project details page
+
 
 ## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon
 <s>

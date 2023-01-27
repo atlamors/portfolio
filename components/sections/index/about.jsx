@@ -49,6 +49,7 @@ export default function About() {
 							title="Reasearch and planning" 
 							containerClass={about.container}
 							list={methods} 
+							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
 							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."

@@ -6,7 +6,7 @@ import { LazyMotion, domAnimation } from "framer-motion"
 import SetGridGap from '../components/utils/set.grid.util'
 
 // Structure
-import Layout from '../components/structure/layout'
+import Layout from '../components/layout/layout'
 
 // CSS reset (https://github.com/elad2412/the-new-css-reset.git)
 import "../node_modules/the-new-css-reset/css/reset.css"

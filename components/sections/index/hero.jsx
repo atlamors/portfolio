@@ -61,28 +61,15 @@ export default function Hero() {
 				<section>
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
 						{ content.paragraph }
-					</p>
-					{/* <p className={`${hero.tempBright} subtitle ${space(["verticalLrg"])}`}>
-						This is an open source website built on Next.js and React—it is currently under construction.
-						Version 1 is scheduled to be completed by Jan 30, 2023. 
-						Checkout the roadmap (its updated while I&apos;m working on the site) by visiting the GitHub Repo.<br/><br/>
-						
-						<a href="https://github.com/atlamors/portfolio-theme" rel="noreferrer" target="_blank">https://github.com/atlamors/portfolio-theme <Icon icon={[ 'fad', 'arrow-up-right-from-square' ]} /></a><br/><br/>
-
-						<span className={hero.gitBadges}>
-							<img src="https://img.shields.io/badge/stability-experimental-orange.svg" alt="Experimental" />
-							<img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel" />
-							<img src="https://therealsujitk-vercel-badge.vercel.app/?app=portfolio-theme-jqe0jhmif-atlamors.vercel.app" alt="Vercel Deployed" />
-							<img src="https://img.shields.io/github/license/atlamors/portfolio-theme" alt="Liscence" />
-						</span>
-					</p> */}
-					
+					</p>					
 				</section>
 				<section>
-					<button className={`button ${button.primary}`}>
+					<button	className={`button ${button.primary}`}
+							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
 						{content.buttons.primary.title}
 					</button>
-					<button className={`button ${button.secondary} leaveSite`}>
+					<button className={`button ${button.secondary} leaveSite`}
+							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
 						{content.buttons.secondary.title}
 					</button>
 				</section>

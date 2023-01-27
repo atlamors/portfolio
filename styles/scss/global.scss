@@ -24,7 +24,7 @@ html {
 
 img {
 	border-radius: .5rem;
-	width: 100%;
+	//width: 100%;
 	filter: brightness( var(--brightness-low) );
 
 	&:hover {
@@ -56,6 +56,7 @@ h1 {
 }
 
 h2 {
+	color: var(--primary);
 	font-size: var(--font-xl);
 	font-family: var(--font-sans);
 	font-weight: 700;
@@ -76,6 +77,14 @@ h4 {
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .1rem;
+}
+
+h5 {
+	font-size: var(--font-m);
+	font-family: var(--font-sans);
+	color: var(--primary);
+	font-weight: 600;
+	letter-spacing: -.01rem;
 }
 
 p {
@@ -169,4 +178,22 @@ a {
 	--gradient-color-2: var( --mesh-color-2 );
 	--gradient-color-3: var( --mesh-color-3 );
 	--gradient-color-4: var( --mesh-color-4 );
+}
+
+.highlight {
+	--looking-bg-1: var(--neon-1-1);
+	--looking-bg-2: var(--neon-1-2);
+
+	width: fit-content;
+	background: var(--bar-gradient);
+	--bar-gradient: 
+		linear-gradient( 
+			90deg, 
+			var(--looking-bg-1) 0%, 
+			var(--looking-bg-2) 100%
+		);
+
+	-webkit-background-clip: text;
+	background-clip: text;
+	-webkit-text-fill-color: transparent;
 }

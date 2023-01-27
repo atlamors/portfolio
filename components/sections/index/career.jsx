@@ -88,7 +88,7 @@ export default function Career() {
 										<span className={career.subList}><span className={career.bullet}></span>Decreased Credit Card fraud by 98%</span>
 									</li>
 								</ul>
-								<Badges list={fullStack} block="stack" />
+								<Badges list={fullStack} block="stack" fullContainer="fullContainer"/>
 							</div>
 							<div className={career.positionAlt}></div>
 						</div>
@@ -118,7 +118,7 @@ export default function Career() {
 										<span className={career.subList}><span className={career.bullet}></span>7.1% overall conversion rate </span>
 									</li>
 								</ul>
-								<Badges list={stack} block="stack" />
+								<Badges list={stack} block="stack" fullContainer="fullContainer"/>
 							</div>
 							<div className={career.positionAlt}></div>
 						</div>

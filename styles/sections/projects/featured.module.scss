@@ -4,83 +4,74 @@
 	border-bottom: 1px solid var(--primary-dark);
 }
 
-.image {
-	z-index: 3;
-	position: relative;
-	display: block;
-	width: 50%;
-	border-radius: 1rem;
-	flex-grow: 1;
-	flex-shrink: 0;
-
-	img {
-		position: absolute;
-		top: 50%;
-		transform: translateY(-50%);
-		width: calc(100% + 3rem);
-		max-width: calc(100% + 3rem);
-		border-radius: 1rem;
-		aspect-ratio: 14/9;
-	}
-}
-
-.icon {
-	padding: 0.5rem;
-	display: block;
-	background: var(--primary-dark);
-	width: fit-content;
-	border-radius: 0.5rem;
-
-	svg {
-		height: 1.6rem;
-		color: var(--primary);
-	}
-}
-
 .project {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
+	user-select: none;
+
+	border-radius: 2rem;
+	background-color: var(--background-dim2);
+    border: 1px solid var(--primary-dark);
+
+	.viewProject svg {
+		@include transition;
+	}
+
+	&:nth-of-type(2n) {
+		flex-direction: row-reverse;
+	}
 
 	&:hover {
-		img {
-			filter: brightness( var(--brightness-hight) );
+		cursor: pointer;
+
+		.viewProject svg {
+			@include transition;
+			color: var(--neon-1-1);
+		}
+	}
+}
+
+
+.projectHeader  {
+	display: flex;
+	flex-direction: column;
+	gap: var(--size-3x);
+
+	p {
+		font-size: 1.75rem;
+		line-height: 1.2;
+
+		strong {
+			color: var(--primary-bright);
 		}
 	}
 
-	&:nth-of-type(even) {
-		.details {
-			--padding: 2rem;
-			--padding-left: var(--padding);
-			--padding-top: var(--padding);
-			--padding-right: 5rem;
-			--padding-bottom: var(--padding);
-			padding: var(--padding);
-			padding-right: var(--padding-right);
-		}
-
-		.image {
-			left: -3rem;
+	.viewProject {
+		svg {
+			height: 1.5rem;
+			color: var(--primary);	
 		}
 	}
 
-	&:nth-of-type(odd) {
-		flex-direction: row-reverse;
+	.header {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: 2rem;
 
-		.details {
-			--padding: 2rem;
-			--padding-left: 5rem;
-			--padding-top: var(--padding);
-			--padding-right: var(--padding);
-			--padding-bottom: var(--padding);
-			padding: var(--padding);
-			padding-left: var(--padding-left);
+		a {
+			flex-grow: 0;
+			flex-shrink: 1;
 		}
 
-		.image {
-			right: 0;
+		.privateOr {
+			flex-grow: 0;
+			flex-shrink: 1;
+			height: fit-content;
 		}
 	}
+
 }
 
 .details {
@@ -91,9 +82,7 @@
 	gap: var(--size-3x);
 	overflow: hidden;
 
-	border: 1px solid var(--primary-dark);
-	border-radius: 2rem;
-	background-color: var(--background);
+	padding: 2rem;
 
 	h3 {
 		position: relative;
@@ -110,52 +99,39 @@
 	img {
 		display: none;
 	}
+}
 
-	.description {
-		font-size: 0.875rem;
-		font-family: var(--font-accent);
-		color: var(--primary);
+.imageContainer {
+	z-index: 3;
+	position: relative;
+	display: block;
+	width: 50%;
+	border-radius: 1rem;
+	flex-grow: 1;
+	flex-shrink: 0;
 
-		li {
-			&::marker {
-				content: '=>';
+	.imageAnimationContainer {
+		position: absolute;
+		overflow: hidden;
+		border-radius: 2rem;
+		height: calc(100% - 6rem);
+		width: calc(100% + 9rem);
+		right: 0;
+		bottom: 0;
+
+		> div > div {
+
+			> span {
+				position: absolute !important;
+				right: 4rem;
+	
+				img {
+					width: calc(556px / 1.25) !important;
+				}
 			}
 		}
-
-		p { 
-			font-size: inherit;
-			font-family: inherit;
-			margin-left: 0.5rem;
-		}
 	}
 }
-
-.projectHeader  {
-	display: flex;
-	flex-direction: column;
-	gap: var(--size-3-);
-
-	.headerTitle {
-		display: flex;
-		flex-direction: row;
-		align-items: center;
-		justify-content: space-between;
-
-		a {
-			flex-grow: 0;
-			flex-shrink: 1;
-		}
-
-		.privateOr {
-			flex-grow: 0;
-			flex-shrink: 1;
-			height: fit-content;
-		}
-	}
-
-}
-
-
 
 .privateOr {
 	display: flex;
@@ -173,9 +149,8 @@
 	background: var(--primary-dark);
 }
 
-
 .bgContainer {
-	--opacity: 5%;
+	--opacity: 10%;
 
 	position: absolute;
 	top: 50%;
@@ -194,13 +169,17 @@
 		transform: translateX(50%);
 		filter: blur(200px);
 		opacity: var(--opacity);
-		background: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );	
+		// background: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );	
+		background: linear-gradient(180deg, var(--neon-1-1) 0%,  var(--neon-1-2) 100% );	
 	}
 
 	.orbitalBg {
-		--left: linear-gradient(180deg, rgb(51, 205, 229) 0%,  rgb(229, 51, 140) 100% );
-		--center: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );
-		--right: linear-gradient(180deg, rgb(78, 21, 115) 0%,  rgb(103, 242, 79) 100% );
+		// --left: linear-gradient(180deg, rgb(51, 205, 229) 0%,  rgb(229, 51, 140) 100% );
+		// --center: linear-gradient(180deg, rgb(41, 212, 112) 0%,  rgb(242, 240, 79) 100% );
+		// --right: linear-gradient(180deg, rgb(78, 21, 115) 0%,  rgb(103, 242, 79) 100% );
+		--left: linear-gradient(180deg, var(--neon-2-1) 0%,  var(--neon-2-2) 100% );
+		--center: linear-gradient(180deg, var(--neon-1-1) 0%,  var(--neon-1-2) 100% );
+		--right: linear-gradient(180deg, var(--neon-2-2) 0%,  var(--neon-1-1) 100% );
 		
 		position: absolute;
 		z-index: -1;
@@ -244,7 +223,7 @@
 			position: absolute;
 			left: -50%;
 			background: var(--left);
-			opacity: calc(var(--opacity) + 20%);
+			opacity: calc(var(--opacity) + 15%);
 		}
 		.heroCenter {
 			background: var(--center);
@@ -254,7 +233,7 @@
 			position: absolute;
 			right: -50%;
 			background: var(--right);
-			opacity: calc(var(--opacity) + 20%);
+			opacity: calc(var(--opacity) + 15%);
 		}
 	
 	
@@ -272,7 +251,7 @@
 @include media($max: $mobile) {
 	.project {
 		&:nth-of-type(n) {
-			flex-direction: column-reverse;
+			flex-direction: column;
 
 			&:hover {
 				.details {
@@ -283,20 +262,6 @@
 			.details {
 				border-radius: 1rem;
 				padding: var(--size-2x);
-
-				img {
-					display: block;
-					margin-left: -2rem;
-					margin-top: -1rem;
-					margin-right: -2rem;
-					border-radius: 0;
-					max-width: unset;
-					width: unset;
-				}
-			}
-
-			.image {
-				display: none;
 			}
 
 			.stackContainer {
@@ -308,6 +273,44 @@
 				}
 				ul {
 					font-size: .6rem;
+				}
+			}
+
+			.imageContainer {
+				height: 100px;
+				width: 100%;
+			}
+
+			.imageAnimationContainer {
+				height: calc(100% + 6rem);
+				width: 100%;
+		
+				> div > div {
+					> span {
+						img {
+							width: calc(556px / 2) !important;
+						}
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(2n+1) {
+			.imageAnimationContainer {
+				> div > div {
+					> span {
+						right: 2rem;
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(2n) {
+			.imageAnimationContainer {
+				> div > div {
+					> span {
+						right: 0rem;
+					}
 				}
 			}
 		}

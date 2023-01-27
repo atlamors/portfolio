@@ -11,7 +11,7 @@
 
 <img src="https://www.andrewnelson.net/img/preview.png">
 
-## This website is still being developed! ⚠️
+## This website is still being developed! 🥳
 
 The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, etc.
 
@@ -38,8 +38,12 @@ The porftofolio application has currently hit the Beta phase and is ready to be 
 - [ ] Pages\Projects\Project : Single project details page
 
 
-## <s>Please fork this repo! 🦄</s> Fork & Deploy Instruction Coming Soon
-<s>
-This is my first open-source contribution, and it was also a great oppoortunity for me to learn! It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjs and React and have as much fun as I did—and even better if it helps you in your quest of proffesional networking!
-</s>
+## Please fork this repo! 🦄
+
+Fork, Install, Editing, and Deploy instructions coming soon(ish)!
+
+This is my first open-source contribution, and it was also a great oppoortunity for me to learn! 
+
+It is my hope that by sharing this project it can give others a chance to enjoy learning Nextjsand have as much fun as I did—and even better if it helps you in your quest of proffesional networking!
+
 

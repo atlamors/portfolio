@@ -70,7 +70,7 @@
 :root[data-theme='dark'] {
 	--primary-bright:	#ffffff;
 	--primary:			#bfbfbf;
-	--primary-dim:		#666667;
+	--primary-dim:		#888889;
 	--primary-dim2:		#262627;
 	--primary-dark:		#141415;
 	
@@ -81,14 +81,14 @@
 	--background-dim:	#08090a;
 	--background-dim2:	#0e0f11;
 	
-	--neon-1-1: #eaf737;
-	--neon-1-2: #2493ee;
+	--neon-1-1: #a7d575;
+	--neon-1-2: #52abc4;
 	--neon-2-1: #37eaf7;
 	--neon-2-2: #c624ee;
 
 	--icon-bright: #ffffff;
 
-	--brightness-low:	50%;
+	--brightness-low:	100%;
 	--brightness-high:	100%;
 
 	--mesh-color-1: #060708;
@@ -114,12 +114,12 @@
 	--background-dim:	#fbfbfb;
 	--background-dim2:	#fefefe;
 
-	--neon-1-1: #4800ff;
+	--neon-1-1: #424bff;
 	--neon-1-2: #2493ee;
 	--neon-2-1: #37eaf7;
 	--neon-2-2: #c624ee;
 
-	--icon-bright: #4800ff;
+	--icon-bright: var(--neon-1-1);
 
 	--mesh-color-1: #96c4f3;
     --mesh-color-2: #96a8f2;
@@ -147,7 +147,7 @@
 	--neon-2-1: #eaf737;
 	--neon-2-2: #2493ee;
 
-	--icon-bright: #c624ee;
+	--icon-bright: var(--neon-1-1);
 
 	--mesh-color-1: #96c4f3;
     --mesh-color-2: #f296cc;

@@ -46,6 +46,7 @@ export default function Technical() {
 							copy="With over 20 years of experience creating digital assets, I have a deep and intuitive understanding of how the interfaces of the best software products in the world are designed. This is just some of the software I have used over that time."
 							list={software}
 							block="software" 
+							fullContainer="fullContainer"
 							icon="grid-2-plus"
 							containerClass={about.container}
 							headerIcon={about.icon} 
@@ -54,7 +55,8 @@ export default function Technical() {
 							title="Technologies I love to build with" 
 							copy="I deeply enjoy solving problems through code. From the front end all the way to the back end and the APIs in-between. No project is too challenging for me."
 							list={tech} 
-							block="tech" 
+							block="tech"
+							fullContainer="fullContainer" 
 							icon="laptop-code"
 							containerClass={about.container}
 							headerIcon={about.icon} 

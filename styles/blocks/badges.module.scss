@@ -24,17 +24,6 @@ $background: 	--background-dim2;
 	font-size: var(--font-xs);
 	list-style: none;
 
-    border-top: 1px solid var(--primary-dark);
-    background: var(--background-dim);
-    margin-left: calc( var(--padding-left) * -1 );
-    margin-right: calc( var(--padding-right) * -1 );
-    margin-bottom: calc( var(--padding-bottom) * -1 );
-	padding: var(--padding);
-	padding-left: var(--padding-left);
-    padding-top: var(--padding-top, 1rem);
-	padding-right: var(--padding-right);
-	padding-bottom: var(--padding-bottom);
-
 	.item {
 		position: relative;
 		display: flex;
@@ -45,7 +34,7 @@ $background: 	--background-dim2;
 		@include buttonPadding( var(--size-3-) );
 		text-transform: uppercase;
 
-		color: var($badgeText);
+		color: var(--primary-dim);
 		
 		i, svg {
 			display: flex;
@@ -55,7 +44,9 @@ $background: 	--background-dim2;
 		}
 
 		i {
-			//color: var(--icon-bright);
+			&:not(.colored) {
+				color: var(--icon-bright);
+			}
 		}
 		
 		svg {
@@ -139,6 +130,19 @@ $background: 	--background-dim2;
 			}
 		}	
 	}
+}
+
+.fullContainer {
+	border-top: 1px solid var(--primary-dark);
+	background: var(--background-dim);
+	margin-left: calc( var(--padding-left) * -1 );
+	margin-right: calc( var(--padding-right) * -1 );
+	margin-bottom: calc( var(--padding-bottom) * -1 );
+	padding: var(--padding);
+	padding-left: var(--padding-left);
+	padding-top: var(--padding-top, 1rem);
+	padding-right: var(--padding-right);
+	padding-bottom: var(--padding-bottom);
 }
 
 @include media($max: $mobile) {

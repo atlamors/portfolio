@@ -1,12 +1,12 @@
 import { useState, useEffect } from 'react'
 
-import Container from '../../structure/container'
-import Icon from '../../utils/icon.util'
+import Container from '../structure/container'
+import Icon from '../utils/icon.util'
 
-import css from '../../../styles/structure/footer.module.scss'
+import css from '../../styles/structure/footer.module.scss'
 
-import content from '../../../content/footer.json'
-import settings from '../../../content/_settings.json'
+import content from '../../content/footer.json'
+import settings from '../../content/_settings.json'
 
 export default function Footer() {
 	

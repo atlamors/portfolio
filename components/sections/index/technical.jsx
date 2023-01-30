@@ -63,7 +63,7 @@ export default function Technical() {
 						/>							
 					</div>
 					<div className={`${about.image} ${about.technicalSvg}`}>
-						<img src="/img/dataism-24.svg" alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
+						<Image src="/img/dataism-24.svg" width={477} height={1111} alt="Data Strings 01 by Colorpong: https://ywft.us/2177b695b" />
 					</div>
 				</section>	
 			</Container>

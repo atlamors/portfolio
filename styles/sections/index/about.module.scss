@@ -109,10 +109,14 @@
 			}
 
 			&.technicalSvg {
+				> span {
+					position: relative !important;
+					overflow: visible !important;
+					height: 100% !important;
+					z-index: -1;	
+				}
 				img {    
-					position: relative;
-					overflow: visible;
-					z-index: -1;					
+					overflow: visible;		
 					filter: brightness(100%);
 				}
 			}

@@ -11,8 +11,11 @@
 
 <img src="https://www.andrewnelson.net/img/preview.png">
 
-## This website is still being developed! 🥳
+## Updates
+#### Dev Update — Feb 10th, 2023
+I am currently taking a short break in development of this theme. I am in the final phases of a job search, and getting ready to move into a bigger place to give some much needed room to my growing family! I am hoping to continue development before the end of next quarter!
 
+## This website is still being developed! 🥳
 The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, etc.
 
 #### Next & App Architecure

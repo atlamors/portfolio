@@ -36,10 +36,6 @@
 		}
 	}
 
-	// Link ClassName not working?
-	.logo {
-	}
-
 	.mobileButton {
 		display: none;
 	}
@@ -204,6 +200,7 @@
 			&[data-open="true"] {
 				transition: transform, cubic-bezier(0.4, 0, 0.2, 1), 300ms;
 				max-height: 100vh;
+				transform: translate3d(0px,0px,1px);
 			}
 
 			ul {

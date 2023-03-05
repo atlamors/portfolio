@@ -21,7 +21,7 @@ I am currently taking a short break in development of this theme. I am in the fi
 The porftofolio application has currently hit the Beta phase and is ready to be forked if you are familiar with React and Next. The next release cycle will focus on a better DX—moving from local JSON to MongoDB, setting up Sanity for GUI page editing, Unit Testing with Jest, adding TypeScript, etc.
 
 #### Next & App Architecure
-- [ ] Next.js v13 : Waitinf for /app/ folder to leave beta
+- [ ] Next.js v13 : Waiting for /app/ folder to leave beta
 - [ ] Sanity.io
 
 #### App Architecure & Design Systems

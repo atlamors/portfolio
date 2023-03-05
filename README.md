@@ -12,8 +12,8 @@
 <img src="https://www.andrewnelson.net/img/preview.png">
 
 ## Updates
-#### Dev Update — Feb 13th, 2023
-I will be starting work on the Jest / Unit Testing portion of the app sooner than expected! 
+#### Dev Update — Feb 13th, 2023 [Updated: March 05th, 2023]
+Jest has been setup, but no progress on building tests has been made. Life is busy atm! 
 #### Dev Update — Feb 10th, 2023
 I am currently taking a short break in development of this theme. I am in the final phases of a job search, and getting ready to move into a bigger place to give some much needed room to my growing family! I am hoping to continue development before the end of next quarter!
 

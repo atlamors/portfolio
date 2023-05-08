@@ -19,7 +19,7 @@ export default function PageWithJSbasedForm() {
 			prefix: event.target.prefix.value,
 			icon: event.target.icon.value,
 		}
-		
+
 		// Send the data to the server in JSON format.
 		const JSONdata = JSON.stringify(data)
 		

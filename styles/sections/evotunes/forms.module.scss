@@ -1,0 +1,73 @@
+.form {
+	ul {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		gap: 1rem;
+
+		li {
+			display: flex;
+			flex-direction: column;
+			gap: .5rem;
+			width: calc(50% - 1rem);
+
+			&.companySelect {
+				width: 100%;
+			}
+
+			select {
+				background: var(--primary-dark);
+				border: 1px solid var(--primary-dim2);
+				color: var(--primary-bright);
+				padding: 1rem 2rem;
+				border-radius: 1rem;
+				margin-bottom: 1rem;
+			}
+
+			input {
+				color: var(--primary-bright);
+				margin-top: .25rem;
+				padding-top: .5rem;
+				padding-bottom: .5rem;
+				font-size: 1rem;
+				border-radius: .5rem;
+				border: 1px solid var(--primary-dark);
+				background-color: var(--background-dim2);
+				padding: .5rem 2rem;
+
+				&::placeholder {
+					color: #5e5e5e;
+					/* Set the color of the placeholder text */
+					font-size: .9rem;
+					/* Set the font size of the placeholder text */
+					font-style: italic;
+					/* Set the font style of the placeholder text */
+				}
+			}
+		}
+	}
+}
+
+.results {
+	margin-top: 4rem;
+	padding: 2rem;
+	width: 100%;
+	border-radius: 1rem;
+	border: 1px solid var(--primary-dim);
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.code {
+	margin-top: 0;
+
+	pre {
+		width: 100%;
+		white-space: pre-wrap;
+		font-size: .8rem;
+		padding: 2rem;
+		margin: 0;
+	}
+}

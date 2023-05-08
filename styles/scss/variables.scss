@@ -100,7 +100,8 @@
 } 
 
 // Light mode theme
-:root[data-theme='light'] {
+:root[data-theme='light'],
+:root[data-theme='undefined'] {
 	--primary-bright:	#000000;
 	--primary: 			#2e2e2e;
 	--primary-dim:		#3a3a3a;

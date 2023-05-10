@@ -66,23 +66,27 @@ export default function PageWithJSbasedForm() {
 			case "Evo Tunes Inc.":
 				data.companyLogo = "https://cdn.evotunes.ca/email/logos/evo-tunes-logo@200px.png";
 				data.companyUrl = false;
+				data.logoWidth = 200;
 				break;
 			case "Black Bandit":
 				data.companyLogo = "https://cdn.evotunes.ca/email/logos/black-bandit-logo@200px.png";
-				data.companyUrl = 'www.blackbandit.com';
+				data.companyUrl = 'https://www.blackbandit.com/';
+				data.logoWidth = 200;
 				break;
 			case "Evo Performance":
-				data.companyLogo = "https://cdn.evotunes.ca/email/logos/evo-performance-logo@200px.png";
-				data.companyUrl = 'www.evoauto.com';
+				data.companyLogo = "https://cdn.evotunes.ca/email/logos/evo-performance-logo@300px.png";
+				data.companyUrl = 'https://www.evoauto.com/';
+				data.logoWidth = 300;
 				break;
 			case "Tuner Depot":
 				data.companyLogo = "https://cdn.evotunes.ca/email/logos/tuner-depot-logo@200px.png";
-				data.companyUrl = false;
+				data.companyUrl = 'https://www.tunerdepot.com/';
+				data.logoWidth = 200;
 				break;
 		}
 
 		if ( data.companyUrl ) {
-			data.companyLink = `<a href="${data.companyUrl}" style="color:#131217">${data.companyUrl}</a>`;
+			data.companyLink = `<svg style="margin-right: 6px;" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="link-simple" class="svg-inline--fa fa-link-simple " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><g class="fa-duotone-group"><path class="fa-secondary" fill="currentColor" d="M160 256c0-17.7 14.3-32 32-32H384c17.7 0 32 14.3 32 32s-14.3 32-32 32H192c-17.7 0-32-14.3-32-32z"></path><path class="fa-primary" fill="currentColor" d="M160 96C71.6 96 0 167.6 0 256s71.6 160 160 160h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H160c-53 0-96-43-96-96s43-96 96-96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H160zm256 0H352c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c53 0 96 43 96 96s-43 96-96 96H352c-17.7 0-32 14.3-32 32s14.3 32 32 32h64c88.4 0 160-71.6 160-160s-71.6-160-160-160z"></path></g></svg><a href="${data.companyUrl}" style="color:#131217">${data.companyName}</a>`;
 		} else {
 			data.companyLink = ``;
 		}
@@ -99,9 +103,9 @@ export default function PageWithJSbasedForm() {
 										<td style="vertical-align:top;width:101px">
 											<table cellpadding="0" cellspacing="0" style="vertical-align:-webkit-baseline-middle">
 												<tbody>
-													<tr style="display:block;width:100px;height:100px">
+													<tr style="display:block;width:${data.logoWidth/2}px;height:100px">
 														<td style="text-align:center">
-															<img src="${data.companyLogo}" alt="Evo Tunes Inc." role="presentation" width="100" height="100">
+															<img src="${data.companyLogo}" alt="Evo Tunes Inc." role="presentation" width="${data.logoWidth/2}" height="100">
 														</td>
 													</tr>
 												</tbody>	
@@ -113,7 +117,7 @@ export default function PageWithJSbasedForm() {
 											<h3 style="margin:0;font-size:18px;color:#131217">${data.fullName}</h3>
 											<p style="margin:0;color:#888;font-size:14px;line-height:22px">${data.positionTitle}</p>
 											<p style="margin:0;color:#131217;font-size:14px;line-height:22px">
-												<a href="tel:${data.phoneNumber}" style="color:#131217">${data.phoneNumber}</a>
+												<a href="tel:${data.phoneNumber}" style="color:#131217"><svg style="margin: 0 6px -1px 0; height: 14px;" aria-hidden="true" focusable="false" data-prefix="fad" data-icon="phone" class="svg-inline--fa fa-phone " role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><g class="fa-duotone-group"><path class="fa-secondary" fill="currentColor" d="M497.3 447.1l9.786-42.41l-175.1-70.4l-27.1 33.18L497.3 447.1zM144.5 207.1L177.6 180.8L107.3 4.884L64.88 14.67L144.5 207.1z"></path><path class="fa-primary" fill="currentColor" d="M507.1 404.7l4.086-17.7c3.405-14.69-4.207-29.69-18.12-35.79L384.6 304.7c-12.78-5.436-27.69-1.774-36.47 8.975l-16.98 20.62L507.1 404.7zM0 54.5c-.0014 252.2 205.2 457.5 457.5 457.5c14.65 0 27.21-9.969 30.46-24.22l9.378-40.66l-193.3-79.63C234.8 333.5 178.5 277.2 144.5 207.1L64.88 14.67L24.22 24.05C9.967 27.32-.0014 39.83 0 54.5zM198.3 163.9c10.78-8.687 14.51-23.67 8.98-36.45L160.8 18.92C154.8 5.017 139.6-2.568 124.1 .8048L107.3 4.884L177.6 180.8L198.3 163.9z"></path></g></svg>${data.phoneNumber}</a>
 											</p>
 											<p style="margin:0;color:#131217;font-size:14px;line-height:22px">${data.companyLink}</p>
 										</td>

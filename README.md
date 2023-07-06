@@ -12,7 +12,7 @@
 <img src="https://www.andrewnelson.net/img/preview.png">
 
 ## Updates
-#### Dev Update — July 6th, 2023 [Updated: March 05th, 2023]
+#### Dev Update — July 6th, 2023 🥰
 We have relocated to a beautiful home in the suburbs of Langely, BC. There has been a LOT of work unpacking, organizing, and landscaping to get this home perfect for our two toddlers! I am hoping to resume development of the theme in the next couple months!
 
 On a really interesting note, Webflow has launched a React component export tool. I am considering moving all component design and management over to Webflow for easier tooling for marketing teams and visual designers! 

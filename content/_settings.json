@@ -1,15 +1,15 @@
 {
-	"name": "Andrew Nelson",
-	"logo": "",
-	
-	"username": {
-		"github": "atlamors",
-		"medium": "@--andrewnelson"
-	},
+  "name": "Aryan Tayal",
+  "logo": "",
 
-	"portfolio": { 
-		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo_html": "https://www.github.com/atlamors/portfolio",
-		"repo_api": "https://api.github.com/repos/atlamors/portfolio"
-	}
+  "username": {
+    "github": "atlamors",
+    "medium": "@--andrewnelson"
+  },
+
+  "portfolio": {
+    "forkthis": "Steal this theme! Its open-source 🥰",
+    "repo_html": "https://www.github.com/atlamors/portfolio",
+    "repo_api": "https://api.github.com/repos/atlamors/portfolio"
+  }
 }

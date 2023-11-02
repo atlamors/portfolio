@@ -1,32 +1,32 @@
 {
-	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
-		"end": "Hello, my name is",
-		"speed": 60,
-		"deletionSpeed": 80,
-		"wrapper": "h2",
-		"startDelay": 1000,
-		"deleteDelay": 3000,
-		"restartDelay": 12000
-	},
+  "intro": {
+    "start": "const Aryan = ( name, passion ) =>",
+    "end": "Hello, my name is",
+    "speed": 60,
+    "deletionSpeed": 80,
+    "wrapper": "h2",
+    "startDelay": 1000,
+    "deleteDelay": 3000,
+    "restartDelay": 12000
+  },
 
-	"header": {
-		"name": "Andrew Nelson.",
-		"usp": "I design and build meaningful experiences."
-	},
+  "header": {
+    "name": "Aryan Tayal.",
+    "usp": "I design and build meaningful experiences."
+  },
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+  "paragraph": "I work as a software engineer professionally and persue my passion for photography and cinematography during my free time.",
 
-	"buttons": {
-		"primary": {
-			"title": "Contact Me",
-			"url": "",
-			"leaveSite": false
-		},
-		"secondary": {
-			"title": "LinkedIn",
-			"url": "",
-			"leaveSite": "true"
-		}
-	}
+  "buttons": {
+    "primary": {
+      "title": "Contact Me",
+      "url": "",
+      "leaveSite": false
+    },
+    "secondary": {
+      "title": "LinkedIn",
+      "url": "",
+      "leaveSite": "true"
+    }
+  }
 }

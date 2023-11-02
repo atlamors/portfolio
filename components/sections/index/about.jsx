@@ -30,11 +30,11 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UX design, UI design, full stack development, operational architecture, systems design, photography, and branding, I am a well-rounded digital professional."
+					subTitle="With a diverse skill set that includes UI design, full stack development, photography /, and branding, I am a well-rounded digital professional."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>
-						<img src="/img/family-photo.jpg" alt="Nelson family photo"/>
+						<img src="/img/profile-picture.jpg" alt="Aryan Tayal"/>
 						{/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
 					</div>
 					<div className={about.copy} >
@@ -43,7 +43,7 @@ export default function About() {
 							containerClass={about.container}
 							iconClass={about.icon}
 							icon={[ 'fat', 'ear-listen' ]}
-							copy="In addition to my design and technical expertise—I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner / managing partner, husband, and father of two. Outside of work, I enjoy staying active through sports such as hockey and snowboarding. I am confident in my ability to bring passion and value to any project."
+							copy="In addition to my technical expertise — I also have strong leadership, time management, and multitasking skills—honed through my experience as a business owner and constant student. Outside of work, I enjoy trying new coffee shops with friends, shooting videos, playing golf as well managing my business and reading books. I am confident in my ability to bring passion and value to any project."
 						/>
 						<BadgesBlock 
 							title="Reasearch and planning" 
@@ -52,7 +52,7 @@ export default function About() {
 							fullContainer="fullContainer"
 							block="methods" 
 							icon="fingerprint"
-							copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+							copy="One of my favorite aspects of creating is seeing a project come to fruition and watching my dedication drive me to working on a vision that I believe in."
 							//invertedColor="invertedColor"
 							headerIcon={`${about.icon}`}
 						/>

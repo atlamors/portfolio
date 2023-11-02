@@ -7,6 +7,7 @@ import Color 	from '../../components/utils/page.colors.util'
 import colors 		from '../../content/articles/_colors.json'
 import settings 	from '../../content/_settings.json'
 
+export const runtime = 'edge';
 //
 export default function Articles({ mediumArticles }) {
 	return (

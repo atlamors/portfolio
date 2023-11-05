@@ -36,7 +36,7 @@
 .projectHeader  {
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-3x);
+	gap: var(--size-2x);
 
 	p {
 		font-size: 1.75rem;
@@ -79,7 +79,7 @@
 	flex-direction: column;
 	flex-grow: 0;
 	flex-shrink: 1;
-	gap: var(--size-3x);
+	gap: var(--size-1x);
 	overflow: hidden;
 
 	padding: 2rem;
@@ -104,7 +104,7 @@
 .imageContainer {
 	z-index: 3;
 	position: relative;
-	display: block;
+	display:block;
 	width: 50%;
 	border-radius: 1rem;
 	flex-grow: 1;
@@ -123,10 +123,10 @@
 
 			> span {
 				position: absolute !important;
-				right: 4rem;
+				right: 0rem;
 	
 				img {
-					width: calc(556px / 1.25) !important;
+					width: calc(200px / 1.25) !important;
 				}
 			}
 		}
@@ -278,12 +278,12 @@
 
 			.imageContainer {
 				height: 100px;
-				width: 100%;
+				width: 50%;
 			}
 
 			.imageAnimationContainer {
 				height: calc(100% + 6rem);
-				width: 100%;
+				width: 50%;
 		
 				> div > div {
 					> span {

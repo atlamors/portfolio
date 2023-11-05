@@ -1,7 +1,7 @@
 {
 	"intro": {
-		"start": "const Andrew = ( name, passion ) =>",
-		"end": "Hello, my name is",
+		"start": "Welcome to the technology revolution.",
+		"end": "Bienvenidos a la revolución tecnológica.",
 		"speed": 60,
 		"deletionSpeed": 80,
 		"wrapper": "h2",
@@ -11,15 +11,15 @@
 	},
 
 	"header": {
-		"name": "Andrew Nelson.",
-		"usp": "I design and build meaningful experiences."
+		"name": "REBULX",
+		"usp": "Disrupting the future."
 	},
 
-	"paragraph": "I am a digital polymath — a constantly evolving digital creator driven by a passion for lifelong learning and the desire to leave a lasting impact.",
+	"paragraph": "Our mission is to develop innovative and distinctive products and services, ensuring excellence in design and customer satisfaction.",
 
 	"buttons": {
 		"primary": {
-			"title": "Contact Me",
+			"title": "Contact us",
 			"url": "",
 			"leaveSite": false
 		},

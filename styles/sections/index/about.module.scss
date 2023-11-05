@@ -14,6 +14,13 @@
 			padding: 0;
 		}
 
+		h2 {
+			position: relative;
+			color: var(--primary);
+			font-size: medium;			
+			
+		}
+
 		h3 {
 			position: relative;
 			color: var(--primary);
@@ -43,6 +50,7 @@
 			// 	transform: translate(-50%, -50%);
 			// }
 		}
+	
 
 		.container {
 			display: flex;
@@ -101,7 +109,7 @@
 			position: relative;
 
 			img {
-				height: 100%;
+				height: auto;
 				width: auto;
 				aspect-ratio: 3/4;
 				object-fit: cover;

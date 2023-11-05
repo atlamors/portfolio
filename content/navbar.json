@@ -1,11 +1,7 @@
 [
 	{
-		"url": "/",
-		"title": "About Me"
-	},
-	{
 		"url": "/case-studies",
-		"title": "Case Studies"
+		"title": "About"
 	},
 	{
 		"url": "/articles",

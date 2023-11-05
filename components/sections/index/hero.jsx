@@ -51,9 +51,11 @@ export default function Hero() {
 					repeat={Infinity}
 				/>
 				<section>
-					<h1 className={hero.header}>
+					{/*<h1 className={hero.header}>
 						{content.header.name}
-						</h1>
+				</h1>*/}					
+					<img src='img/logos/rebulx.png' style={{ width: '60%', borderRadius: 0 }}>
+					</img>
 					<h1 className={`${hero.header} ${hero.primaryDim}`}>
 						{content.header.usp}
 					</h1>

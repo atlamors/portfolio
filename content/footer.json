@@ -32,20 +32,12 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
-			"icon": "medium"
-		},
-		{
-			"url": "https://dev.to/andrewnelson",
-			"icon": "dev"
+			"url": "in",
+			"icon": "instagram"
 		},
 		{
 			"url": "https://www.linkedin.com/in/--andrewnelson/",
 			"icon": "linkedin"
-		},
-		{
-			"url": "https://github.com/atlamors",
-			"icon": "github"
 		}
 	]
 }

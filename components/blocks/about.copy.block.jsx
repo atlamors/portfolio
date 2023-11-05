@@ -9,18 +9,17 @@ import space from '../utils/spacing.util';
  * 
  * @param {string} 	classProp template literals of classes for contain
  * @param {array}	icon request props [ iconType, iconKey ] 
- * @param {string} 	title to be displayed 
+ * @param {string} 	title to be displayed
+ * @param {string} 	position to be displayed 
  * @param {string} 	copy written content
  * @returns {jsx} <CopyBlock />
  */
-export default function CopyBlock({ containerClass, iconClass, icon, title, copy }) {
+export default function CopyBlock({ containerClass, iconClass, icon, title, copy, position }) {
 	return (
 		<>
-		<div className={containerClass}>
-			<span className={iconClass}>
-				<Icon icon={icon} />
-			</span>
+		<div className={containerClass}>			
 			<h3>{title}</h3>
+			<h2>{position}</h2>
 			<p>
 				{copy}
 			</p>

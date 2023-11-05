@@ -134,7 +134,9 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<img src={settings.logo} ></img>
+					<div className={css.imageContainer}>
+						<img src={settings.logo}></img>
+					</div>
 					{/*<Link className={css.logo} href="/"  >
 						{settings.name}
 	</Link>*/}

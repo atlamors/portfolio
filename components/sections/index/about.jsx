@@ -28,8 +28,8 @@ export default function About() {
 		<Section classProp={about.section}>	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="About Us"
-					preTitle="The REBULX team"
+					title="Meet the REBULX team"
+					preTitle="About us"
 					subTitle="We are a group of people facinated about technology. Our focus is on innovation and digital transformation."
 				/>
 				<section className={about.content}>
@@ -40,7 +40,7 @@ export default function About() {
 						<div className={about.copy} >
 							<CopyBlock 
 								title="Juan Alberto Medina"
-								position="TBD"
+								position="Business Intelligence and AI"
 								containerClass={about.container}							
 								copy="Industrial Engineer with a master's degree in artificial intelligence."								
 							/>
@@ -53,7 +53,7 @@ export default function About() {
 						<div className={about.copy} >
 							<CopyBlock 
 								title="Nicolás Serignese"
-								position="TBD"
+								position="Digital Transformation"
 								containerClass={about.container}							
 								copy="I'm a dedicated systems student and passionate technology enthusiast with over 7 years of valuable experience in the consulting and tech industries. I'm on a continuous quest for knowledge, always seeking innovative solutions to complex challenges. My journey in the world of technology has taught me the importance of adaptability, problem-solving, and staying curious. Join me as I explore the ever-evolving landscape of technology and share my insights along the way."
 							/>
@@ -66,7 +66,7 @@ export default function About() {
 						<div className={about.copy} >
 							<CopyBlock 
 								title="Tomás Mongelós"
-								position="TBD"
+								position="Software Development"
 								containerClass={about.container}
 								copy="Tomi's description."
 							/>

@@ -10,7 +10,7 @@
 	flex-wrap: nowrap;
 	user-select: none;
 
-	border-radius: 2rem;
+	border-radius: 1.25rem;
 	background-color: var(--background-dim2);
     border: 1px solid var(--primary-dark);
 
@@ -36,10 +36,10 @@
 .projectHeader  {
 	display: flex;
 	flex-direction: column;
-	gap: var(--size-2x);
+	gap: var(--size-1x);
 
 	p {
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		line-height: 1.2;
 
 		strong {
@@ -86,6 +86,7 @@
 
 	h3 {
 		position: relative;
+		font-size: 2rem;
 	}
 
 	h4 {
@@ -105,15 +106,15 @@
 	z-index: 3;
 	position: relative;
 	display:block;
-	width: 50%;
-	border-radius: 1rem;
+	width: 20%;
+	border-radius: 0rem;
 	flex-grow: 1;
 	flex-shrink: 0;
 
 	.imageAnimationContainer {
 		position: absolute;
 		overflow: hidden;
-		border-radius: 2rem;
+		border-radius: 0rem;
 		height: calc(100% - 6rem);
 		width: calc(100% + 9rem);
 		right: 0;

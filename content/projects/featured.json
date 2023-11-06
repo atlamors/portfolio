@@ -14,11 +14,38 @@
 		]
 	},
 	{
-		"project": "Artificial Intelligence",
+		"project": "Business Intelligence & AI",
 		"url": "",
 		"repo": "",
 		"descriptionTitle": "We implement artificial intelligence algorithms",
 		"description": "to your processes to meet your objectives.",
+		"imageOptions": [
+			{ "key": "size", 		"value": "large" }
+		],
+		"images": [
+			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+		]
+	},
+	{
+		"project": "Software development",
+		"url": "",
+		"repo": "",
+		"descriptionTitle": "We create software",
+		"description": "to help you boost your systems.",
+		"imageOptions": [
+		],
+		"images": [
+			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
+			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
+			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+		]
+	},
+	{
+		"project": "Internet of Things",
+		"url": "",
+		"repo": "",
+		"descriptionTitle": "We create new products",
+		"description": "to connect your devices and get insights from data.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],

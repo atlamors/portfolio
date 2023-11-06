@@ -30,7 +30,7 @@ export default function About() {
 				<SectionTitle
 					title="About Me"
 					preTitle="Synopsis"
-					subTitle="With a diverse skill set that includes UI design, full stack development, photography /, and branding, I am a well-rounded digital professional."
+					subTitle="With a diverse skill set that includes UI design, full stack development, photography / cinamatography and branding, I am a well-rounded digital professional."
 				/>
 				<section className={about.content}>
 					<div className={about.image}>

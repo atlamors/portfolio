@@ -1,0 +1,23 @@
+[
+    {
+        "title": "Juan Alberto Medina",
+        "img": "/img/team/juan.jpeg",
+        "alt": "Juan Medina photo",
+        "position": "Business Intelligence and AI",
+        "description": "Industrial Engineer with a master's degree in artificial intelligence."
+    },
+    {
+        "title": "Nicolás Serignese",
+        "img": "/img/team/nico.jpeg",
+        "alt": "Nicolás Serignese photo",
+        "position": "Digital Transformation",
+        "description": "I'm a dedicated systems student and passionate technology enthusiast with over 7 years of valuable experience in the consulting and tech industries. I'm on a continuous quest for knowledge, always seeking innovative solutions to complex challenges. My journey in the world of technology has taught me the importance of adaptability, problem-solving, and staying curious. Join me as I explore the ever-evolving landscape of technology and share my insights along the way."
+    },
+    {
+        "title": "Tomás Mongelós",
+        "img": "/img/team/tomi.jpeg",
+        "alt": "Tomás Mongelós photo",
+        "position": "Software Development",
+        "description": "Tomi's description."
+    }
+]

@@ -14,7 +14,7 @@ import space from '../utils/spacing.util';
  * @param {string} 	copy written content
  * @returns {jsx} <CopyBlock />
  */
-export default function CopyBlock({ containerClass, iconClass, icon, title, copy, position }) {
+export default function CopyBlock({ containerClass, title, copy, position }) {
 	return (
 		<>
 		<div className={containerClass}>			

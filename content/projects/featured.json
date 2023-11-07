@@ -50,7 +50,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/services/drone.png" }
 		]
 	}
 ]

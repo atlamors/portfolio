@@ -115,8 +115,8 @@
 		position: absolute;
 		overflow: hidden;
 		border-radius: 0rem;
-		height: calc(100% - 6rem);
-		width: calc(100% + 9rem);
+		height: 100%;
+		width: 100%;
 		right: 0;
 		bottom: 0;
 
@@ -278,8 +278,9 @@
 			}
 
 			.imageContainer {
-				height: 100px;
-				width: 50%;
+				// Saco los valores estándar para ocultar las fotos cuando cargue la pág versión mobile.
+				height: 0; //300px
+				width: 0; //100%
 			}
 
 			.imageAnimationContainer {

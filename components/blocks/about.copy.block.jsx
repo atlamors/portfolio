@@ -12,13 +12,19 @@ import space from '../utils/spacing.util';
  * @param {string} 	title to be displayed
  * @param {string} 	position to be displayed 
  * @param {string} 	copy written content
+ * @param {string} 	linkedin linkedin profile
  * @returns {jsx} <CopyBlock />
  */
-export default function CopyBlock({ containerClass, title, copy, position }) {
+export default function CopyBlock({ containerClass, title, copy, position, linkedin }) {
+	const {url, iconKey} = linkedin
 	return (
 		<>
 		<div className={containerClass}>			
-			<h3>{title}</h3>
+			<div style={{display:"flex"}}>
+				<h3>{title}</h3>
+				<a href={url} rel="noreferrer" target="_blank"s><Icon icon={[ 'fab', "linkedin" ]}/></a>
+			</div>
+						
 			<h2>{position}</h2>
 			<p>
 				{copy}

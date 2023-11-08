@@ -17,13 +17,14 @@
 		h2 {
 			position: relative;
 			color: var(--primary);
-			font-size: medium;			
+			font-size: large;			
 			
 		}
 
 		h3 {
 			position: relative;
 			color: var(--primary);
+			font-size:25px;
 
 			// &:before {
 			// 	content: '';
@@ -50,7 +51,9 @@
 			// 	transform: translate(-50%, -50%);
 			// }
 		}
-	
+		a {
+			font-size: 25px;
+		}
 
 		.container {
 			display: flex;

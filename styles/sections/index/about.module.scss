@@ -110,13 +110,18 @@
 			flex-grow: 1;
 			flex-shrink: 1;
 			position: relative;
+			display: flex;
+			flex-direction: column;
 
 			img {
 				height: auto;
-				width: auto;
-				aspect-ratio: 3/4;
-				object-fit: cover;
+				width: 50%;
 				border-radius: 2rem;
+				object-fit: cover;
+				margin: auto;
+				padding: 2%;
+				//width: auto;
+				//aspect-ratio: 3/4;
 			}
 
 			&.technicalSvg {

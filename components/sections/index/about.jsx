@@ -34,7 +34,7 @@ export default function About() {
 				<SectionTitle
 					title="Meet the REBULX team"
 					preTitle="About us"
-					subTitle="We are a group of people facinated about technology. Our focus is on innovation and digital transformation."
+					subTitle="We believe that technology is a key component for business success. Our focus is on innovation and digital transformation."
 				/>
 				<section className={about.content}>
 					{

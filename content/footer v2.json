@@ -1,0 +1,43 @@
+{
+	"acknowledgments": [
+		{ 
+			"person": "Link 2",
+			"link": "",
+			"note": "Descripción."
+		},
+		{ 
+			"person": "Link 2",
+			"link": "",
+			"note": "Descripción."
+		},
+		{ 
+			"person": "Link 3",
+			"link": "",
+			"note": "Descripción."
+		},
+		{ 
+			"person": "Link 4",
+			"link": "",
+			"note": "Descripción"
+		}
+	],
+
+	"links": [
+		{ 
+			"person": "Link 1",
+			"link": "",
+			"note": "Descripción."
+		}
+	],
+
+	"social": [
+		{
+			"url": "https://www.instagram.com/rebulx/",
+			"icon": "instagram"
+		},
+		{
+			"url": "https://www.linkedin.com/company/rebulx/",
+			"icon": "linkedin"
+		}
+	]
+}

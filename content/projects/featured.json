@@ -8,13 +8,11 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{ "key": "mock-stack",	"hover": "left",	"h": "800", "w": "700", "url": "/img/services/power-automate.png" }
 		]
 	},
 	{
-		"project": "Business Intelligence & AI",
+		"project": "Business Intelligence",
 		"url": "",
 		"repo": "",
 		"descriptionTitle": "We implement artificial intelligence algorithms",
@@ -23,7 +21,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/portfolio-mock_single.png" }
+			{ "key": "mock-stack", "hover": "left", "h": "600", "w": "600",  "url": "/img/services/powerbi.png" }
 		]
 	},
 	{
@@ -35,17 +33,15 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "right", 	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/03.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/02.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/01.png" }
+			{ "key": "mock-stack",	"hover": "left", 	"h": "570", "w": "600", "url": "/img/services/azure.png" }			
 		]
 	},
 	{
-		"project": "Internet of Things",
+		"project": "Artificial Intelligence",
 		"url": "",
 		"repo": "",
-		"descriptionTitle": "We create new products",
-		"description": "to connect your devices and get insights from data.",
+		"descriptionTitle": "We implement artificial intelligence algorithms",
+		"description": "to your processes to meet your objectives.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],

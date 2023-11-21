@@ -1,5 +1,5 @@
 import Hero 		from '../components/sections/index/hero'
-import Looking 		from '../components/sections/index/contact'
+import Contact 		from '../components/sections/index/contact'
 import About 		from '../components/sections/index/about'
 import Technical 	from '../components/sections/index/technical'
 import Career 		from '../components/sections/index/career'
@@ -18,7 +18,7 @@ export default function HomePage() {
 			<Hero />
 			<About />						
 			{<FeaturedProjects />}
-			{<Looking />}
+			{<Contact />}
 			{/*<Technical />*/}
 			{/*<Career />*/}
 		</>

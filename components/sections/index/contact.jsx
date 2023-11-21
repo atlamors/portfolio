@@ -25,7 +25,7 @@ export default function Contact() {
 			<Container classProp={`${section.title} ${looking.container}`} spacing={['verticalXXXLrg']}>
 				{/*<h4>CONTACT US</h4>*/}
 				{/*<h2 className={looking.json}>Get in contact!</h2>*/}
-				<a href='test'><h2 className={looking.jsonSub}><span className={looking.highlight}>Click here 👈</span></h2></a>
+				<a href='mailto:nicolas@rebulx.com?subject=First%20contact%20%7C%20%3CMy%20Company%20Name%3E&body=Hello%20RBX%20team!%0A%0A...'><h2 className={looking.jsonSub}><span className={looking.highlight}>👉 Click here 👈</span></h2></a>
 				<h2 className={looking.jsonSub}><span className={looking.highlight}>and start your</span></h2>
 				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Digital Transformation Journey</span></h2>			
 				<h2 className={looking.jsonSub}><span className={looking.highlight}>with us!</span></h2>

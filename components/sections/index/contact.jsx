@@ -17,20 +17,18 @@ import section 		from '../../../styles/blocks/section.title.module.scss'
  * Section: Looking
  * Declare your employment intentions 🚀
  * 
- * @returns {jsx} <Looking />
+ * @returns {jsx} <Contact />
  */
-export default function Looking() {
+export default function Contact() {
 	return (
 		<Section classProp={`${looking.section} borderBottom`}>	
 			<Container classProp={`${section.title} ${looking.container}`} spacing={['verticalXXXLrg']}>
-				<h4>I&apos;m currently looking for employment.</h4>
-				<h2 className={looking.json}>Senior : &#123;</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight}>Front End Engineer</span>,</h2>
-				<h2 className={looking.jsonSub}><span className={looking.highlight2}>User Experience Designer</span></h2>
-				<h2 className={looking.json}>&#125;</h2>
-				<h4>I am particularily interested in product facing postions where I can help make an organization wide impact.</h4>
-				{/* <h2>Senior <span className={looking.highlight}>User Experience</span> Designer</h2> */}
-				{/* <p className="subtitle">with a focus on Product Design.</p> */}
+				{/*<h4>CONTACT US</h4>*/}
+				{/*<h2 className={looking.json}>Get in contact!</h2>*/}
+				<a href='test'><h2 className={looking.jsonSub}><span className={looking.highlight}>Click here 👈</span></h2></a>
+				<h2 className={looking.jsonSub}><span className={looking.highlight}>and start your</span></h2>
+				<h2 className={looking.jsonSub}><span className={looking.highlight2}>Digital Transformation Journey</span></h2>			
+				<h2 className={looking.jsonSub}><span className={looking.highlight}>with us!</span></h2>
 			</Container>
 		</Section>
 	)

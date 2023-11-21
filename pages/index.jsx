@@ -1,5 +1,5 @@
 import Hero 		from '../components/sections/index/hero'
-import Looking 		from '../components/sections/index/looking'
+import Looking 		from '../components/sections/index/contact'
 import About 		from '../components/sections/index/about'
 import Technical 	from '../components/sections/index/technical'
 import Career 		from '../components/sections/index/career'
@@ -16,11 +16,11 @@ export default function HomePage() {
 		<>
 			<Color colors={colors} />
 			<Hero />
-			<About />			
-			{/* <Looking /> */}
+			<About />						
 			{<FeaturedProjects />}
-			{/* <Technical /> */}
-			{/* <Career /> */}
+			{<Looking />}
+			{/*<Technical />*/}
+			{/*<Career />*/}
 		</>
 	);
 }

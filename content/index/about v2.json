@@ -1,5 +1,16 @@
 [
     {
+        "title": "Juan Medina",
+        "img": "/img/team/juan.jpeg",
+        "alt": "Juan Medina photo",
+        "position": "Business Intelligence and AI",
+        "description": "Industrial Engineer with a master's degree in artificial intelligence.",
+        "linkedin":{
+			"url": "https://www.linkedin.com/in/juanalbertomedinaalbarenga/",
+			"icon": "linkedin"
+		}
+    },
+    {
         "title": "Nicolás Serignese",
         "img": "/img/team/nico.jpeg",
         "alt": "Nicolás Serignese photo",

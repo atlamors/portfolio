@@ -1,10 +1,10 @@
 [
 	{
-		"project": "Robotic Process Automation",
+		"project": "Automatización Robótica de Procesos",
 		"url": "",
 		"repo": "",
-		"descriptionTitle": "We leverage your processes and create robots",
-		"description": "to automate your daily tasks and boost your productivity.",
+		"descriptionTitle": "Analizamos sus procesos y creamos robots",
+		"description": "para automatizar tus tareas diarias y mejorar la productividad.",
 		"imageOptions": [
 		],
 		"images": [
@@ -12,24 +12,24 @@
 		]
 	},
 	{
-		"project": "Business Intelligence",
+		"project": "Inteligencia Artificial",
 		"url": "",
 		"repo": "",
-		"descriptionTitle": "We implement artificial intelligence algorithms",
-		"description": "to your processes to meet your objectives.",
+		"descriptionTitle": "Implementamos inteligencia artificial a sus procesos",
+		"description": "para alcanzar los objetivos.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "600", "w": "600",  "url": "/img/services/powerbi.png" }
+			{ "key": "mock-stack", "hover": "left", "h": "600", "w": "600",  "url": "/img/services/drone.png" }
 		]
 	},
 	{
-		"project": "Software development",
+		"project": "Desarrollo de Software",
 		"url": "",
 		"repo": "",
-		"descriptionTitle": "We create software",
-		"description": "to help you boost your systems.",
+		"descriptionTitle": "Creamos sistemas y aplicaciones",
+		"description": "que ayuden a facilitar, organizar y mejorar su trabajo diario.",
 		"imageOptions": [
 		],
 		"images": [
@@ -37,16 +37,16 @@
 		]
 	},
 	{
-		"project": "Artificial Intelligence",
+		"project": "Inteligencia de Negocios",
 		"url": "",
 		"repo": "",
-		"descriptionTitle": "We implement artificial intelligence algorithms",
-		"description": "to your processes to meet your objectives.",
+		"descriptionTitle": "Analizamos sus procesos de negocio con una mirada en la calidad,",
+		"description": "y desarrollamos tableros de control para sus indicadores de gestión.",
 		"imageOptions": [
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/services/drone.png" }
+			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/services/powerbi.png" }
 		]
 	}
 ]

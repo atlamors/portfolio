@@ -29,12 +29,12 @@ import content 		from '../../../content/index/about.json'
  */
 export default function About() {
 	return (
-		<Section classProp={about.section}>	
+		<Section classProp={about.section} id="about-us">	
 			<Container spacing={['verticalXXXLrg']}>
 				<SectionTitle
-					title="Meet the REBULX team"
-					preTitle="About us"
-					subTitle="We believe that technology is a key component for business success. Our focus is on innovation and digital transformation."
+					title="Conoce al equipo REBULX"
+					preTitle="SOBRE NOSOTROS"
+					subTitle="Creemos que la tecnología es un componente clave para el éxito empresarial. Nos centramos en la innovación y la transformación digital."
 				/>
 				<section className={about.content}>
 					{

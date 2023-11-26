@@ -70,10 +70,10 @@ export default function Hero() {
 							onClick={ () => window.location = 'mailto:nicolas@rebulx.com?subject=First%20contact%20%7C%20%3CMy%20Company%20Name%3E&body=Hello%20RBX%20team!%0A%0A...' } >
 						{content.buttons.primary.title}
 					</button>
-					<button className={`button ${button.secondary} leaveSite`}
+					{/*<button className={`button ${button.secondary} leaveSite`}
 							onClick={ ()=> window.open("https://www.linkedin.com/company/rebulx/", "_blank") } >
 						{content.buttons.secondary.title}
-					</button>
+			</button>*/}
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />

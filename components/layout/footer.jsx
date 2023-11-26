@@ -59,7 +59,7 @@ export default function Footer() {
 						})
 						}
 					</ul>*/}
-					<ul className={css.social}>
+					{/*<ul className={css.social}>
 						<li><h4>Social</h4></li>
 						<li className={css.socialList}>
 							{
@@ -70,7 +70,7 @@ export default function Footer() {
 							})
 							}
 						</li>
-					</ul>
+						</ul>*/}
 				</section>
 				<h4 className={css.thanks}>© 2023 REBULX. Todos los derechos reservados.</h4>
 				{/*<section className={css.github}>

@@ -22,7 +22,7 @@ export default function CopyBlock({ containerClass, title, copy, position, linke
 		<div className={containerClass}>			
 			<div style={{display:"flex"}}>
 				<h3>{title}</h3>
-				<a href={url} rel="noreferrer" target="_blank"s><Icon icon={[ 'fab', "linkedin" ]}/></a>
+				{/*<a href={url} rel="noreferrer" target="_blank"s><Icon icon={[ 'fab', "linkedin" ]}/></a>*/}
 			</div>
 						
 			<h2>{position}</h2>

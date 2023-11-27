@@ -31,7 +31,7 @@ export default function Hero() {
 	const [typingStatus, setTypingStatus] = useState('Initializing');
 
 	return (
-		<Section classProp={`${hero.section}`}>
+		<Section classProp={`${hero.section}`} IdName="start">
 			<Container spacing={'VerticalXXXL'}>
 				<TypeAnimation className={`${hero.preHeader}`}
 					sequence={[

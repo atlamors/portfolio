@@ -8,7 +8,7 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "left",	"h": "800", "w": "700", "url": "/img/services/power-automate.png" }
+			{ "key": "mock-stack",	"hover": "left",	"h": "100%", "w": "100%", "url": "/img/services/power-automate.png" }
 		]
 	},
 	{
@@ -21,7 +21,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "600", "w": "600",  "url": "/img/services/drone.png" }
+			{ "key": "mock-stack", "hover": "right", "h": "100%", "w": "90%",  "url": "/img/services/drone.png" }
 		]
 	},
 	{
@@ -33,7 +33,7 @@
 		"imageOptions": [
 		],
 		"images": [
-			{ "key": "mock-stack",	"hover": "left", 	"h": "570", "w": "600", "url": "/img/services/azure.png" }			
+			{ "key": "mock-stack",	"hover": "left", 	"h": "70%", "w": "70%", "url": "/img/services/azure.png" }			
 		]
 	},
 	{
@@ -46,7 +46,7 @@
 			{ "key": "size", 		"value": "large" }
 		],
 		"images": [
-			{ "key": "mock-stack", "hover": "left", "h": "797", "w": "556",  "url": "/img/services/powerbi.png" }
+			{ "key": "mock-stack", "hover": "right", "h": "100%", "w": "100%",  "url": "/img/services/powerbi.png" }
 		]
 	}
 ]

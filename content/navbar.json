@@ -1,1 +1,14 @@
-[]
+[
+    {
+        "url": "#start",
+        "title": "Inicio"
+    },
+    {
+        "url": "#about-us",
+        "title": "Acerca de nosotros"
+    },
+    {
+        "url": "#services",
+        "title": "Servicios"
+    }
+]

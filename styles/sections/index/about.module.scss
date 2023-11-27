@@ -14,9 +14,17 @@
 			padding: 0;
 		}
 
+		h2 {
+			position: relative;
+			color: var(--primary);
+			font-size: large;			
+			
+		}
+
 		h3 {
 			position: relative;
 			color: var(--primary);
+			font-size:25px;
 
 			// &:before {
 			// 	content: '';
@@ -42,6 +50,9 @@
 			// 	top: 50%;
 			// 	transform: translate(-50%, -50%);
 			// }
+		}
+		a {
+			font-size: 25px;
 		}
 
 		.container {
@@ -99,13 +110,18 @@
 			flex-grow: 1;
 			flex-shrink: 1;
 			position: relative;
+			display: flex;
+			flex-direction: column;
 
 			img {
-				height: 100%;
-				width: auto;
-				aspect-ratio: 3/4;
-				object-fit: cover;
+				height: auto;
+				width: 50%;
 				border-radius: 2rem;
+				object-fit: cover;
+				margin: auto;
+				padding: 2%;
+				//width: auto;
+				//aspect-ratio: 3/4;
 			}
 
 			&.technicalSvg {

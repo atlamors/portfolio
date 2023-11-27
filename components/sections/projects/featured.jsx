@@ -14,12 +14,12 @@ import content 		from '../../../content/projects/featured.json'
 export default function FeaturedProjects() {
 
 	return (
-		<Section classProp={css.hasBg}>	
-			<Container spacing={'verticalXXXXLrg'}>
+		<Section classProp={css.hasBg} IdName="services">	
+			<Container spacing={'verticalMed'}>
 				<SectionTitle
-					title="Featured Projects"
-					preTitle="UX and Full Stack"
-					subTitle="Focused on the experience, driven by the engineering."
+					title="¡Nos apasiona crear tecnología!"
+					preTitle="nuestros servicios"
+					subTitle="Nos enfocamos en la experiencia del usuario, mientras creamos las mejores herramientas para usted."
 				/> 				{
 				content.map( (data, index) => {
 					return (

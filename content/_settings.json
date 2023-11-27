@@ -1,15 +1,15 @@
 {
-	"name": "Andrew Nelson",
-	"logo": "",
+	"name": "REBULX",
+	"logo": "img/logos/logo.png",
 	
 	"username": {
-		"github": "atlamors",
-		"medium": "@--andrewnelson"
+		"github": "",
+		"medium": ""
 	},
 
 	"portfolio": { 
-		"forkthis": "Steal this theme! Its open-source 🥰",
-		"repo_html": "https://www.github.com/atlamors/portfolio",
-		"repo_api": "https://api.github.com/repos/atlamors/portfolio"
+		"forkthis": "",
+		"repo_html": "",
+		"repo_api": ""
 	}
 }

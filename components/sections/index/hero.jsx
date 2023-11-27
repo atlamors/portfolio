@@ -31,7 +31,7 @@ export default function Hero() {
 	const [typingStatus, setTypingStatus] = useState('Initializing');
 
 	return (
-		<Section classProp={`${hero.section}`}>
+		<Section classProp={`${hero.section}`} IdName="start">
 			<Container spacing={'VerticalXXXL'}>
 				<TypeAnimation className={`${hero.preHeader}`}
 					sequence={[
@@ -51,9 +51,11 @@ export default function Hero() {
 					repeat={Infinity}
 				/>
 				<section>
-					<h1 className={hero.header}>
+					{/*<h1 className={hero.header}>
 						{content.header.name}
-						</h1>
+				</h1>*/}					
+					<img src='img/logos/rebulx.png' style={{ width: '60%', borderRadius: 0 }}>
+					</img>
 					<h1 className={`${hero.header} ${hero.primaryDim}`}>
 						{content.header.usp}
 					</h1>
@@ -65,13 +67,13 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+							onClick={ () => window.location = 'mailto:nicolas@rebulx.com?subject=First%20contact%20%7C%20%3CMy%20Company%20Name%3E&body=Hello%20RBX%20team!%0A%0A...' } >
 						{content.buttons.primary.title}
 					</button>
-					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
+					{/*<button className={`button ${button.secondary} leaveSite`}
+							onClick={ ()=> window.open("https://www.linkedin.com/company/rebulx/", "_blank") } >
 						{content.buttons.secondary.title}
-					</button>
+			</button>*/}
 				</section>
 			</Container>
 			<HeroBg theme="bg-color-1" />

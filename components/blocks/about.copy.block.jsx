@@ -9,18 +9,23 @@ import space from '../utils/spacing.util';
  * 
  * @param {string} 	classProp template literals of classes for contain
  * @param {array}	icon request props [ iconType, iconKey ] 
- * @param {string} 	title to be displayed 
+ * @param {string} 	title to be displayed
+ * @param {string} 	position to be displayed 
  * @param {string} 	copy written content
+ * @param {string} 	linkedin linkedin profile
  * @returns {jsx} <CopyBlock />
  */
-export default function CopyBlock({ containerClass, iconClass, icon, title, copy }) {
+export default function CopyBlock({ containerClass, title, copy, position, linkedin }) {
+	const {url, iconKey} = linkedin
 	return (
 		<>
-		<div className={containerClass}>
-			<span className={iconClass}>
-				<Icon icon={icon} />
-			</span>
-			<h3>{title}</h3>
+		<div className={containerClass}>			
+			<div style={{display:"flex"}}>
+				<h3>{title}</h3>
+				{/*<a href={url} rel="noreferrer" target="_blank"s><Icon icon={[ 'fab', "linkedin" ]}/></a>*/}
+			</div>
+						
+			<h2>{position}</h2>
 			<p>
 				{copy}
 			</p>

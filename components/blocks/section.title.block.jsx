@@ -10,10 +10,10 @@ import section from '../../styles/blocks/section.title.module.scss'
  * @param {string} * strings for header
  * @returns 
  */
-export default function SectionTitle({ preTitle, title, subTitle }) {
+export default function SectionTitle({ preTitle, title, subTitle,idName }) {
 	return (
 		<>
-		<div className={`${section.title}`}>
+		<div className={`${section.title}`} id={idName}>
 			<h4>{preTitle}</h4>
 			<h2>{title}</h2>
 			<p className="subtitle">{subTitle}</p>

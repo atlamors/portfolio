@@ -134,9 +134,12 @@ export default function Navbar() {
 		<nav id="Navbar" className={css.container}>
 			<ul className={css.menu}>
 				<li className={css.menuHeader}>
-					<Link className={css.logo} href="/"  >
+					<div className={css.imageContainer}>
+						<img src={settings.logo}></img>
+					</div>
+					{/*<Link className={css.logo} href="/"  >
 						{settings.name}
-					</Link>
+	</Link>*/}
 					<button onClick={toggleMenu} className={css.mobileToggle} data-open={menuState}>
 						<div>
 							<span></span>
@@ -149,7 +152,7 @@ export default function Navbar() {
 						{
 						content.map( ({ url, title }, index) => {
 							return (
-								<li key={index}>
+								<li key={index}>								
 									<Link href={url}>{title}</Link>
 								</li>
 							)

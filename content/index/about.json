@@ -1,0 +1,24 @@
+[
+    {
+        "title": "Nicolás Serignese",
+        "img": "/img/team/nico.jpeg",
+        "alt": "Nicolás Serignese photo",
+        "position": "Experto en Gestión de Equipos y Proyectos",
+        "description": "Además de liderar personas y proyectos durante los últimos +7 años, mi experiencia técnica se centra en la Transformación Digital, Automatización de Procesos Robóticos (RPA) y Análisis de Datos. Mi enfoque se centra en ayudar a nuestros clientes a alcanzar sus objetivos a través de la tecnología. Mis pasatiempos incluyen la música, los deportes, el cine, viajar y pasar tiempo con la familia y amigos.",
+        "linkedin":{
+			"url": "https://www.linkedin.com/in/nserignese",
+			"icon": "linkedin"
+		}
+    },
+    {
+        "title": "Tomás Mongelós",
+        "img": "/img/team/tomi.jpeg",
+        "alt": "Tomás Mongelós photo",
+        "position": "Experto en Desarrollo de Productos",
+        "description": "Como una persona curiosa, he aprendido programación tanto en el frontend como en el backend. También invierto tiempo en explorar el diseño UX/UI, ya que es un factor clave para el éxito en nuestros proyectos. Mis pasatiempos incluyen pasar tiempo con la familia, salir con amigos, participar en deportes y ver películas.",
+        "linkedin":{
+			"url": "https://www.linkedin.com/in/tom%C3%A1s-gonzalez-mongel%C3%B3s-6134631ab/",
+			"icon": "linkedin"
+		}
+    }
+]

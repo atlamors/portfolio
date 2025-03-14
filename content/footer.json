@@ -1,11 +1,6 @@
 {
 	"acknowledgments": [
 		{ 
-			"person": "Jihad Hassan - Marketing Director",
-			"link": "",
-			"note": "Thank you for all the advice and feedback."
-		},
-		{ 
 			"person": "Colorpong - Artist",
 			"link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
 			"note": "Checkout their amazing vector illustrations."
@@ -32,15 +27,15 @@
 
 	"social": [
 		{
-			"url": "https://medium.com/@--andrewnelson",
+			"url": "https://medium.com/",
 			"icon": "medium"
 		},
 		{
-			"url": "https://dev.to/andrewnelson",
+			"url": "https://dev.to/",
 			"icon": "dev"
 		},
 		{
-			"url": "https://www.linkedin.com/in/--andrewnelson/",
+			"url": "https://www.linkedin.com/in/",
 			"icon": "linkedin"
 		},
 		{

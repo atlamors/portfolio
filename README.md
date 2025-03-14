@@ -1,6 +1,6 @@
 
 <div align="center">
-  <h1>andrewnelson.net | portfolio</h1>
+  <h1>Prajapatijay.com | portfolio</h1>
   <p></p>
   <img src="https://img.shields.io/badge/stability-beta-blue.svg" alt="Experimental">
   <img src="https://vercelbadge.vercel.app/api/atlamors/portfolio-theme" alt="Vercel">
@@ -9,7 +9,6 @@
   <br><br>
 </div>
 
-<img src="https://www.andrewnelson.net/img/preview.png">
 
 ## Updates
 #### Dev Update — July 6th, 2023 🥰

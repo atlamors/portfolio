@@ -50,13 +50,18 @@ export default function Hero() {
 					wrapper={content.intro.wrapper}
 					repeat={Infinity}
 				/>
-				<section>
+				<section className="alignMen" >
+					<div className="headline">
 					<h1 className={hero.header}>
 						{content.header.name}
 						</h1>
 					<h1 className={`${hero.header} ${hero.primaryDim}`}>
 						{content.header.usp}
 					</h1>
+					</div>
+					<div>
+						<img src="/img/Man.png" />
+					</div>
 				</section>
 				<section>
 					<p className={`${hero.primaryBright} subtitle ${space(["verticalLrg"])}`}>
@@ -65,11 +70,11 @@ export default function Hero() {
 				</section>
 				<section>
 					<button	className={`button ${button.primary}`}
-							onClick={ () => window.location = 'mailto:hello@andrewnelson.net' } >
+							onClick={ () => window.location = 'mailto:dpjp123321@gmail.com' } >
 						{content.buttons.primary.title}
 					</button>
 					<button className={`button ${button.secondary} leaveSite`}
-							onClick={ ()=> window.open("https://www.linkedin.com/in/--andrewnelson/", "_blank") } >
+							onClick={ ()=> window.open("https://www.linkedin.com/", "_blank") } >
 						{content.buttons.secondary.title}
 					</button>
 				</section>

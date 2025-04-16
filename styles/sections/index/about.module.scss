@@ -67,6 +67,7 @@
 		}
 
 		.copy {
+			z-index: 1;
 			flex-basis: calc(60% + 1px);
 			flex-grow: 1;
 			flex-shrink: 1;

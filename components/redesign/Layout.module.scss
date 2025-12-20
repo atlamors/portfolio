@@ -1,0 +1,34 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-primary);
+}
+
+.main {
+  flex: 1;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-6);
+  
+  @media (max-width: 640px) {
+    padding: 0 var(--space-4);
+  }
+}
+
+.footer {
+  padding: var(--space-12) 0;
+  border-top: 1px solid var(--border-color);
+  
+  p {
+    color: var(--text-muted);
+    font-size: var(--text-sm);
+    text-align: center;
+    margin: 0;
+  }
+}

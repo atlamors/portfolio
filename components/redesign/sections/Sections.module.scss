@@ -1,0 +1,242 @@
+// Shared styles for all section components
+
+// Text styles
+.mainText {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+  
+  a {
+    color: var(--accent);
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.subheading {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: var(--space-6);
+  margin-bottom: var(--space-3);
+}
+
+// Update list (Present section)
+.updateList {
+  list-style: disc;
+  padding-left: var(--space-6);
+  
+  li {
+    margin-bottom: var(--space-2);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    
+    &::marker {
+      color: var(--text-muted);
+    }
+  }
+}
+
+.updateDate {
+  color: var(--text-muted);
+  font-weight: 500;
+  
+  &::after {
+    content: ": ";
+  }
+}
+
+.updateText {
+  a {
+    color: var(--accent);
+    
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Item list (Experience section)
+.itemList {
+  list-style: disc;
+  padding-left: var(--space-6);
+  
+  li {
+    margin-bottom: var(--space-3);
+    color: var(--text-secondary);
+    line-height: 1.6;
+    
+    &::marker {
+      color: var(--text-muted);
+    }
+    
+    a {
+      color: var(--accent);
+      font-weight: 600;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    strong {
+      color: var(--text-primary);
+    }
+  }
+}
+
+.itemDescription {
+  color: var(--text-secondary);
+}
+
+// Projects section
+.projectGrid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.projectCard {
+  padding: var(--space-5);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-secondary);
+  transition: all var(--transition-base);
+  
+  &:hover {
+    border-color: var(--border-hover);
+    box-shadow: var(--shadow-sm);
+  }
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: var(--space-3);
+}
+
+.projectTitle {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  margin: 0;
+  
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+    
+    &:hover {
+      color: var(--accent);
+    }
+  }
+}
+
+.projectLinks {
+  display: flex;
+  gap: var(--space-3);
+}
+
+.projectLink {
+  color: var(--text-muted);
+  transition: color var(--transition-fast);
+  
+  &:hover {
+    color: var(--accent);
+  }
+  
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  font-size: var(--text-sm);
+  line-height: 1.6;
+  margin-bottom: var(--space-4);
+  
+  strong {
+    color: var(--text-primary);
+  }
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.techTag {
+  font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-3);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+// Skills section
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.skillCategory {
+  &:not(:last-child) {
+    padding-bottom: var(--space-6);
+    border-bottom: 1px solid var(--border-color);
+  }
+}
+
+.skillCategoryTitle {
+  font-size: var(--text-base);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--space-3);
+}
+
+.skillTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.skillTag {
+  font-size: var(--text-sm);
+  padding: var(--space-2) var(--space-4);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  color: var(--text-secondary);
+  transition: all var(--transition-fast);
+  
+  &:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+  }
+}
+
+// Contact section
+.contactLinks {
+  display: flex;
+  gap: var(--space-4);
+  margin-top: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.contactLink {
+  color: var(--accent);
+  font-weight: 500;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}

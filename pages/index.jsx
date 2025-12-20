@@ -1,26 +1,53 @@
-import Hero 		from '../components/sections/index/hero'
-import Looking 		from '../components/sections/index/looking'
-import About 		from '../components/sections/index/about'
-import Technical 	from '../components/sections/index/technical'
-import Career 		from '../components/sections/index/career'
-import FeaturedProjects	from '../components/sections/projects/featured'
+import Head from 'next/head';
+import Layout from '../components/redesign/Layout';
+import Header from '../components/redesign/Header';
+import Present from '../components/redesign/sections/Present';
+import Experience from '../components/redesign/sections/Experience';
+import Projects from '../components/redesign/sections/Projects';
+import Skills from '../components/redesign/sections/Skills';
+import Contact from '../components/redesign/sections/Contact';
 
-import Color 		from '../components/utils/page.colors.util'
+import portfolioData from '../content/redesign/portfolio.json';
+import projectsData from '../content/projects/featured.json';
 
-import colors 		from '../content/index/_colors.json'
-
-//
 export default function HomePage() {
-
-	return (
-		<>
-			<Color colors={colors} />
-			<Hero id="hero" />
-			{/* <Looking /> */}
-			<FeaturedProjects id="featured" />
-			<About id="about" />
-			{/* <Technical /> */}
-			{/* <Career /> */}
-		</>
-	);
+  return (
+    <>
+      <Head>
+        <title>Kyle Zhang | Developer & Designer</title>
+        <meta name="description" content="Entrepreneurial UPenn M&T graduate building meaningful experiences in gaming and healthcare" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="icon" href="/favicon/favicon.ico" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Kyle Zhang | Developer & Designer" />
+        <meta property="og:description" content="Entrepreneurial UPenn M&T graduate building meaningful experiences" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Kyle Zhang | Developer & Designer" />
+        <meta name="twitter:description" content="Entrepreneurial UPenn M&T graduate building meaningful experiences" />
+      </Head>
+      
+      <Layout>
+        <Header 
+          name={portfolioData.header.name}
+          tagline={portfolioData.header.tagline}
+          profileImage={portfolioData.header.profileImage}
+          email={portfolioData.header.email}
+        />
+        
+        <Present data={portfolioData.present} />
+        
+        <Experience data={portfolioData.experience} />
+        
+        <Projects data={projectsData} />
+        
+        <Skills data={portfolioData.skills} />
+        
+        <Contact data={portfolioData.contact} />
+      </Layout>
+    </>
+  );
 }

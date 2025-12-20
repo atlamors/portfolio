@@ -1,0 +1,265 @@
+.header {
+  padding: var(--space-12) 0 var(--space-10);
+  
+  @media (max-width: 768px) {
+    padding: var(--space-8) 0 var(--space-6);
+  }
+}
+
+.headerGrid {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: var(--space-8);
+  align-items: start;
+  
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
+
+// Left side graphic
+.graphicContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  @media (max-width: 768px) {
+    max-width: 160px;
+    margin: 0 auto;
+  }
+}
+
+.techSvg {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  color: var(--text-primary);
+}
+
+.circuitLines {
+  opacity: 0.7;
+}
+
+.centerSymbol {
+  opacity: 1;
+}
+
+// Pulse animations
+.pulse1 {
+  animation: pulse 3s ease-in-out infinite;
+}
+
+.pulse2 {
+  animation: pulse 3s ease-in-out infinite 0.5s;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform-origin: center;
+    transform: scale(1);
+    opacity: 0.3;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 0.1;
+  }
+}
+
+// Right side info cards
+.infoColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+// Shared card styles
+.nameCard,
+.taglineCard,
+.contactCard {
+  border: 2px solid var(--text-primary);
+  padding: var(--space-5) var(--space-6);
+  background: var(--bg-card);
+  transition: all var(--transition-base);
+}
+
+.nameCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-5);
+  border-bottom: none;
+  
+  @media (max-width: 480px) {
+    flex-direction: column;
+    text-align: center;
+    padding: var(--space-6);
+  }
+}
+
+.profileImage {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid var(--text-primary);
+  
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0;
+  }
+  
+  @media (max-width: 480px) {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+.name {
+  font-family: 'Palatino Linotype', 'Palatino', 'Georgia', 'Times New Roman', serif;
+  font-size: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  margin: 0;
+  color: var(--text-primary);
+  
+  @media (max-width: 640px) {
+    font-size: 2rem;
+    letter-spacing: 0.08em;
+  }
+  
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+    letter-spacing: 0.06em;
+  }
+}
+
+.taglineCard {
+  border-bottom: none;
+  padding: var(--space-4) var(--space-6);
+}
+
+.tagline {
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  
+  @media (max-width: 640px) {
+    flex-direction: column;
+  }
+}
+
+.emailLink {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  flex: 1;
+  color: var(--accent);
+  text-decoration: none;
+  font-size: var(--text-sm);
+  border-right: 2px solid var(--text-primary);
+  transition: background var(--transition-base);
+  
+  &:hover {
+    background: var(--bg-secondary);
+    text-decoration: none;
+  }
+  
+  @media (max-width: 640px) {
+    width: 100%;
+    justify-content: center;
+    border-right: none;
+    border-bottom: 2px solid var(--text-primary);
+  }
+}
+
+.emailIcon {
+  width: 18px;
+  height: 18px;
+  color: var(--text-secondary);
+}
+
+.socialIcons {
+  display: flex;
+  align-items: stretch;
+}
+
+.socialIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  color: var(--text-primary);
+  border-left: 2px solid var(--text-primary);
+  transition: all var(--transition-base);
+  
+  &:first-child {
+    border-left: none;
+  }
+  
+  &:hover {
+    background: var(--text-primary);
+    color: var(--bg-primary);
+  }
+  
+  svg {
+    width: 20px;
+    height: 20px;
+  }
+  
+  @media (max-width: 640px) {
+    flex: 1;
+    border-left: none;
+    border-right: 2px solid var(--text-primary);
+    
+    &:last-child {
+      border-right: none;
+    }
+    
+    &:first-child {
+      border-left: none;
+    }
+  }
+}
+
+// Dark mode adjustments
+:global([data-theme='dark']) {
+  .nameCard,
+  .taglineCard,
+  .contactCard {
+    border-color: var(--border-color);
+  }
+  
+  .profileImage {
+    border-color: var(--border-color);
+  }
+  
+  .emailLink {
+    border-color: var(--border-color);
+  }
+  
+  .socialIcon {
+    border-color: var(--border-color);
+    
+    &:hover {
+      background: var(--text-primary);
+      color: var(--bg-primary);
+    }
+  }
+  
+  .techSvg {
+    color: var(--text-secondary);
+  }
+}

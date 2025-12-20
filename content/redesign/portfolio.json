@@ -1,0 +1,92 @@
+{
+  "header": {
+    "name": "Kyle Zhang",
+    "tagline": "Entrepreneurial UPenn M&T graduate building meaningful experiences in gaming and healthcare",
+    "profileImage": "/headshot.jpeg",
+    "email": "kyle@example.com",
+    "social": {
+      "github": "https://github.com/RiptideStar",
+      "linkedin": "https://www.linkedin.com/in/zhangkyle/",
+      "twitter": "https://twitter.com/"
+    }
+  },
+
+  "present": {
+    "intro": "I'm a UPenn M&T graduate passionate about building products at the intersection of technology and human impact. Currently focused on full-stack development and AI applications, with a particular interest in gaming and healthcare industries.",
+    "updates": [
+      {
+        "date": "2024",
+        "text": "Building AI-powered solutions for fraud detection in ",
+        "link": {
+          "text": "government healthcare programs",
+          "url": "https://robin-ai.vercel.app"
+        },
+        "suffix": ""
+      },
+      {
+        "date": "2023",
+        "text": "Launched ",
+        "link": {
+          "text": "LineupsValorant",
+          "url": "https://lineupsvalorant.com"
+        },
+        "suffix": ", serving millions of Valorant players"
+      }
+    ]
+  },
+
+  "experience": {
+    "intro": "I graduated from the Jerome Fisher Program in Management & Technology at UPenn, where I pursued dual degrees in Engineering and Business.",
+    "education": [
+      {
+        "name": "University of Pennsylvania - M&T Program",
+        "link": "https://fisher.wharton.upenn.edu/",
+        "description": "BSE from Penn Engineering and BS in Economics from Wharton"
+      }
+    ],
+    "internships": [
+      {
+        "name": "Full Stack Development",
+        "description": "built production applications using Next.js, React, and modern cloud infrastructure"
+      },
+      {
+        "name": "AI/ML Engineering",
+        "description": "developed ML pipelines with TensorFlow, PyTorch, and LLM technologies"
+      }
+    ]
+  },
+
+  "skills": [
+    {
+      "title": "Frontend",
+      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind", "Framer Motion"]
+    },
+    {
+      "title": "Backend",
+      "skills": ["Node.js", "Python", "FastAPI", "Flask", "PostgreSQL", "MySQL", "Redis"]
+    },
+    {
+      "title": "AI & ML",
+      "skills": ["TensorFlow", "PyTorch", "OpenAI GPT", "Hugging Face", "Pinecone", "LangChain"]
+    },
+    {
+      "title": "Tools & Infrastructure",
+      "skills": ["AWS", "Docker", "Git", "Vercel", "CI/CD", "Google Analytics"]
+    }
+  ],
+
+  "contact": {
+    "message": "I'm always open to discussing new opportunities, collaborations, or just chatting about technology. Feel free to reach out at",
+    "email": "kyle@example.com",
+    "links": [
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/zhangkyle/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/RiptideStar"
+      }
+    ]
+  }
+}

@@ -1,0 +1,42 @@
+.toggleWrapper {
+  position: fixed;
+  top: var(--space-6);
+  right: var(--space-6);
+  z-index: 1000;
+  
+  @media (max-width: 640px) {
+    top: var(--space-4);
+    right: var(--space-4);
+  }
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  
+  &:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+  }
+  
+  span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  svg {
+    width: 18px;
+    height: 18px;
+  }
+}

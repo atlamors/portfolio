@@ -1,3 +1,5 @@
+// Layout Styles - Minimalist Portfolio
+
 .layout {
   min-height: 100vh;
   display: flex;
@@ -7,7 +9,6 @@
 
 .main {
   flex: 1;
-  padding: 0;
 }
 
 .container {
@@ -15,20 +16,32 @@
   max-width: var(--max-width);
   margin: 0 auto;
   padding: 0 var(--space-6);
-  
+
   @media (max-width: 640px) {
     padding: 0 var(--space-4);
   }
 }
 
 .footer {
-  padding: var(--space-12) 0;
+  padding: var(--space-16) var(--space-6);
   border-top: 1px solid var(--border-color);
-  
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: var(--space-2);
+  }
+
   p {
     color: var(--text-muted);
     font-size: var(--text-sm);
     text-align: center;
     margin: 0;
+  }
+
+  .copyright {
+    font-size: var(--text-xs);
+    color: var(--text-faint);
   }
 }

@@ -1,0 +1,94 @@
+// Dot Matrix Animation Component Styles
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-6);
+}
+
+.matrixWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 280px;
+  aspect-ratio: 1;
+
+  @media (max-width: 640px) {
+    max-width: 220px;
+  }
+}
+
+.dotGrid {
+  display: grid;
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+  padding: var(--space-2);
+
+  @media (max-width: 640px) {
+    gap: 3px;
+  }
+}
+
+.dotWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+}
+
+.dot {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: var(--dot-inactive);
+  will-change: transform, opacity, background-color;
+}
+
+.iconLabel {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.labelText {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.progressContainer {
+  display: flex;
+  gap: var(--space-2);
+  padding: var(--space-2);
+}
+
+.progressDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: none;
+  background-color: var(--border-color);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  padding: 0;
+
+  &:hover {
+    background-color: var(--text-muted);
+    transform: scale(1.2);
+  }
+
+  &.active {
+    transform: scale(1.3);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+  }
+}
+
+// Note: --dot-inactive variable is defined in variables-new.css

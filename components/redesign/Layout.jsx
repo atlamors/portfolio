@@ -15,14 +15,13 @@ export default function Layout({ children }) {
           exit={{ opacity: 0 }}
           transition={{ duration: 0.3 }}
         >
-          <div className={styles.container}>
-            {children}
-          </div>
+          {children}
         </motion.main>
       </AnimatePresence>
       <footer id="footer-section" className={styles.footer}>
         <div className={styles.container}>
-          <p>© {new Date().getFullYear()} Kyle Zhang. All rights reserved.</p>
+          <p>Designed & built by Kyle Zhang</p>
+          <p className={styles.copyright}>© {new Date().getFullYear()}</p>
         </div>
       </footer>
     </div>

@@ -1,11 +1,12 @@
-/* Base reset and global styles */
+/* Global Styles - Minimalist Portfolio */
+
 * {
   box-sizing: border-box;
 }
 
 ::selection {
-  background: var(--accent);
-  color: white;
+  background: var(--text-primary);
+  color: var(--bg-primary);
 }
 
 html {
@@ -17,7 +18,7 @@ body {
   font-family: var(--font-sans);
   background: var(--bg-primary);
   color: var(--text-primary);
-  line-height: 1.6;
+  line-height: 1.7;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -33,54 +34,51 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 600;
   line-height: 1.3;
   color: var(--text-primary);
+  margin: 0;
 }
 
 h1 {
-  font-family: var(--font-mono);
-  font-size: var(--text-3xl);
+  font-size: var(--text-4xl);
+  font-weight: 500;
   letter-spacing: -0.02em;
 }
 
 h2 {
   font-size: var(--text-2xl);
-  margin-bottom: var(--space-4);
+  font-weight: 600;
+  letter-spacing: -0.01em;
 }
 
 h3 {
   font-size: var(--text-xl);
-  margin-bottom: var(--space-3);
+  font-weight: 600;
 }
 
 p {
   color: var(--text-secondary);
-  margin-bottom: var(--space-4);
-}
-
-p:last-child {
-  margin-bottom: 0;
+  margin: 0;
 }
 
 /* Links */
 a {
-  color: var(--accent);
+  color: var(--link-color);
   text-decoration: none;
   transition: color var(--transition-fast);
 }
 
 a:hover {
-  color: var(--accent-hover);
-  text-decoration: underline;
+  color: var(--link-hover);
 }
 
 /* Lists */
 ul, ol {
   padding-left: var(--space-6);
-  margin-bottom: var(--space-4);
+  margin: 0;
 }
 
 ul li, ol li {
-  margin-bottom: var(--space-2);
   color: var(--text-secondary);
+  margin-bottom: var(--space-2);
 }
 
 ul li::marker, ol li::marker {
@@ -91,18 +89,19 @@ ul li::marker, ol li::marker {
 button {
   cursor: pointer;
   font-family: inherit;
+  border: none;
+  background: none;
 }
 
 /* Images */
 img {
   max-width: 100%;
   height: auto;
-  border-radius: var(--radius-md);
 }
 
 /* Focus styles for accessibility */
 :focus-visible {
-  outline: 2px solid var(--accent);
+  outline: 2px solid var(--link-color);
   outline-offset: 2px;
 }
 
@@ -119,28 +118,47 @@ img {
   color: var(--text-secondary);
 }
 
-/* Container */
-.container {
-  width: 100%;
-  max-width: var(--max-width);
-  margin: 0 auto;
-  padding: 0 var(--space-6);
+/* Smooth page transitions */
+.page-transition-enter {
+  opacity: 0;
+  transform: translateY(10px);
 }
 
-@media (max-width: 640px) {
-  .container {
-    padding: 0 var(--space-4);
-  }
+.page-transition-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 300ms ease, transform 300ms ease;
+}
+
+.page-transition-exit {
+  opacity: 1;
+}
+
+.page-transition-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--border-hover);
 }
 
 /* Main content area */
 main {
   flex: 1;
-  padding: var(--space-8) 0 var(--space-16);
-}
-
-@media (max-width: 640px) {
-  main {
-    padding: var(--space-6) 0 var(--space-12);
-  }
 }

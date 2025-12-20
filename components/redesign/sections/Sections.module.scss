@@ -1,19 +1,279 @@
-// Shared styles for all section components
+// Section Styles - Minimalist Portfolio
 
-// Text styles
+// Base section styles
+.section {
+  padding: var(--space-24) var(--space-6);
+  border-top: 1px solid var(--border-color);
+
+  @media (max-width: 640px) {
+    padding: var(--space-16) var(--space-4);
+  }
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+// Section header with number
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-bottom: var(--space-10);
+
+  @media (max-width: 640px) {
+    margin-bottom: var(--space-8);
+  }
+}
+
+.sectionNumber {
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.sectionTitle {
+  font-size: var(--text-2xl);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+// Content area
+.content {
+  max-width: var(--max-width-narrow);
+}
+
+// Introduction text
+.intro {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-6);
+
+  @media (max-width: 640px) {
+    font-size: var(--text-base);
+  }
+}
+
+// Highlight list
+.highlightList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+
+  li {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-3);
+    color: var(--text-secondary);
+    line-height: 1.6;
+
+    &::before {
+      content: "→";
+      color: var(--text-muted);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    a {
+      color: var(--link-color);
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Project list
+.projectList {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-10);
+}
+
+.projectItem {
+  padding-bottom: var(--space-10);
+  border-bottom: 1px solid var(--border-color);
+
+  &:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+}
+
+.projectMeta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-3);
+}
+
+.projectType {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.projectLinks {
+  display: flex;
+  gap: var(--space-3);
+
+  a {
+    color: var(--text-muted);
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--text-primary);
+    }
+
+    svg {
+      width: 16px;
+      height: 16px;
+    }
+  }
+}
+
+.projectName {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-bottom: var(--space-3);
+
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+    transition: color var(--transition-fast);
+
+    &:hover {
+      color: var(--link-color);
+    }
+  }
+}
+
+.projectDescription {
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-4);
+
+  strong {
+    color: var(--text-primary);
+    font-weight: 500;
+  }
+}
+
+.techStack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.techTag {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  padding: var(--space-1) var(--space-3);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  color: var(--text-muted);
+}
+
+.techMore {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--text-faint);
+}
+
+// Contact section
+.contactIntro {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: var(--space-8);
+  max-width: var(--max-width-narrow);
+
+  @media (max-width: 640px) {
+    font-size: var(--text-base);
+  }
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-4);
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.contactCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-5);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  text-decoration: none;
+  transition: all var(--transition-base);
+
+  &:hover {
+    border-color: var(--border-hover);
+    background: var(--bg-tertiary);
+  }
+}
+
+.contactIcon {
+  width: 24px;
+  height: 24px;
+  color: var(--text-muted);
+  flex-shrink: 0;
+}
+
+.contactInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  min-width: 0;
+}
+
+.contactLabel {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-muted);
+}
+
+.contactText {
+  font-size: var(--text-sm);
+  color: var(--text-primary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Existing legacy styles (keeping for backwards compatibility)
 .mainText {
   color: var(--text-secondary);
   line-height: 1.7;
   margin-bottom: var(--space-4);
-  
+
   a {
-    color: var(--accent);
-    
+    color: var(--link-color);
+
     &:hover {
       text-decoration: underline;
     }
   }
-  
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -27,16 +287,15 @@
   margin-bottom: var(--space-3);
 }
 
-// Update list (Present section)
 .updateList {
   list-style: disc;
   padding-left: var(--space-6);
-  
+
   li {
     margin-bottom: var(--space-2);
     color: var(--text-secondary);
     line-height: 1.6;
-    
+
     &::marker {
       color: var(--text-muted);
     }
@@ -46,7 +305,7 @@
 .updateDate {
   color: var(--text-muted);
   font-weight: 500;
-  
+
   &::after {
     content: ": ";
   }
@@ -54,37 +313,36 @@
 
 .updateText {
   a {
-    color: var(--accent);
-    
+    color: var(--link-color);
+
     &:hover {
       text-decoration: underline;
     }
   }
 }
 
-// Item list (Experience section)
 .itemList {
   list-style: disc;
   padding-left: var(--space-6);
-  
+
   li {
     margin-bottom: var(--space-3);
     color: var(--text-secondary);
     line-height: 1.6;
-    
+
     &::marker {
       color: var(--text-muted);
     }
-    
+
     a {
-      color: var(--accent);
+      color: var(--link-color);
       font-weight: 600;
-      
+
       &:hover {
         text-decoration: underline;
       }
     }
-    
+
     strong {
       color: var(--text-primary);
     }
@@ -95,7 +353,6 @@
   color: var(--text-secondary);
 }
 
-// Projects section
 .projectGrid {
   display: flex;
   flex-direction: column;
@@ -108,7 +365,7 @@
   border-radius: var(--radius-md);
   background: var(--bg-secondary);
   transition: all var(--transition-base);
-  
+
   &:hover {
     border-color: var(--border-hover);
     box-shadow: var(--shadow-sm);
@@ -126,63 +383,31 @@
   font-size: var(--text-lg);
   font-weight: 600;
   margin: 0;
-  
+
   a {
     color: var(--text-primary);
     text-decoration: none;
-    
+
     &:hover {
-      color: var(--accent);
+      color: var(--link-color);
     }
   }
-}
-
-.projectLinks {
-  display: flex;
-  gap: var(--space-3);
 }
 
 .projectLink {
   color: var(--text-muted);
   transition: color var(--transition-fast);
-  
+
   &:hover {
-    color: var(--accent);
+    color: var(--link-color);
   }
-  
+
   svg {
     width: 16px;
     height: 16px;
   }
 }
 
-.projectDescription {
-  color: var(--text-secondary);
-  font-size: var(--text-sm);
-  line-height: 1.6;
-  margin-bottom: var(--space-4);
-  
-  strong {
-    color: var(--text-primary);
-  }
-}
-
-.techStack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--space-2);
-}
-
-.techTag {
-  font-size: var(--text-xs);
-  padding: var(--space-1) var(--space-3);
-  background: var(--bg-primary);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-sm);
-  color: var(--text-muted);
-}
-
-// Skills section
 .skillsContainer {
   display: flex;
   flex-direction: column;
@@ -217,14 +442,13 @@
   border-radius: var(--radius-md);
   color: var(--text-secondary);
   transition: all var(--transition-fast);
-  
+
   &:hover {
     border-color: var(--border-hover);
     color: var(--text-primary);
   }
 }
 
-// Contact section
 .contactLinks {
   display: flex;
   gap: var(--space-4);
@@ -233,10 +457,25 @@
 }
 
 .contactLink {
-  color: var(--accent);
+  color: var(--link-color);
   font-weight: 500;
-  
+
   &:hover {
     text-decoration: underline;
+  }
+}
+
+// Dark mode
+:global([data-theme='dark']) {
+  .contactCard {
+    background: var(--bg-tertiary);
+
+    &:hover {
+      background: var(--bg-card);
+    }
+  }
+
+  .techTag {
+    background: var(--bg-card);
   }
 }

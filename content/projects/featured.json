@@ -1,57 +1,60 @@
 [
-	{
-		"project": "LineupsValorant",
-		"url": "https://lineupsvalorant.com",
-		"repo": "Private",
-		"descriptionTitle": "Platform for over millions of Valorant players",
-		"description": "to find and share the best lineups for their favorite agents and teams. Fast, easy, and free.",
-		"imageOptions": [
-		],
-		"images": [
-			{ "key": "mock-stack",	"hover": "left", 	"h": "556", "w": "900", "url": "/img/msc-mock_stack/mac2-LineupsValorant.png" },
-			{ "key": "mock-stack",	"hover": "right",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/left-phone-LineupsValorant-2.png" },
-			{ "key": "mock-stack",	"hover": "left",	"h": "1200", "w": "556", "url": "/img/msc-mock_stack/left2-phone-LineupsValorant.png" }
-		],
-		"stack": [
-			{ "key": "mysql", 		"name": "mySQL", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "jquery", 		"name": "jQuery", 		"type": "devicon" },
-			{ "key": "html5",		"name": "HTML5", 		"type": "devicon" },
-			{ "key": "css3",		"name": "CSS3", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{ "key": "google",		"name": "GA4/GTM/EEC", 	"type": "devicon" },
-			{ "key": "python",		"name": "Python", 		"type": "devicon" },
-			{ "key": "flask",		"name": "Flask", 		"type": "devicon" }
-		]
-	},
-	{
-		"project": "Robin",
-		"url": "https://robin-ai.vercel.app",
-		"repo": "Private",
-		"descriptionTitle": "An LLM-powered solution to fraud detection",
-		"description": "built on Pinecone, GPT-4, HuggingFace, and other proprietary ML, embedding, and pipelining technologies. For the US government's Medicaid and Medicare.",
-		"imageOptions": [
-			{ "key": "size", 		"value": "large" }
-		],
-		"images": [
-			{ "key": "portfolio", "hover": "left", "h": "797", "w": "556",  "url": "/img/Robin.png" }
-		],
-		"stack": [
-			{ "key": "nextjs", 		"name": "Next.js", 		"type": "devicon" },
-			{ "key": "react", 		"name": "React", 		"type": "devicon" },
-			{ "key": "nodejs", 		"name": "Node.js", 		"type": "devicon" },
-			{ "key": "javascript", 	"name": "JavaScript", 	"type": "devicon" },
-			{ "key": "python", 		"name": "Python", 		"type": "devicon" },
-			{ "key": "tensorflow", 	"name": "TensorFlow", 	"type": "custom" },
-			{ "key": "pytorch", 	"name": "PyTorch", 		"type": "devicon" },
-			{ "key": "huggingface", "name": "HuggingFace", 	"type": "custom" },
-			{ "key": "openai", 		"name": "OpenAI GPT-4", "type": "custom" },
-			{ "key": "pinecone", 	"name": "Pinecone", 	"type": "custom" },
-			{ "key": "amazonwebservices", 		"name": "AWS", 			"type": "devicon" },
-			{ "key": "docker", 		"name": "Docker", 		"type": "devicon" },
-			{ "key": "git",			"name": "Git(Hub)", 	"type": "devicon" },
-			{ "key": "fastapi", 	"name": "FastAPI", 		"type": "devicon" },
-			{ "key": "redis", 		"name": "Redis", 		"type": "devicon" }
-		]
-	}
+  {
+    "project": "LineupsValorant",
+    "type": "Gaming Platform",
+    "url": "https://lineupsvalorant.com",
+    "repo": "Private",
+    "descriptionTitle": "Platform for millions of Valorant players",
+    "description": "to discover and share the best agent lineups. Built with a focus on speed, accessibility, and community engagement.",
+    "stack": [
+      { "key": "mysql", "name": "MySQL", "type": "devicon" },
+      { "key": "javascript", "name": "JavaScript", "type": "devicon" },
+      { "key": "python", "name": "Python", "type": "devicon" },
+      { "key": "flask", "name": "Flask", "type": "devicon" },
+      { "key": "google", "name": "Analytics", "type": "devicon" }
+    ]
+  },
+  {
+    "project": "Robin",
+    "type": "AI Healthcare",
+    "url": "https://robin-ai.vercel.app",
+    "repo": "Private",
+    "descriptionTitle": "LLM-powered fraud detection",
+    "description": "for US government Medicaid and Medicare programs. Combines GPT-4, vector embeddings, and custom ML pipelines to identify suspicious patterns.",
+    "stack": [
+      { "key": "nextjs", "name": "Next.js", "type": "devicon" },
+      { "key": "python", "name": "Python", "type": "devicon" },
+      { "key": "openai", "name": "GPT-4", "type": "custom" },
+      { "key": "pinecone", "name": "Pinecone", "type": "custom" },
+      { "key": "fastapi", "name": "FastAPI", "type": "devicon" }
+    ]
+  },
+  {
+    "project": "NCut Visualization",
+    "type": "Research",
+    "url": null,
+    "repo": "Private",
+    "descriptionTitle": "Computer vision research",
+    "description": "on normalized cut algorithms and spectral clustering for image segmentation. Developed visualization tools to understand and improve segmentation quality.",
+    "stack": [
+      { "key": "python", "name": "Python", "type": "devicon" },
+      { "key": "pytorch", "name": "PyTorch", "type": "devicon" },
+      { "key": "numpy", "name": "NumPy", "type": "devicon" },
+      { "key": "matplotlib", "name": "Visualization", "type": "custom" }
+    ]
+  },
+  {
+    "project": "Forte",
+    "type": "Music Tech",
+    "url": null,
+    "repo": "Private",
+    "descriptionTitle": "A cappella practice companion",
+    "description": "helping vocal groups rehearse more effectively. Features pitch tracking, harmony analysis, and section-specific practice modes.",
+    "stack": [
+      { "key": "react", "name": "React", "type": "devicon" },
+      { "key": "nodejs", "name": "Node.js", "type": "devicon" },
+      { "key": "tensorflow", "name": "TensorFlow", "type": "custom" },
+      { "key": "webAudio", "name": "Web Audio", "type": "custom" }
+    ]
+  }
 ]

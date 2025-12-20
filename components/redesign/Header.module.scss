@@ -1,265 +1,192 @@
+// Header Styles - Minimalist Hero with Dot Matrix
+
 .header {
-  padding: var(--space-12) 0 var(--space-10);
-  
-  @media (max-width: 768px) {
-    padding: var(--space-8) 0 var(--space-6);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-8) var(--space-6);
+  position: relative;
+
+  @media (max-width: 640px) {
+    min-height: calc(100vh - 60px);
+    padding: var(--space-6) var(--space-4);
   }
 }
 
-.headerGrid {
-  display: grid;
-  grid-template-columns: 200px 1fr;
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
   gap: var(--space-8);
-  align-items: start;
-  
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
+
+  @media (max-width: 640px) {
     gap: var(--space-6);
   }
 }
 
-// Left side graphic
-.graphicContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
-  @media (max-width: 768px) {
-    max-width: 160px;
-    margin: 0 auto;
-  }
+.dotMatrixWrapper {
+  margin-bottom: var(--space-4);
 }
 
-.techSvg {
-  width: 100%;
-  max-width: 200px;
-  height: auto;
-  color: var(--text-primary);
-}
-
-.circuitLines {
-  opacity: 0.7;
-}
-
-.centerSymbol {
-  opacity: 1;
-}
-
-// Pulse animations
-.pulse1 {
-  animation: pulse 3s ease-in-out infinite;
-}
-
-.pulse2 {
-  animation: pulse 3s ease-in-out infinite 0.5s;
-}
-
-@keyframes pulse {
-  0%, 100% {
-    transform-origin: center;
-    transform: scale(1);
-    opacity: 0.3;
-  }
-  50% {
-    transform: scale(1.05);
-    opacity: 0.1;
-  }
-}
-
-// Right side info cards
-.infoColumn {
+.introSection {
   display: flex;
   flex-direction: column;
-  gap: 0;
-}
-
-// Shared card styles
-.nameCard,
-.taglineCard,
-.contactCard {
-  border: 2px solid var(--text-primary);
-  padding: var(--space-5) var(--space-6);
-  background: var(--bg-card);
-  transition: all var(--transition-base);
-}
-
-.nameCard {
-  display: flex;
-  align-items: center;
-  gap: var(--space-5);
-  border-bottom: none;
-  
-  @media (max-width: 480px) {
-    flex-direction: column;
-    text-align: center;
-    padding: var(--space-6);
-  }
-}
-
-.profileImage {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-  border: 2px solid var(--text-primary);
-  
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0;
-  }
-  
-  @media (max-width: 480px) {
-    width: 80px;
-    height: 80px;
-  }
+  gap: var(--space-3);
 }
 
 .name {
-  font-family: 'Palatino Linotype', 'Palatino', 'Georgia', 'Times New Roman', serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  letter-spacing: 0.12em;
-  margin: 0;
+  font-size: var(--text-5xl);
+  font-weight: 600;
+  letter-spacing: -0.03em;
   color: var(--text-primary);
-  
-  @media (max-width: 640px) {
-    font-size: 2rem;
-    letter-spacing: 0.08em;
-  }
-  
-  @media (max-width: 480px) {
-    font-size: 1.5rem;
-    letter-spacing: 0.06em;
-  }
-}
+  line-height: 1.1;
 
-.taglineCard {
-  border-bottom: none;
-  padding: var(--space-4) var(--space-6);
+  @media (max-width: 640px) {
+    font-size: var(--text-4xl);
+  }
 }
 
 .tagline {
-  font-size: var(--text-sm);
-  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--text-lg);
+  color: var(--text-muted);
+  letter-spacing: 0.02em;
   margin: 0;
-  line-height: 1.5;
-  text-align: center;
+
+  @media (max-width: 640px) {
+    font-size: var(--text-base);
+  }
 }
 
-.contactCard {
-  display: flex;
-  align-items: center;
-  padding: 0;
-  
+.description {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  line-height: 1.7;
+  max-width: 480px;
+  margin: 0;
+
   @media (max-width: 640px) {
-    flex-direction: column;
+    font-size: var(--text-base);
   }
+}
+
+.socialRow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-4);
 }
 
 .emailLink {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  gap: var(--space-3);
-  padding: var(--space-4) var(--space-5);
-  flex: 1;
-  color: var(--accent);
-  text-decoration: none;
-  font-size: var(--text-sm);
-  border-right: 2px solid var(--text-primary);
-  transition: background var(--transition-base);
-  
-  &:hover {
-    background: var(--bg-secondary);
-    text-decoration: none;
-  }
-  
-  @media (max-width: 640px) {
-    width: 100%;
-    justify-content: center;
-    border-right: none;
-    border-bottom: 2px solid var(--text-primary);
-  }
-}
-
-.emailIcon {
-  width: 18px;
-  height: 18px;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-5);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
   color: var(--text-secondary);
+  font-size: var(--text-sm);
+  transition: all var(--transition-base);
+  text-decoration: none;
+
+  &:hover {
+    border-color: var(--border-hover);
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+    color: var(--text-muted);
+  }
 }
 
-.socialIcons {
+.socialLinks {
   display: flex;
-  align-items: stretch;
+  gap: var(--space-3);
 }
 
 .socialIcon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 52px;
-  height: 52px;
-  color: var(--text-primary);
-  border-left: 2px solid var(--text-primary);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
   transition: all var(--transition-base);
-  
-  &:first-child {
-    border-left: none;
-  }
-  
+
   &:hover {
-    background: var(--text-primary);
-    color: var(--bg-primary);
+    border-color: var(--text-primary);
+    color: var(--text-primary);
+    background: var(--bg-tertiary);
   }
-  
+
   svg {
     width: 20px;
     height: 20px;
   }
-  
+}
+
+.scrollIndicator {
+  position: absolute;
+  bottom: var(--space-8);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: all var(--transition-base);
+  animation: bounce 2s infinite;
+
+  &:hover {
+    color: var(--text-primary);
+  }
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+
   @media (max-width: 640px) {
-    flex: 1;
-    border-left: none;
-    border-right: 2px solid var(--text-primary);
-    
-    &:last-child {
-      border-right: none;
-    }
-    
-    &:first-child {
-      border-left: none;
-    }
+    bottom: var(--space-6);
+  }
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  40% {
+    transform: translateX(-50%) translateY(-8px);
+  }
+  60% {
+    transform: translateX(-50%) translateY(-4px);
   }
 }
 
 // Dark mode adjustments
 :global([data-theme='dark']) {
-  .nameCard,
-  .taglineCard,
-  .contactCard {
-    border-color: var(--border-color);
-  }
-  
-  .profileImage {
-    border-color: var(--border-color);
-  }
-  
-  .emailLink {
-    border-color: var(--border-color);
-  }
-  
+  .emailLink,
   .socialIcon {
+    background: var(--bg-tertiary);
     border-color: var(--border-color);
-    
+
     &:hover {
-      background: var(--text-primary);
-      color: var(--bg-primary);
+      background: var(--bg-card);
+      border-color: var(--border-hover);
     }
-  }
-  
-  .techSvg {
-    color: var(--text-secondary);
   }
 }

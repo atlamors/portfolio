@@ -1,9 +1,11 @@
+// Theme Toggle - Minimalist style
+
 .toggleWrapper {
   position: fixed;
   top: var(--space-6);
   right: var(--space-6);
   z-index: 1000;
-  
+
   @media (max-width: 640px) {
     top: var(--space-4);
     right: var(--space-4);
@@ -17,26 +19,40 @@
   width: 44px;
   height: 44px;
   border: 1px solid var(--border-color);
-  border-radius: var(--radius-md);
-  background: var(--bg-card);
-  color: var(--text-secondary);
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-muted);
   cursor: pointer;
   transition: all var(--transition-base);
-  
+  backdrop-filter: blur(8px);
+
   &:hover {
     border-color: var(--border-hover);
     color: var(--text-primary);
-    background: var(--bg-secondary);
+    background: var(--bg-tertiary);
   }
-  
+
   span {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   svg {
     width: 18px;
     height: 18px;
+  }
+}
+
+// Dark mode adjustments
+:global([data-theme='dark']) {
+  .toggle {
+    background: var(--bg-tertiary);
+    border-color: var(--border-color);
+
+    &:hover {
+      background: var(--bg-card);
+      border-color: var(--border-hover);
+    }
   }
 }

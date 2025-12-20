@@ -1,8 +1,8 @@
 {
   "header": {
     "name": "Kyle Zhang",
-    "tagline": "Entrepreneurial UPenn M&T graduate building meaningful experiences in gaming and healthcare",
-    "profileImage": "/headshot.jpeg",
+    "tagline": "Builder. Researcher. Creator.",
+    "description": "M&T graduate from UPenn, passionate about building products at the intersection of gaming, AI, and human impact.",
     "email": "kyle@example.com",
     "social": {
       "github": "https://github.com/RiptideStar",
@@ -11,12 +11,11 @@
     }
   },
 
-  "present": {
-    "intro": "I'm a UPenn M&T graduate passionate about building products at the intersection of technology and human impact. Currently focused on full-stack development and AI applications, with a particular interest in gaming and healthcare industries.",
-    "updates": [
+  "about": {
+    "intro": "I'm an entrepreneurial UPenn M&T graduate who loves turning ideas into impactful products. My journey spans from building gaming tools used by millions to developing AI-powered healthcare solutions. I believe in creating technology that genuinely helps people.",
+    "highlights": [
       {
-        "date": "2024",
-        "text": "Building AI-powered solutions for fraud detection in ",
+        "text": "Currently building AI solutions for fraud detection in ",
         "link": {
           "text": "government healthcare programs",
           "url": "https://robin-ai.vercel.app"
@@ -24,69 +23,27 @@
         "suffix": ""
       },
       {
-        "date": "2023",
-        "text": "Launched ",
+        "text": "Created ",
         "link": {
           "text": "LineupsValorant",
           "url": "https://lineupsvalorant.com"
         },
-        "suffix": ", serving millions of Valorant players"
-      }
-    ]
-  },
-
-  "experience": {
-    "intro": "I graduated from the Jerome Fisher Program in Management & Technology at UPenn, where I pursued dual degrees in Engineering and Business.",
-    "education": [
-      {
-        "name": "University of Pennsylvania - M&T Program",
-        "link": "https://fisher.wharton.upenn.edu/",
-        "description": "BSE from Penn Engineering and BS in Economics from Wharton"
-      }
-    ],
-    "internships": [
-      {
-        "name": "Full Stack Development",
-        "description": "built production applications using Next.js, React, and modern cloud infrastructure"
+        "suffix": ", serving millions of players worldwide"
       },
       {
-        "name": "AI/ML Engineering",
-        "description": "developed ML pipelines with TensorFlow, PyTorch, and LLM technologies"
+        "text": "Researched computer vision and ML at UPenn, contributing to NCut visualization and segmentation work",
+        "link": null,
+        "suffix": ""
+      },
+      {
+        "text": "Passionate about a cappella, exploring new cities, and finding the best local food spots",
+        "link": null,
+        "suffix": ""
       }
     ]
   },
-
-  "skills": [
-    {
-      "title": "Frontend",
-      "skills": ["React", "Next.js", "TypeScript", "JavaScript", "HTML/CSS", "Tailwind", "Framer Motion"]
-    },
-    {
-      "title": "Backend",
-      "skills": ["Node.js", "Python", "FastAPI", "Flask", "PostgreSQL", "MySQL", "Redis"]
-    },
-    {
-      "title": "AI & ML",
-      "skills": ["TensorFlow", "PyTorch", "OpenAI GPT", "Hugging Face", "Pinecone", "LangChain"]
-    },
-    {
-      "title": "Tools & Infrastructure",
-      "skills": ["AWS", "Docker", "Git", "Vercel", "CI/CD", "Google Analytics"]
-    }
-  ],
 
   "contact": {
-    "message": "I'm always open to discussing new opportunities, collaborations, or just chatting about technology. Feel free to reach out at",
-    "email": "kyle@example.com",
-    "links": [
-      {
-        "name": "LinkedIn",
-        "url": "https://www.linkedin.com/in/zhangkyle/"
-      },
-      {
-        "name": "GitHub",
-        "url": "https://github.com/RiptideStar"
-      }
-    ]
+    "message": "I'm always excited to connect with fellow builders, researchers, and anyone passionate about technology. Whether you have a project idea, want to collaborate, or just want to chat about gaming, AI, or food—reach out!"
   }
 }
